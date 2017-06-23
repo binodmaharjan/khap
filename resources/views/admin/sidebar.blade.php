@@ -16,15 +16,13 @@
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-edit"></i> Files </a>
+                <a href="{{url('/reports')}}"><i class="fa fa-edit"></i> Report </a>
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-table"></i> User</a>
+                <a href="{{url('/member')}}"><i class="fa fa-table"></i> Members</a>
             </li>
-            <li>
-                <a href="{{url('/reports')}}"><i class="fa fa-edit"></i> Report </a>
-            </li>
+
 
 
 

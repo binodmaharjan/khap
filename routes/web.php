@@ -40,12 +40,20 @@ Route::get('/slider/{id}/delete','SliderController@delete');
 Route::get('/slider/{id}/edit','SliderController@edit');
 Route::post('slider/update','SliderController@update')->name('slider_update');
 
+// member
+Route::get('/member','MemberController@index');
+Route::get('/member/add','MemberController@create');
+Route::post('/member/store','MemberController@store')->name('member_store');
+Route::get('/member/{id}/delete','MemberController@delete');
+Route::get('/member/{id}/edit','MemberController@edit');
+Route::post('member/update','MemberController@update')->name('member_update');
+
 
 
 
 Route::get('downloads/{cat}/{file_name}', function($cat=null,$file_name = null)
 {
-    $path = storage_path('app/'.$cat.'/'.$file_name);
+    $path = public_path('uploads/'.$cat.'/'.$file_name);
   //  dd($path);
 
     if (file_exists($path)) {

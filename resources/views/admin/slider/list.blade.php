@@ -12,7 +12,14 @@
 
     <div class="table-responsive">
         <table class="table">
-
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Photo</th>
+                <th>Title</th>
+                <th>Action</th>
+            </tr>
+            </thead>
             <tbody>
             <?php $counts = 0; ?>
 
