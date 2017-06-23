@@ -26,7 +26,7 @@ body {
     width:100%;
     margin:10px 20px 10px 0px;
     background-color:transparent;
-    padding: 15px 30px;
+    padding: 0px 30px;
     min-height:1200px;
 }
 .header .container-fluid{
@@ -630,5 +630,13 @@ font-size: 19px;
 .glyphicon {
     font-size: 25px;
 }
+
+.col-left{
+    width:10%;
+    text-align: left;
+
+}
+
+
 
 

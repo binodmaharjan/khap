@@ -22,5 +22,24 @@ Route::get('/test', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/reports','ReportController@index');
 Route::get('/reports/add','ReportController@create');
+Route::post('/reports/store','ReportController@store')->name('store');
+Route::get('/reports/{id}/delete','ReportController@delete');
+
+
+
+
+Route::get('downloads/{cat}/{file_name}', function($cat=null,$file_name = null)
+{
+    $path = storage_path('app/'.$cat.'/'.$file_name);
+  //  dd($path);
+
+    if (file_exists($path)) {
+
+        return Response::download($path);
+    }
+
+});
+
