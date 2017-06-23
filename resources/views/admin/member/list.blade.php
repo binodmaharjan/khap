@@ -5,7 +5,7 @@
 
 
     <div class="panel-heading">
-        <a href="{{url('/member/add')}}" > <button ><i class="fa fa-plus" aria-hidden="true"> </i> Add new</button></a>
+        <a href="{{route('admin_member_add')}}" > <button ><i class="fa fa-plus" aria-hidden="true"> </i> Add new</button></a>
     </div>
 
 
@@ -34,13 +34,13 @@
                     <td> {{ ++$counts }}</td>
                     <td><img src="{{asset('uploads/'.$member->path)}}" height="50px"></td>
 
-                    <td><a href="{{url('member/'.$member->id.'/edit')}}"> {{$member->name}}</a></td>
-                    <td><a href="{{url('member/'.$member->id.'/edit')}}"> {{$member->position}}</a></td>
+                    <td><a href="{{route('admin_member_edit',array($member->id))}}"> {{$member->name}}</a></td>
+                    <td><a href="{{route('admin_member_edit',array($member->id))}}"> {{$member->position}}</a></td>
 
-                    <td><a href="{{url('member/'.$member->id.'/edit')}}"> {{$member->phone}}</a></td>
+                    <td><a href="{{route('admin_member_edit',array($member->id))}}"> {{$member->phone}}</a></td>
 
                     <td>
-                         <a href="{{url('member/'.$member->id.'/delete')}}" onclick="return confirm('Are you sure you want to delete this item?');">  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></a>
+                         <a href="{{route('admin_member_delete',array($member->id))}}" onclick="return confirm('Are you sure you want to delete this item?');">  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></a>
                     </td>
 
                 </tr>

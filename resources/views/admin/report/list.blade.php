@@ -5,7 +5,7 @@
 
 
     <div class="panel-heading">
-        <a href="{{url('/reports/add')}}" > <button ><i class="fa fa-plus" aria-hidden="true"> </i> Add new</button></a>
+        <a href="{{route('admin_report_add')}}" > <button ><i class="fa fa-plus" aria-hidden="true"> </i> Add new</button></a>
     </div>
 
 
@@ -27,10 +27,10 @@
 
                 <tr>
                     <td>{{++$counts}}</td>
-                    <td><a href="{{url('reports/'.$report->id.'/edit')}}"> {{$report->title}}</a></td>
+                    <td><a href="{{route('admin_report_edit',array($report->id))}}"> {{$report->title}}</a></td>
                     <td>
                         <a href="{{url('downloads/'.$report->path)}}"> <button ><i class="fa fa-download" aria-hidden="true"> </i> Download</button></a>
-                        <a href="{{url('reports/'.$report->id.'/delete')}}" onclick="return confirm('Are you sure you want to delete this item?');">  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></a>
+                        <a href="{{route('admin_report_delete',array($report->id))}}" onclick="return confirm('Are you sure you want to delete this item?');">  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></a>
                     </td>
 
                 </tr>

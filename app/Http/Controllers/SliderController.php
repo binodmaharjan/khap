@@ -11,6 +11,13 @@ class SliderController extends Controller
 {
     //
 
+
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $report=Slider::all()->sortByDesc("id");
@@ -39,7 +46,7 @@ class SliderController extends Controller
         $photo->path=$filename;
         $photo->save();
 
-        return redirect('slider')->with('status', 'Your file is uploaded.');
+        return redirect()->route('admin_sliders')->with('status', 'Your file is uploaded.');
 
     }
 
@@ -64,7 +71,7 @@ class SliderController extends Controller
         $report->title = $input['title'];
         $report->path=$filename;
         $report->save();
-        return redirect('slider')->with('status', 'Slider is updated.');
+        return redirect()->route('admin_sliders')->with('status', 'Slider is updated.');
     }
 
     public function delete($id){
@@ -73,7 +80,7 @@ class SliderController extends Controller
         $this->deleteFile('uploads/'.$report->path);
         $report->delete();
 
-        return redirect('slider')->with('status', 'Your file is deleted.');
+        return redirect()->route('admin_sliders')->with('status', 'Your file is deleted.');
     }
 
     private function deleteFile($path){

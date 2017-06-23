@@ -12,15 +12,15 @@
                 <a href="#"><i class="fa fa-bar-chart-o"></i>Articles</a>
             </li>
             <li>
-                <a href="{{url('/slider')}}"><i class="fa fa-qrcode"></i> Slider</a>
+                <a href="{{route('admin_sliders')}}"><i class="fa fa-qrcode"></i> Slider</a>
             </li>
 
             <li>
-                <a href="{{url('/reports')}}"><i class="fa fa-edit"></i> Report </a>
+                <a href="{{route('admin_reports')}}"><i class="fa fa-edit"></i> Report </a>
             </li>
 
             <li>
-                <a href="{{url('/member')}}"><i class="fa fa-table"></i> Members</a>
+                <a href="{{route('admin_members')}}"><i class="fa fa-table"></i> Members</a>
             </li>
 
 

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form class="form-horizontal" role="form" method="POST" action="{{ route('member_store') }}" enctype="multipart/form-data">
+    <form class="form-horizontal" role="form" method="POST" action="{{ route('admin_member_store') }}" enctype="multipart/form-data">
         {{ csrf_field() }}
 
         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form class="form-horizontal" role="form" method="POST" action="{{ route('member_update') }}" enctype="multipart/form-data">
+    <form class="form-horizontal" role="form" method="POST" action="{{ route('admin_member_update') }}" enctype="multipart/form-data">
         {{ csrf_field() }}
 
 

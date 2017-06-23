@@ -10,6 +10,12 @@ use File;
 class MemberController extends Controller
 {
     //
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $member=Member::all()->sortByDesc("id");
@@ -45,7 +51,7 @@ class MemberController extends Controller
         $member->path=$filename;
         $member->save();
 
-        return redirect('member')->with('status', 'New member successfully added.');
+        return redirect()->route('admin_members')->with('status', 'New member successfully added.');
 
     }
 
@@ -79,7 +85,7 @@ class MemberController extends Controller
         $member->path=$filename;
         $member->save();
 
-        return redirect('member')->with('status', 'member is updated.');
+        return redirect()->route('admin_members')->with('status', 'member is updated.');
     }
 
     public function delete($id){
@@ -90,7 +96,9 @@ class MemberController extends Controller
 
         $report->delete();
 
-        return redirect('member')->with('status', 'Your file is deleted.');
+      //  route('admin_member_edit',array($member->id))}}
+
+        return redirect()->route('admin_members')->with('status', 'Your file is deleted.');
     }
 
     private function deleteFile($path){
