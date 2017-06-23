@@ -2,28 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use App\Report;
+use App\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
-
-use Illuminate\Support\Facades\Validator;
-use FileSystem;
-use Storage;
 use File;
-class ReportController extends Controller
+
+class SliderController extends Controller
 {
     //
 
-
     public function index()
     {
-        $report=Report::all()->sortByDesc("id");;
+        $report=Slider::all()->sortByDesc("id");
 
-        return view('admin.report.list',['report' => $report]);
+       // return "Slider index";
+
+        return view('admin.slider.list',['slider'=>$report]);
     }
 
     public function create(){
-        return view('admin.report.add');
+        return view('admin.slider.add');
     }
 
     public function store(Request $request){
@@ -31,23 +29,23 @@ class ReportController extends Controller
         $input = Input::only('title','file');
 
         $this->validate($request, [
-            'title' => 'required|max:255|min:2',
-            'file' => 'required',
+            'title' => 'required|max:255|',
+            'file' => 'required|image',
         ]);
 
-        $filename = $input['file']->store('reports');
-        $report =new Report();
-        $report->title = $input['title'];
-        $report->path=$filename;
-        $report->save();
+        $filename = $input['file']->store('slider');
+        $photo =new Slider();
+        $photo->title = $input['title'];
+        $photo->path=$filename;
+        $photo->save();
 
-        return redirect('reports')->with('status', 'Your file is uploaded.');
+        return redirect('slider')->with('status', 'Your file is uploaded.');
 
     }
 
     public  function edit($id){
-       $report = Report::find($id);
-       return view('admin.report.edit',['report'=>$report]);
+        $report = Slider::find($id);
+        return view('admin.slider.edit',['report'=>$report]);
     }
 
     public  function update(Request $request){
@@ -59,19 +57,19 @@ class ReportController extends Controller
             'file' => 'required',
         ]);
 
-         $report = Report::find($input['id']);
+        $report = Slider::find($input['id']);
 
-         $this->deleteFile('app/'.$report->path);
-        $filename = $input['file']->store('reports');
+        $this->deleteFile('app/'.$report->path);
+        $filename = $input['file']->store('slider');
         $report->title = $input['title'];
         $report->path=$filename;
         $report->save();
-        return redirect('reports')->with('status', 'Report is updated.');
+        return redirect('slider')->with('status', 'Slider is updated.');
     }
 
     public function delete($id){
 
-        $report = Report::find($id);
+        $report = Slider::find($id);
 
         $file_path= storage_path('app/'.$report->path);
 
@@ -81,7 +79,7 @@ class ReportController extends Controller
 
         $report->delete();
 
-        return redirect('reports')->with('status', 'Your file is deleted.');
+        return redirect('slider')->with('status', 'Your file is deleted.');
     }
 
     private function deleteFile($path){

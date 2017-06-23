@@ -12,7 +12,7 @@
                 <a href="#"><i class="fa fa-bar-chart-o"></i>Articles</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-qrcode"></i> Slider</a>
+                <a href="{{url('/slider')}}"><i class="fa fa-qrcode"></i> Slider</a>
             </li>
 
             <li>

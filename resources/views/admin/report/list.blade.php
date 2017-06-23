@@ -14,11 +14,11 @@
         <table class="table">
 
             <tbody>
-
+            <?php $counts = 0; ?>
             @foreach($report as $key => $report)
 
                 <tr>
-                    <td>{{++$key}}</td>
+                    <td>{{++$counts}}</td>
                     <td><a href="{{url('reports/'.$report->id.'/edit')}}"> {{$report->title}}</a></td>
                     <td>
                         <a href="{{url('downloads/'.$report->path)}}"> <button ><i class="fa fa-download" aria-hidden="true"> </i> Download</button></a>

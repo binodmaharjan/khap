@@ -32,6 +32,14 @@ Route::get('/reports/{id}/delete','ReportController@delete');
 Route::get('/reports/{id}/edit','ReportController@edit');
 Route::post('reports/update','ReportController@update')->name('update');
 
+// slider
+Route::get('/slider','SliderController@index');
+Route::get('/slider/add','SliderController@create');
+Route::post('/slider/store','SliderController@store')->name('slider_store');
+Route::get('/slider/{id}/delete','SliderController@delete');
+Route::get('/slider/{id}/edit','SliderController@edit');
+Route::post('slider/update','SliderController@update')->name('slider_update');
+
 
 
 

@@ -8,7 +8,7 @@
     </div>
     <!-- /. PAGE INNER  -->
 
-    <footer><p>All right reserved. Template by: <a href="http://webthemez.com/">WebThemez.com</a></p>
+    <footer><p>All right reserved. {{date('Y')}}</p>
 
 
     </footer>
