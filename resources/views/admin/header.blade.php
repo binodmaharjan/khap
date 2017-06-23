@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Free Bootstrap Admin Template</title>
+    <title>@yield('page_title')</title>
     <!-- Bootstrap Styles-->
     <link href="{{ asset('admin/css/bootstrap.css') }}" rel="stylesheet">
     <!-- FontAwesome Styles-->

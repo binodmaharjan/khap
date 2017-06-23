@@ -1,4 +1,7 @@
 @extends('admin.layout')
+@section('page_title','Slider')
+@section('header-title','Slider')
+@section('header-subtitle','slider')
 
 @section('content')
 
@@ -51,5 +54,3 @@
 
 @endsection
 
-@section('header-title','Slider')
-@section('header-subtitle','slider')

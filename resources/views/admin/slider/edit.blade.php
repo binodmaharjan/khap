@@ -1,5 +1,9 @@
 @extends('admin.layout')
 
+@section('page_title','Edit Slider')
+@section('header-title','Slider')
+@section('header-subtitle','Edit slider')
+
 @section('content')
 
     <form class="form-horizontal" role="form" method="POST" action="{{ route('admin_slider_update') }}" enctype="multipart/form-data">
@@ -46,5 +50,3 @@
 
 @endsection
 
-@section('header-title','Slider')
-@section('header-subtitle','Edit slider')

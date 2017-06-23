@@ -1,4 +1,7 @@
 @extends('admin.layout')
+@section('page_title','Edit report')
+@section('header-title','Reports')
+@section('header-subtitle','Edit report')
 
 @section('content')
 
@@ -45,6 +48,3 @@
     </form>
 
 @endsection
-
-@section('header-title','Reports')
-@section('header-subtitle','Add new report')
