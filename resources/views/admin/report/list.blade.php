@@ -19,7 +19,7 @@
 
                 <tr>
                     <td>{{++$key}}</td>
-                    <td>{{$report->title}}</td>
+                    <td><a href="{{url('reports/'.$report->id.'/edit')}}"> {{$report->title}}</a></td>
                     <td>
                         <a href="{{url('downloads/'.$report->path)}}"> <button ><i class="fa fa-download" aria-hidden="true"> </i> Download</button></a>
                         <a href="{{url('reports/'.$report->id.'/delete')}}" onclick="return confirm('Are you sure you want to delete this item?');">  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></a>

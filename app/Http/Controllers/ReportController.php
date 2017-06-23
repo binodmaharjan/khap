@@ -43,7 +43,34 @@ class ReportController extends Controller
 
         return redirect('reports')->with('status', 'Your file is uploaded.');
 
+    }
 
+    public  function edit($id){
+       $report = Report::find($id);
+
+
+        return view('admin.report.edit',['report'=>$report]);
+    }
+
+    public  function update(Request $request){
+
+        $input = Input::only('id','title','file');
+
+        $this->validate($request, [
+            'title' => 'required|max:255|min:2',
+            'file' => 'required',
+        ]);
+
+         $report = Report::find($input['id']);
+
+         $this->deleteFile('app/'.$report->path);
+        $filename = $input['file']->store('reports');
+        $report->title = $input['title'];
+        $report->path=$filename;
+        $report->save();
+
+
+        return redirect('reports')->with('status', 'Report is updated.');
     }
 
     public function delete($id){
@@ -59,6 +86,13 @@ class ReportController extends Controller
         $report->delete();
 
         return redirect('reports')->with('status', 'Your file is deleted.');
+    }
+
+    private function deleteFile($path){
+        $file_path= storage_path($path);
+        if (file_exists($file_path)) {
+            File::delete($file_path);
+        }
     }
 
 

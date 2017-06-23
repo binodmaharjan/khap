@@ -23,10 +23,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+// reports
 Route::get('/reports','ReportController@index');
 Route::get('/reports/add','ReportController@create');
 Route::post('/reports/store','ReportController@store')->name('store');
 Route::get('/reports/{id}/delete','ReportController@delete');
+Route::get('/reports/{id}/edit','ReportController@edit');
+Route::post('reports/update','ReportController@update')->name('update');
 
 
 
