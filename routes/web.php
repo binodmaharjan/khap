@@ -49,7 +49,13 @@ Route::prefix('admin')->group(function () {
     Route::get('/member/{id}/edit','MemberController@edit')->name('admin_member_edit');;
     Route::post('member/update','MemberController@update')->name('admin_member_update');;
 
-
+// category
+    Route::get('/category','CategoryController@index')->name('admin_category');
+    Route::get('/category/add','CategoryController@create')->name('admin_category_add');
+    Route::post('/category/store','CategoryController@store')->name('admin_category_store');
+    Route::get('/category/{id}/delete','CategoryController@delete')->name('admin_category_delete');;
+    Route::get('/category/{id}/edit','CategoryController@edit')->name('admin_category_edit');;
+    Route::post('category/update','CategoryController@update')->name('admin_category_update');;
 
 });
 

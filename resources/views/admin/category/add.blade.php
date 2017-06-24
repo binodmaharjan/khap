@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form class="form-horizontal" role="form" method="POST" action="{{ route('admin_member_store') }}" enctype="multipart/form-data">
+    <form class="form-horizontal" role="form" method="POST" action="{{ route('admin_category_store') }}">
         {{ csrf_field() }}
 
         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -19,59 +19,17 @@
             </div>
         </div>
 
-        <div class="form-group{{ $errors->has('position') ? ' has-error' : '' }}">
-            <label for="name" class="col-md-4 control-label col-left">Position</label>
 
-            <div class="col-md-6">
-                <input id="name" type="text" class="form-control" name="position" value="{{ old('position') }}" required autofocus>
 
-                @if ($errors->has('position'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('position') }}</strong>
-                    </span>
-                @endif
-            </div>
-        </div>
 
-        <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
-            <label for="name" class="col-md-4 control-label col-left">Phone</label>
 
-            <div class="col-md-6">
-                <input id="name" type="text" class="form-control" name="phone" value="{{ old('phone') }}" required autofocus>
 
-                @if ($errors->has('phone'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('phone') }}</strong>
-                    </span>
-                @endif
-            </div>
-        </div>
-
-        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-            <label for="name" class="col-md-4 control-label col-left">Email</label>
-
-            <div class="col-md-6">
-                <input id="name" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
-                @if ($errors->has('email'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('email') }}</strong>
-                    </span>
-                @endif
-            </div>
-        </div>
 
         <div class="form-group">
             <label for="name" class="col-md-4 control-label col-left"></label>
-
-            <div class="col-md-6">
-                <input type="file" name="file" id="file-1" data-multiple-caption="{count} files selected"  multiple="multiple">
-
-                @if ($errors->has('file'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('file') }}</strong>
-                    </span>
-                @endif
+            <div class="col-md-5">
+                <input type="hidden" name="menu" value="0">
+                <input type="checkbox" name="menu" value="1" > Menu<br>
             </div>
         </div>
 
@@ -79,13 +37,13 @@
             <label for="name" class="col-md-4 control-label col-left"></label>
             <div class="col-md-5">
                 <button type="submit" class="btn btn-primary">
-                    Upload
+                    Submit
                 </button>
             </div>
         </div>
     </form>
 
 @endsection
-@section('page_title','Add new member')
-@section('header-title','Members')
-@section('header-subtitle','Add new member')
+@section('page_title','Add new category')
+@section('header-title','Categories')
+@section('header-subtitle','Add new category')
