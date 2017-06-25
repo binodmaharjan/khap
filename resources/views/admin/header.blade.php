@@ -35,7 +35,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/index.html"><strong>Marvel</strong></a>
+            <a class="navbar-brand" href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/index.html"><strong>Pulchowk</strong></a>
 
             <div id="sideNav" href="" class=""><i class="fa fa-caret-right"></i></div>
         </div>

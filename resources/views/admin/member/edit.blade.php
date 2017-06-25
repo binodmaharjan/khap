@@ -80,6 +80,14 @@
         <div class="form-group">
             <label for="name" class="col-md-4 control-label col-left"></label>
             <div class="col-md-5">
+                <input type="hidden" name="head" value="0">
+                <input type="checkbox" name="head" value="1" {{$member->head ==1?'checked':''}}> Head<br>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="col-md-4 control-label col-left"></label>
+            <div class="col-md-5">
                 <button type="submit" class="btn btn-primary">
                     Upload
                 </button>

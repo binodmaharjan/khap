@@ -32,14 +32,15 @@ class MemberController extends Controller
     public function store(Request $request){
 
 
-        $input = Input::only('name','position','phone','email','file');
+        $input = Input::only('name','position','phone','email','file','head');
 
         $this->validate($request, [
             'name' => 'required|max:255|',
             'position' => 'required|max:255|',
             'position' => 'required|max:10|',
             'email' => 'required',
-            'file'=>'required|image'
+            'file'=>'required|image',
+
         ]);
 
         $filename = $input['file']->store('member');
@@ -49,6 +50,7 @@ class MemberController extends Controller
         $member->phone = $input['phone'];
         $member->email = $input['email'];
         $member->path=$filename;
+        $member->head=$input['head'];
         $member->save();
 
         return redirect()->route('admin_members')->with('status', 'New member successfully added.');
@@ -64,7 +66,7 @@ class MemberController extends Controller
 
 
 
-        $input = Input::only('id','name','position','phone','email','file');
+        $input = Input::only('id','name','position','phone','email','file','head');
 
         $this->validate($request, [
             'name' => 'required|max:255|',
@@ -83,6 +85,7 @@ class MemberController extends Controller
         $member->phone = $input['phone'];
         $member->email = $input['email'];
         $member->path=$filename;
+        $member->head=$input['head'];
         $member->save();
 
         return redirect()->route('admin_members')->with('status', 'member is updated.');

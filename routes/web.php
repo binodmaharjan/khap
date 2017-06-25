@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Route::get('/test', function () {
     return view('admin.dashboard');
@@ -46,18 +46,32 @@ Route::prefix('admin')->group(function () {
     Route::get('/member/add','MemberController@create')->name('admin_member_add');
     Route::post('/member/store','MemberController@store')->name('admin_member_store');
     Route::get('/member/{id}/delete','MemberController@delete')->name('admin_member_delete');;
-    Route::get('/member/{id}/edit','MemberController@edit')->name('admin_member_edit');;
-    Route::post('member/update','MemberController@update')->name('admin_member_update');;
+    Route::get('/member/{id}/edit','MemberController@edit')->name('admin_member_edit');
+    Route::post('member/update','MemberController@update')->name('admin_member_update');
 
 // category
     Route::get('/category','CategoryController@index')->name('admin_category');
     Route::get('/category/add','CategoryController@create')->name('admin_category_add');
     Route::post('/category/store','CategoryController@store')->name('admin_category_store');
     Route::get('/category/{id}/delete','CategoryController@delete')->name('admin_category_delete');;
-    Route::get('/category/{id}/edit','CategoryController@edit')->name('admin_category_edit');;
-    Route::post('category/update','CategoryController@update')->name('admin_category_update');;
+    Route::get('/category/{id}/edit','CategoryController@edit')->name('admin_category_edit');
+    Route::post('category/update','CategoryController@update')->name('admin_category_update');
+
+    // article
+    Route::get('/article','ArticleController@index')->name('admin_articles');
+    Route::get('/article/add','ArticleController@create')->name('admin_article_add');
+    Route::post('/article/store','ArticleController@store')->name('admin_article_store');
+    Route::get('/article/{id}/delete','ArticleController@delete')->name('admin_article_delete');;
+    Route::get('/article/{id}/edit','ArticleController@edit')->name('admin_article_edit');
+    Route::post('article/update','ArticleController@update')->name('admin_article_update');
 
 });
+
+//user
+
+
+    Route::get('/','UserController@index')->name('main');
+
 
 
 

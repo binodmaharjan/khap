@@ -9,7 +9,7 @@
                 <a href="{{route('admin_category')}}"><i class="fa fa-bars"></i> Categories</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-bar-chart-o"></i>Articles</a>
+                <a href="{{route('admin_articles')}}"><i class="fa fa-bar-chart-o"></i>Articles</a>
             </li>
             <li>
                 <a href="{{route('admin_sliders')}}"><i class="fa fa-qrcode"></i> Slider</a>

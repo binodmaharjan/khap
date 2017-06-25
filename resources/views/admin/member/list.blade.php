@@ -16,6 +16,7 @@
             <thead>
             <tr>
                 <th>#</th>
+                <th>Head</th>
                 <th>Photo</th>
                 <th>Name</th>
                 <th>Position</th>
@@ -32,6 +33,8 @@
 
                 <tr>
                     <td> {{ ++$counts }}</td>
+                    <td> <input type="checkbox" {{$member->head ==1?'checked':''}} disabled >
+                    </td>
                     <td><img src="{{asset('uploads/'.$member->path)}}" height="50px"></td>
 
                     <td><a href="{{route('admin_member_edit',array($member->id))}}"> {{$member->name}}</a></td>
