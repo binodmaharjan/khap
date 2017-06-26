@@ -524,6 +524,7 @@ ul, li, ol, dl, dt, dd, form, p, img, h1, h2, h3, h4, h5, h6, textarea, select, 
     display: inline-block;
     margin-bottom: 12px;
     padding-bottom: 10px;
+    display: block;
 }
 .widget_comments .comment, .widget_comments .comment li .col-md-3 {
     padding-left: 0;
@@ -1646,7 +1647,7 @@ a.bsp-controls:hover {
 } 
 ul.first {
     margin:10px;
-  }156d20
+  }
   /* .custom-gallery-wraper{
     min-height: 240px;
     height: auto;
@@ -1659,7 +1660,7 @@ ul.first {
    .breaking-news
    {
     font-family: Impact; 
-    font-size: 18px:
+    font-size: 18px;
 }
 .breaking-news > a 
 {
@@ -1673,4 +1674,19 @@ ul.first {
 .footer-develop-text a
 {
     color:#fff;
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
 }

@@ -32,7 +32,7 @@
                                 <li><a href="#">जनसङ्ख्या </a></li>
                                 <li><a href="#">फोटो ग्यालरी</a></li>
 
-                                <li><a href="#">सम्पर्क</a></li>
+                                <li><a href="{{route('user_support_create')}}">सम्पर्क</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </nav>

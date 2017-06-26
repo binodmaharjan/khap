@@ -20,6 +20,7 @@
             <tr>
                 <th>#</th>
                 <th>Title</th>
+                <th>Type</th>
 
                 <th>Action</th>
             </tr>
@@ -32,6 +33,12 @@
                 <tr>
                     <td>{{++$counts}}</td>
                     <td><a href="{{route('admin_report_edit',array($report->id))}}"> {{$report->title}}</a></td>
+                    <td><a href="{{route('admin_report_edit',array($report->id))}}">
+                            @if($report->type==0){{"Annual Report"}}
+                                @elseif($report->type==1){{"Publications"}}
+                                @else{{"Notices"}}
+                             @endif
+                           </a></td>
                     <td>
                         <a href="{{url('downloads/'.$report->path)}}"> <button ><i class="fa fa-download" aria-hidden="true"> </i> Download</button></a>
                         <a href="{{route('admin_report_delete',array($report->id))}}" onclick="return confirm('Are you sure you want to delete this item?');">  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></a>

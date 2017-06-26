@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateReportTable extends Migration
+class AddTypeToReportsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateReportTable extends Migration
      */
     public function up()
     {
-        Schema::create('reports', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title');
-            $table->string('path');
-
-            $table->timestamps();
+        Schema::table('reports', function (Blueprint $table) {
+            //
+            $table->string('type');
         });
     }
 
@@ -29,6 +26,8 @@ class CreateReportTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reports');
+        Schema::table('reports', function (Blueprint $table) {
+            //
+        });
     }
 }

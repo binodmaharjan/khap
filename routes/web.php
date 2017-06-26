@@ -16,7 +16,12 @@
 //});
 
 Route::get('/test', function () {
-    return view('admin.dashboard');
+
+ $c=   auth()->user()->unreadNotifications[0]->data['thread']['name'];
+
+ return $c;
+ dd($c);
+   // return view('admin.dashboard');
 });
 
 Auth::routes();
@@ -65,12 +70,20 @@ Route::prefix('admin')->group(function () {
     Route::get('/article/{id}/edit','ArticleController@edit')->name('admin_article_edit');
     Route::post('article/update','ArticleController@update')->name('admin_article_update');
 
+    // support
+
+    Route::get('/supports','SupportController@index')->name('admin_supports');
+    Route::get('/support/{id}/delete','SupportController@delete')->name('admin_support_delete');
+
 });
 
 //user
 
 
     Route::get('/','UserController@index')->name('main');
+    Route::get('/support','SupportController@create')->name('user_support_create');
+    Route::post('/support/store','SupportController@store')->name('user_support_store');
+
 
 
 

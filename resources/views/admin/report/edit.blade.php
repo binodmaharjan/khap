@@ -23,7 +23,22 @@
                 @endif
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
+            <label for="name" class="col-md-4 control-label col-left">Type</label>
+
+            <div class="col-md-6">
+                {{--<input id="name" type="text" class="form-control" name="category_id" value="{{ old('category_id') }}" required autofocus>--}}
+                <select class="form-control" name ='type' >
+                    <option value="0" {{$report->type==0?'selected':''}} >Annual Report</option>
+                    <option value="1" {{$report->type==1?'selected':''}} >Publications</option>
+                    <option value="2" {{$report->type==2?'selected':''}} >Notices</option>
+                </select>
+
+            </div>
+        </div>
+
+
+            <div class="form-group">
             <label for="name" class="col-md-4 control-label col-left"></label>
 
             <div class="col-md-6">

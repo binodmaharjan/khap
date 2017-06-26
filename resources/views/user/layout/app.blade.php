@@ -35,6 +35,9 @@
 @include('user.layout.breaking')
 
 
+@include('user.message')
+
+
 <!--slider start from here-->
 <div class="margin"></div>
 <!-------- don't use this html this only for margin top remove this ---------------------->

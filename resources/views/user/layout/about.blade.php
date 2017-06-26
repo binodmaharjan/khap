@@ -17,18 +17,14 @@
                     <h3 class="widget-title">समाचार​</h3>
                     <div class="widget-inner">
                         <ul class="comment">
-                            <li>
-                                <a href="#">काठमाडौं नेपालको केन्द्रीय राजधानी शहर तथा मुलुककै पहिलो महानगर पनि हो ।</a>
-                            </li>
-                            <li>
-                                <a href="#"> काठमाडौं नेपालको केन्द्रीय राजधानी शहर तथा मुलुककै पहिलो महानगर पनि हो ।</a>
 
-                            </li>
-                            <li>
-                                <a href="#">काठमाडौं नेपालको केन्द्रीय राजधानी शहर तथा मुलुककै पहिलो महानगर पनि हो ।</a>
-
-                            </li>
-
+                            @if(count($news))
+                                @foreach($news as $news)
+                                <li>
+                                    <a href="#">{{$news->title}}</a>
+                                </li>
+                                @endforeach
+                                @endif
 
                         </ul>
                     </div>
