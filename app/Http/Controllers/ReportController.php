@@ -14,10 +14,14 @@ class ReportController extends Controller
 {
     //
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     public function index()
     {
-        $report=Report::all()->sortByDesc("id");;
+        $report=Report::all()->sortByDesc("id");
 
         return view('admin.report.list',['report' => $report]);
     }
@@ -28,7 +32,7 @@ class ReportController extends Controller
 
     public function store(Request $request){
 
-        $input = Input::only('title','file');
+        $input = Input::only('title','file','type');
 
         $this->validate($request, [
             'title' => 'required|max:255|min:2',
@@ -39,9 +43,10 @@ class ReportController extends Controller
         $report =new Report();
         $report->title = $input['title'];
         $report->path=$filename;
+        $report->type = $input['type'];
         $report->save();
 
-        return redirect('reports')->with('status', 'Your file is uploaded.');
+        return redirect()->route('admin_reports')->with('status', 'Your file is uploaded.');
 
     }
 
@@ -52,7 +57,7 @@ class ReportController extends Controller
 
     public  function update(Request $request){
 
-        $input = Input::only('id','title','file');
+        $input = Input::only('id','title','file','type');
 
         $this->validate($request, [
             'title' => 'required|max:255|min:2',
@@ -64,9 +69,10 @@ class ReportController extends Controller
          $this->deleteFile('app/'.$report->path);
         $filename = $input['file']->store('reports');
         $report->title = $input['title'];
+        $report->type = $input['type'];
         $report->path=$filename;
         $report->save();
-        return redirect('reports')->with('status', 'Report is updated.');
+        return redirect()->route('admin_reports')->with('status', 'Report is updated.');
     }
 
     public function delete($id){
@@ -81,7 +87,7 @@ class ReportController extends Controller
 
         $report->delete();
 
-        return redirect('reports')->with('status', 'Your file is deleted.');
+        return redirect()->route('admin_reports')->with('status', 'Your file is deleted.');
     }
 
     private function deleteFile($path){

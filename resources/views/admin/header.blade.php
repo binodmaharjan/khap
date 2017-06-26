@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Free Bootstrap Admin Template</title>
+    <title>@yield('page_title')</title>
     <!-- Bootstrap Styles-->
     <link href="{{ asset('admin/css/bootstrap.css') }}" rel="stylesheet">
     <!-- FontAwesome Styles-->
@@ -35,7 +35,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/index.html"><strong>Marvel</strong></a>
+            <a class="navbar-brand" href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/index.html"><strong>Pulchowk</strong></a>
 
             <div id="sideNav" href="" class=""><i class="fa fa-caret-right"></i></div>
         </div>
@@ -174,55 +174,62 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#" aria-expanded="false">
-                    <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                <span class="badge">{{count(auth()->user()->unreadNotifications)}}</span>    <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-alerts">
-                    <li>
-                        <a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">
-                            <div>
-                                <i class="fa fa-comment fa-fw"></i> New Comment
-                                <span class="pull-right text-muted small">4 min</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">
-                            <div>
-                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                <span class="pull-right text-muted small">12 min</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">
-                            <div>
-                                <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                <span class="pull-right text-muted small">4 min</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">
-                            <div>
-                                <i class="fa fa-tasks fa-fw"></i> New Task
-                                <span class="pull-right text-muted small">4 min</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">
-                            <div>
-                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                <span class="pull-right text-muted small">4 min</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
+
+                    @foreach(auth()->user()->unreadNotifications as $notification)
+
+                        <li>
+                            <a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> {{$notification->data['thread']['subject']}}
+                                    <span class="pull-right text-muted small"> {{$notification->data['thread']['name']}}</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+
+                        @endforeach
+
+                    {{--<li>--}}
+                        {{--<a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">--}}
+                            {{--<div>--}}
+                                {{--<i class="fa fa-twitter fa-fw"></i> 3 New Followers--}}
+                                {{--<span class="pull-right text-muted small">12 min</span>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</li>--}}
+                    {{--<li class="divider"></li>--}}
+                    {{--<li>--}}
+                        {{--<a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">--}}
+                            {{--<div>--}}
+                                {{--<i class="fa fa-envelope fa-fw"></i> Message Sent--}}
+                                {{--<span class="pull-right text-muted small">4 min</span>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</li>--}}
+                    {{--<li class="divider"></li>--}}
+                    {{--<li>--}}
+                        {{--<a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">--}}
+                            {{--<div>--}}
+                                {{--<i class="fa fa-tasks fa-fw"></i> New Task--}}
+                                {{--<span class="pull-right text-muted small">4 min</span>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</li>--}}
+                    {{--<li class="divider"></li>--}}
+                    {{--<li>--}}
+                        {{--<a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">--}}
+                            {{--<div>--}}
+                                {{--<i class="fa fa-upload fa-fw"></i> Server Rebooted--}}
+                                {{--<span class="pull-right text-muted small">4 min</span>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                    {{--</li>--}}
+                    {{--<li class="divider"></li>--}}
+                    {{--<li>--}}
+                <li>
                         <a class="text-center" href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#">
                             <strong>See All Alerts</strong>
                             <i class="fa fa-angle-right"></i>
@@ -242,7 +249,10 @@
                     <li><a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    <li>
+                        <a href="{{ route('logout') }}"  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -252,3 +262,6 @@
     </nav>
     <!--/. NAV TOP  -->
 </div>
+
+
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>

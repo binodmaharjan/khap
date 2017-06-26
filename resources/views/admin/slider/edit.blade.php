@@ -1,8 +1,12 @@
 @extends('admin.layout')
 
+@section('page_title','Edit Slider')
+@section('header-title','Slider')
+@section('header-subtitle','Edit slider')
+
 @section('content')
 
-    <form class="form-horizontal" role="form" method="POST" action="{{ route('slider_update') }}" enctype="multipart/form-data">
+    <form class="form-horizontal" role="form" method="POST" action="{{ route('admin_slider_update') }}" enctype="multipart/form-data">
         {{ csrf_field() }}
 
         <input id="name" type="hidden" class="form-control" name="id" value="{{$report->id}}">
@@ -46,5 +50,3 @@
 
 @endsection
 
-@section('header-title','Slider')
-@section('header-subtitle','Edit slider')

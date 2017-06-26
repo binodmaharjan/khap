@@ -1,8 +1,11 @@
 @extends('admin.layout')
+@section('page_title','Add new slider')
+@section('header-title','Slider')
+@section('header-subtitle','Add new photo')
 
 @section('content')
 
-    <form class="form-horizontal" role="form" method="POST" action="{{ route('slider_store') }}" enctype="multipart/form-data">
+    <form class="form-horizontal" role="form" method="POST" action="{{ route('admin_slider_store') }}" enctype="multipart/form-data">
         {{ csrf_field() }}
 
         <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
@@ -44,5 +47,3 @@
 
 @endsection
 
-@section('header-title','Slider')
-@section('header-subtitle','Add new photo')
