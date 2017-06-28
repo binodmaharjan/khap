@@ -23,6 +23,12 @@
     <link href="{{ asset('admin/css/css') }}" rel="stylesheet" type="text/css" >
     {{--<link rel="stylesheet" href="./Marvel Free Bootstrap Admin Template_files/cssCharts.css">--}}
     <link href="{{ asset('admin/css/cssCharts.css') }}" rel="stylesheet"  >
+
+    <script src="{{asset('editor/tinymce/js/tinymce/tinymce.min.js')}}"></script>
+    <script>tinymce.init({ selector:'textarea',
+            plugins: "link",
+
+            });</script>
 </head>
 
 <body>
