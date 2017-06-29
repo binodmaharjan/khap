@@ -61,7 +61,7 @@
     overflow: scroll;
 }
 .gallaryOverflow{
-    max-height: 390px;
+    max-height: 700px;
     overflow: scroll;
 }
 .gallaryOverflow ul li:hover{
