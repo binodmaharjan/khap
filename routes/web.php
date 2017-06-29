@@ -11,9 +11,13 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('user.first');
+});
+
+Route::get('/second', function () {
+    return view('user.second');
+});
 
 Route::get('/test', function () {
 
@@ -79,6 +83,7 @@ Route::prefix('admin')->group(function () {
 });
 
 //user
+
 
 
     Route::get('/','UserController@index')->name('main');

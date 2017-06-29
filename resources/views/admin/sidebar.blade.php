@@ -24,7 +24,7 @@
             </li>
 
             <li>
-                <a href="{{route('admin_supports')}}"><i class="fa fa-edit"></i> Support </a>
+                <a href="{{route('admin_supports')}}"><i class="fa fa-edit"></i> फारम </a>
             </li>
 
 

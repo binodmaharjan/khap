@@ -45,7 +45,6 @@ class SupportController extends Controller
             'file'=>'required|image'
         ]);
 
-
         $filename = $input['file']->store('supports');
         $support =new Support();
         $support->name = $input['name'];
@@ -54,28 +53,16 @@ class SupportController extends Controller
         $support->subject = $input['subject'];
         $support->path=$filename;
         $support->save();
-
-
         $users = User::all();
-
-
-
 
         Notification::send($users, new SupportNotify($support));
         return redirect()->route('main')->with('status', 'Your task has been posted. We will contact you later via phone or email');
     }
 
     public function delete($id){
-
-
         $support = Support::find($id);
-
-
-
         $this->deleteFile('uploads/'.$support->path);
-
         $support->delete();
-
         //  route('admin_member_edit',array($member->id))}}
 
         return redirect()->route('admin_supports')->with('status', 'Support deleted.');
