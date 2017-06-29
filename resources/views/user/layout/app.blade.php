@@ -12,7 +12,9 @@
     <link href="{{ asset('admin/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{asset('user/style.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('admin/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('user/owl.carousel.min.css')}}" rel="stylesheet" type="text/css">
+     <link href="{{asset('user/jquery.bsPhotoGallery.css')}}" rel="stylesheet">
+     <link href="{{asset('user/custome.css')}}" rel="stylesheet" type="text/css"/>
+     <link href="{{asset('user/animation.min.css')}}" rel="stylesheet" type="text/css"  rel="stylesheet" media="all">
 
 </head>
 <body>
@@ -40,7 +42,7 @@
 
 <!--slider start from here-->
 <div class="margin"></div>
-<!-------- don't use this html this only for margin top remove this ---------------------->
+<!-- don't use this html this only for margin top remove this -->
 @yield('content')
 
 

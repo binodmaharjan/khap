@@ -1,15 +1,28 @@
 <section>
-    <div class="container-fluid width-define">
+    <div class="container">
         <div class="row">
+             <div class="col-md-12">
             <div class="col-md-8 padding-clear">
                 <div class="padding-top">
-                    <h3 class="heading-title-paragraph">Gallery</h3>
-                    <div class="custom-gallery-wraper ">
+                    <h3 class="otherTitles noShadow">Gallery</h3>
+                    <div class="custom-gallery-wraper gallaryOverflow">
 
 
-                        <ul class="first ">
+                        <ul class="first">
 
 
+                            <li>
+                                <img alt="Title goes here"  src=" {{url('src/kids.jpg')}}">
+                                <p class="text">a</p>
+                            </li>
+                            <li>
+                                <img alt="Title  here"  src=" {{url('src/kids.jpg')}}">
+                                <p class="text">b</p>
+                            </li>
+                            <li>
+                                <img alt="Title goes here"  src=" {{url('src/kids.jpg')}}">
+                                <p class="text">What we have to show</p>
+                            </li>
                             <li>
                                 <img alt="Title goes here"  src=" {{url('src/kids.jpg')}}">
                                 <p class="text">What we have to show</p>
@@ -19,6 +32,10 @@
                                 <p class="text">What we have to show</p>
                             </li>
                             <li>
+                                <img alt="Title goes here"  src=" {{url('src/kids.jpg')}}">
+                                <p class="text">What we have to show</p>
+                            </li>
+                               <li>
                                 <img alt="Title goes here"  src=" {{url('src/kids.jpg')}}">
                                 <p class="text">What we have to show</p>
                             </li>
@@ -39,20 +56,35 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4  widget-sidebar">
-                <div class="widget widget_comments padding-top">
-                    <div class="col-md-12 tab-wrapper">
-                        <ul class="nav-tabs ">
-                            <li class="active widget-title"><a data-toggle="tab" href="#notice">Annual Report</a></li>
-                            <li class="widget-title"><a data-toggle="tab" href="#vacancy">Publication</a></li>
-                            <li class="widget-title"><a data-toggle="tab" href="#info">Notice</a></li>
+            <div class="col-md-4 widget-sidebar ">
+                        <ul class="nav-tabs noShadow otherTitles reports">
+                            <li class='active'><a data-toggle="tab" href="#notice">Annual Report</a></li>
+                            <li><a data-toggle="tab" href="#vacancy">Publication</a></li>
+                            <li><a data-toggle="tab" href="#info">Notice</a></li>
                         </ul>
-                    </div>
-
-                    <div class="widget-inner tab-content">
-                        <div id="notice" class="tab-pane fade in active">
-                            <ul class="comment"  style="margin-top: 40px;">
-
+                 </div>
+            <div class="col-md-4">
+                    <div class="widget-inner widget_comments tab-content staffSlider">
+                        <div id="notice" class="tab-pane fade in active widget-inner ">
+                            <ul class="comment reportList" >
+                                <li>
+                                        <a href="#">a</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">a</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">a</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">a</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">a</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">a</a>
+                                    </li>
                                 @if(count($annual_report))
                                     @foreach($annual_report as $report)
                                     <li>
@@ -64,8 +96,28 @@
                             </ul>
                         </div>
                         <div id="vacancy" class="tab-pane fade ">
-                            <ul class="comment"  style="margin-top: 40px;">
-
+                            <ul class="comment reportList">
+                                  <li>
+                                        <a href="#">b</a>
+                                    </li>
+                                      <li>
+                                        <a href="#">b</a>
+                                    </li>
+                                      <li>
+                                        <a href="#">b</a>
+                                    </li>
+                                      <li>
+                                        <a href="#">b</a>
+                                    </li>
+                                      <li>
+                                        <a href="#">b</a>
+                                    </li>
+                                      <li>
+                                        <a href="#">b</a>
+                                    </li>
+                                      <li>
+                                        <a href="#">b</a>
+                                    </li>
                                 @if(count($publications))
                                     @foreach($publications as $report)
                                         <li>
@@ -79,7 +131,28 @@
                             </ul>
                         </div>
                         <div id="info" class="tab-pane fade ">
-                            <ul class="comment"  style="margin-top: 40px;">
+                            <ul class="comment reportList" >
+                                  <li>
+                                        <a href="#">c</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">c</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">c</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">c</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">c</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">c</a>
+                                    </li>
+                                     <li>
+                                        <a href="#">c</a>
+                                    </li>
                                 @if(count($notice))
                                     @foreach($notice as $report)
                                         <li>
@@ -96,5 +169,6 @@
                 </div>
             </div>
         </div>
+         </div>
     </div>
 </section>

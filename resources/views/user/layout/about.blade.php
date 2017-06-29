@@ -1,8 +1,9 @@
 <section>
-    <div class="container-fluid width-define">
+    <div class="container">
         <div class="row">
+            <div class="col-md-12">
             <div class="col-md-8 padding-clear">
-                <div class=" padding-top">
+                <div class="aboutUs">
                     <h3 class="heading-title-paragraph">हाम्रो बारेमा</h3>
                     <p>काठमाडौं नेपालको केन्द्रीय राजधानी शहर तथा मुलुककै पहिलो महानगर पनि हो । यस महानगरको उपनगरको रुपमा रहेका दुई ठूला शहरहरु मध्ये दक्षिणतर्फ ललितपुर र पूर्वतर्फ भक्तपुर रहेका छन्
                         शिवपुरी, फुल्चोकी, नागार्जुङ र चन्द्रागिरी नामका चार ठूला पहाडहरुको बीचमा रहेको यो महानगर अनुपम भौगोलिक अवस्था, रहस्यपूर्ण जैविक विविधता सहित कचौरा आकारमा समुन्द्री सतहबाट लगभग १४०० मि
@@ -13,10 +14,38 @@
                 </div>
             </div>
             <div class="col-md-4  widget-sidebar">
-                <div class="widget widget_comments padding-top">
+                <div class="widget widget_comments noShadow">
                     <h3 class="widget-title">समाचार​</h3>
-                    <div class="widget-inner">
+                    <div class="widget-inner staffSlider">
                         <ul class="comment">
+                             <li>
+                                    <a href="#">News 1</a>
+                                </li>
+                                  <li>
+                                    <a href="#">News 1</a>
+                                </li>
+                                  <li>
+                                    <a href="#">News 1</a>
+                                </li>
+                                  <li>
+                                    <a href="#">News 1</a>
+                                </li>
+                                  <li>
+                                    <a href="#">News 1</a>
+                                </li>
+                                  <li>
+                                    <a href="#">News 1</a>
+                                </li>
+                                  <li>
+                                    <a href="#">News 1</a>
+                                </li>
+                                  <li>
+                                    <a href="#">News 1</a>
+                                </li>
+                                  <li>
+                                    <a href="#">News 1</a>
+                                </li>
+                                
 
                             @if(count($news))
                                 @foreach($news as $news)
@@ -29,6 +58,7 @@
                         </ul>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>

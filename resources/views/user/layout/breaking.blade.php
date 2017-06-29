@@ -2,7 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="latest-update col-md-2 no-padding">
-                <h3>सुचनाहरु </h3>
+                <h3>सुचनाहरु   <img src="{{url('src/new.png')}}" class="img-responsive image-one floatLeft newTag">
+</h3>
             </div>
             <div class="col-md-10 latest-post-list no-padding">
                 <div class="marquee-top" role="alert">

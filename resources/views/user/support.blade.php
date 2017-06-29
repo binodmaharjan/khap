@@ -1,7 +1,7 @@
 @extends('user.layout.app')
 @section('content')
     <section>
-        <div class="container-fluid width-define">
+        <div class="container">
             <div class="row">
                 <div class="col-md-8 padding-clear">
                     <div class=" padding-top">

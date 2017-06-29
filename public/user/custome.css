@@ -1,0 +1,123 @@
+.image-one{
+    width: 120px;
+    height: auto;
+}
+.img-circle img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin:10px;
+}
+.navbar-toggle {
+    float: left;
+}
+.background-colorr {
+    background: #156d20 none repeat scroll 0 0;
+    -webkit-box-shadow: 0 4px 20px 0 #000000;
+    box-shadow: 0 4px 20px 0 #000000;
+}
+.dropdown-menu>li>a {
+    border-right: transparent !important;
+}
+.newTag{
+    position: absolute;
+    top: 0px;
+    right: -45px;
+        z-index: 99;
+}
+.item img{
+    width: 100%;
+    height: auto;
+}
+.padding-clear {
+    padding: 0;
+}
+.header-calendar{
+    text-align: center;
+    margin-top: 30px;
+}
+.floatLeft{
+    float: left;
+}
+.staffDetails{
+    margin-top: -30px;
+}
+.text-center-one > h4 {
+    color: blue;
+}
+.staffSlider{
+    max-height: 310px;
+    overflow: scroll;
+}
+.gallaryOverflow{
+    max-height: 390px;
+    overflow: scroll;
+}
+.gallaryOverflow ul li:hover{
+    opacity: .7;
+}
+.staffSlider .staffDetails p{
+    text-align: justify;
+}
+.widget-sidebar .noShadow{
+    box-shadow: none;
+}
+.reports{
+    height: 70px;
+}
+
+.reportList{
+    padding: 15px 20px !important;
+}
+.noShadow  > li {
+    background: none;
+    margin-top: 21px;
+}
+.noShadow > li > a{
+    background-color: white !important;
+    color: #156d20;
+    padding: 10px;
+}
+.comment li a:hover{
+    text-decoration: none;
+    opacity: .7;
+}
+.noShadow > li.active > a, .noShadow > li.active > a:hover,.noShadow > li.active > a:focus,.noShadow > li > a:hover{
+    background-color: #156d20 !important;
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    margin-top: 10px;
+    color: white;
+}
+.footer ul{
+    margin:20px;
+}
+
+/*about us*/
+.aboutUs .heading-title-paragraph ,.widget_comments .widget-title, .otherTitles{
+    background-color: transparent;
+    color: #156d20;
+    margin: 0;
+    padding: 12px 0px;
+    font-family: roboto;
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: solid;
+}
+.aboutUs p{
+    text-align: justify;
+    padding:10px 0px;
+}
+
+/*thumbnails style*/
+.bsp-text-container{
+    text-align: center;
+    color: white;
+    background-color: black;
+    opacity:.7;
+}
+
+
