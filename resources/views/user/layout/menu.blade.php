@@ -29,7 +29,7 @@
                                 </li>
                                 <li><a href="#">हाम्रो बारेमा </a></li>
                                 <li><a href="#">जनसङ्ख्या </a></li>
-                                <li><a href="#">फोटो ग्यालरी</a></li>
+                                <li><a  href="{{route('gallery')}}">फोटो ग्यालरी</a></li>
 
                                 <li><a href="{{route('user_support_create')}}">सम्पर्क</a></li>
                             </ul>

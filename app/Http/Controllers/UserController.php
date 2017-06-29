@@ -33,5 +33,8 @@ class UserController extends Controller
             'news'=>$news]);
     }
 
+      public function photos(){
+        return view('user.gallery');
+    }
 
 }

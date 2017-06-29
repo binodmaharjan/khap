@@ -74,6 +74,7 @@ Route::prefix('admin')->group(function () {
 
     Route::get('/supports','SupportController@index')->name('admin_supports');
     Route::get('/support/{id}/delete','SupportController@delete')->name('admin_support_delete');
+    Route::get('/gallery','SupportController@photos')->name('admin_gallery');
 
 });
 
@@ -81,6 +82,7 @@ Route::prefix('admin')->group(function () {
 
 
     Route::get('/','UserController@index')->name('main');
+    Route::get('/gallery','UserController@photos')->name('gallery');
     Route::get('/support','SupportController@create')->name('user_support_create');
     Route::post('/support/store','SupportController@store')->name('user_support_store');
 
