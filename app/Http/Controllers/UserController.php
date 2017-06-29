@@ -36,5 +36,8 @@ class UserController extends Controller
       public function photos(){
         return view('user.gallery');
     }
+     public function articles(){
+        return view('user.post');
+    }
 
 }
