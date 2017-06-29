@@ -3,12 +3,7 @@
         <h3 class="widget-title">पदाधिकारी</h3>
         <div class="staffSlider">
         <div class="col-sm-12">
-            <div class="col-sm-6 col-md-offset-3">
-                <div class="ratio img-responsive img-circle"><img src="{{url('src/profile.jpg')}}">
-
-            </div>
-        </div>
-        <div class="col-sm-12  padding-clear">
+                <div class="img-responsive img-circle"><img src="{{url('src/profile.jpg')}}">
           <div class="text-center-one staffDetails">
                     <h3>BIkram</h3>
                      <h4>Staff</h4>

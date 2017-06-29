@@ -2,6 +2,9 @@
     width: 120px;
     height: auto;
 }
+.img-circle{
+    text-align: center;
+}
 .img-circle img{
     width: 100px;
     height: 100px;
@@ -41,7 +44,6 @@
     float: left;
 }
 .staffDetails{
-    margin-top: -20px;
 }
 .text-center-one > h4 {
     color: black;
@@ -122,3 +124,58 @@
 }
 
 
+/*top page*/
+@media (max-width: 768px) {
+
+.title-aside-logo {
+    font-size: 20px;
+}
+.widget-sidebar{
+    margin-top: 20px;
+}
+.image-one {
+    width: 85px;
+    height: auto;
+}
+.header-calendar{
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    font-size: 12px;
+}
+.nav.navbar-nav.nav-hover a {
+    border-right: transparent;
+}
+.newTag {
+    right: 0px;
+}
+.padding-clear {
+    padding: auto;
+}
+
+}
+
+@media (max-width: 415px) {
+    .header-calendar{
+    top: -50px;
+    margin-top: 0px;
+}
+
+
+    }
+
+@media (max-width: 321px) {
+.title-aside-logo {
+    font-size: 16px;
+}
+.image-one {
+    width: 65px;
+    height: auto;
+}
+.header-calendar{
+    font-size: 9px;
+    top: -40px;
+}
+
+    }
+/*end style*/
