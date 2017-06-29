@@ -1,0 +1,240 @@
+.image-one{
+    width: 120px;
+    height: auto;
+}
+.img-circle{
+    text-align: center;
+}
+.img-circle img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin:10px;
+}
+.navbar-toggle {
+    float: left;
+}
+.background-colorr {
+    background: #156d20 none repeat scroll 0 0;
+    -webkit-box-shadow: 0 4px 20px 0 #000000;
+    box-shadow: 0 4px 20px 0 #000000;
+}
+.dropdown-menu>li>a {
+    border-right: transparent !important;
+}
+.newTag{
+    position: absolute;
+    top: 0px;
+    right: -45px;
+        z-index: 99;
+}
+.item img{
+    width: 100%;
+    height: auto;
+}
+.padding-clear {
+    padding: 0;
+}
+.header-calendar{
+    text-align: center;
+    margin-top: 30px;
+}
+.floatLeft{
+    float: left;
+}
+.floatRight{
+    float: right;
+    }
+.postDate{
+    margin-top: 10px;
+    color: blue;
+}
+.staffDetails{
+}
+.text-center-one > h4 {
+    color: black;
+    font-weight: 600;
+}
+.staffSlider{
+    max-height: 310px;
+    overflow: scroll;
+}
+.gallaryOverflow{
+    max-height: 700px;
+    overflow: scroll;
+}
+.gallaryOverflow ul li:hover{
+    opacity: .7;}
+.widget-sidebar .noShadow{
+    box-shadow: none;
+}
+.reports{
+    height: 70px;
+}
+
+.reportList{
+    padding: 15px 20px !important;
+}
+.noShadow  > li {
+    background: none;
+    margin-top: 21px;
+}
+.noShadow > li > a{
+    background-color: white !important;
+    color: #156d20;
+    padding: 10px;
+}
+.comment li a:hover{
+    text-decoration: none;
+    opacity: .7;
+}
+.widget-inner .mainlinks li{
+    list-style: armenian;
+}
+.noShadow > li.active > a, .noShadow > li.active > a:hover,.noShadow > li.active > a:focus,.noShadow > li > a:hover{
+    background-color: #156d20 !important;
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    margin-top: 10px;
+    color: white;
+}
+.footer ul{
+    margin:20px;
+}
+
+/*about us*/
+.aboutUs .heading-title-paragraph ,.widget_comments .widget-title, .otherTitles{
+    background-color: transparent;
+    color: #156d20;
+    margin: 0;
+    padding: 12px 0px;
+    font-family: roboto;
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: solid;
+}
+.aboutUs p{
+    text-align: justify;
+    padding:10px 0px;
+}
+
+/*thumbnails style*/
+.bsp-text-container{
+    text-align: center;
+    color: white;
+    background-color: black;
+    opacity:.7;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    margin-top: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.postDetails img {
+    padding: 10px 0px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/*top page*/
+@media (max-width: 768px) {
+
+.title-aside-logo {
+    font-size: 20px;
+}
+.widget-sidebar{
+    margin-top: 20px;
+}
+.image-one {
+    width: 85px;
+    height: auto;
+}
+.header-calendar{
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    font-size: 12px;
+}
+.nav.navbar-nav.nav-hover a {
+    border-right: transparent;
+}
+.newTag {
+    right: 0px;
+}
+.padding-clear {
+    padding: auto;
+}
+
+}
+
+ul.alt {
+            list-style: none;
+            padding-left: 0;
+        }
+
+            ul.alt li {
+                border-top: solid 1px;
+                padding: 0.5em 0;
+            }
+
+                ul.alt li:first-child {
+                    border-top: 0;
+                    padding-top: 0;
+                }
+
+        ul.tabs {
+            list-style: none;
+            padding-left: 0;
+        }
+
+            ul.tabs li {
+                display: inline-block;
+            }
+
+                ul.tabs li:first-child {
+                    padding: 0;
+                }
+
+                @media screen and (max-width: 736px) {
+
+                    ul.tabs li {
+                        display: block;
+                        margin: 0 0 .25em 0;
+                        padding: 0;
+                    }
+
+                        ul.tabs li .button {
+                            width: 100%;
+                        }
+
+
+@media (max-width: 415px) {
+    .header-calendar{
+    top: -50px;
+    margin-top: 0px;
+}
+
+
+    }
+
+@media (max-width: 321px) {
+.title-aside-logo {
+    font-size: 16px;
+}
+.image-one {
+    width: 65px;
+    height: auto;
+}
+.header-calendar{
+    font-size: 9px;
+    top: -40px;
+}
+
+    }
+/*end style*/

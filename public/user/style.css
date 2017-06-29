@@ -18,7 +18,9 @@ ul, li, ol, dl, dt, dd, form, p, img, h1, h2, h3, h4, h5, h6, textarea, select, 
     dispaly:none;
     text-decoration: none;
 }
-
+a{
+    cursor: pointer;
+}
 /*width of section */
 .width-define {
     width: 92%;
@@ -51,8 +53,7 @@ ul, li, ol, dl, dt, dd, form, p, img, h1, h2, h3, h4, h5, h6, textarea, select, 
     margin-right: 15px;
 }
 .logo-main {
-    padding-bottom: 2%;
-    padding-top: 2%;
+    padding: 10px 0px;
 }
 .collapse-background{
     background: #0e0e0e;
@@ -1316,13 +1317,9 @@ ul, li, ol, dl, dt, dd, form, p, img, h1, h2, h3, h4, h5, h6, textarea, select, 
     position: relative;
     width: 100%;
 }
-.img-circle {
-    border-radius: 50%;
-    margin-top: 19px;
-}
+
 .img-responsive {
     display: block;
-    height: auto;
     max-width: 100%;
 }
 .widget-sidebar .widget-title {
@@ -1355,7 +1352,7 @@ ul, li, ol, dl, dt, dd, form, p, img, h1, h2, h3, h4, h5, h6, textarea, select, 
     text-decoration: none;
 }
 .padding-top {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);*/
     margin-top: 25px;
 }
 .heading-title-paragraph {
@@ -1586,6 +1583,7 @@ ul, li, ol, dl, dt, dd, form, p, img, h1, h2, h3, h4, h5, h6, textarea, select, 
 }
 .bspHasModal {
   cursor: pointer;
+  margin-bottom: 20px;
 }
 .bspHasModal .text {
   overflow: hidden;
