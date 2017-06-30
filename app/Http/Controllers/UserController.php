@@ -38,5 +38,8 @@ class UserController extends Controller
      public function articles(){
         return view('user.post');
     }
+      public function staffDetails(){
+        return view('user.staffs');
+    }
 
 }

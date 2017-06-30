@@ -27,7 +27,7 @@
 
                                     </ul>
                                 </li>
-                                <li><a href="#">हाम्रो बारेमा </a></li>
+                                <li><a href="{{route('post')}}">हाम्रो बारेमा </a></li>
                                 <li><a href="#">जनसङ्ख्या </a></li>
                                 <li><a  href="{{route('gallery')}}">फोटो ग्यालरी</a></li>
 

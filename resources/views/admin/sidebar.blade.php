@@ -16,6 +16,14 @@
             </li>
 
             <li>
+                <a href="{{route('admin_sliders')}}"><i class="fa fa-qrcode"></i> Slider</a>
+            </li>
+
+            <li>
+                <a href="{{route('admin_gallery')}}"><i class="fa fa-qrcode"></i> Gallery</a>
+            </li>
+
+            <li>
                 <a href="{{route('admin_reports')}}"><i class="fa fa-edit"></i> Report </a>
             </li>
 
@@ -26,9 +34,6 @@
             <li>
                 <a href="{{route('admin_supports')}}"><i class="fa fa-edit"></i> फारम </a>
             </li>
-
-
-
 
             <li>
                 <a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
