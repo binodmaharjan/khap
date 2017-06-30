@@ -18,7 +18,7 @@
                                 <li><a href="{{url('')}}" class="active">गृहपृष्ठ</a></li>
                                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">हाम्रो बारेमा <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li class=""><a href="#">Nationa News</a></li>
+                                        <li class=""><a href="{{route('news')}}">Nationa News</a></li>
                                         <li><a href="#">Internation News</a></li>
                                         <li><a href="#">Today's Market</a></li>
                                         <li><a href="#">Entertainment</a></li>
