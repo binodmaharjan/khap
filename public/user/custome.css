@@ -70,6 +70,9 @@
 .padding-clear {
     padding: 0;
 }
+.margin-clear{
+    margin: 0px;
+}
 
 .header-calendar {
     text-align: center;
@@ -223,10 +226,9 @@
 .newsDetails a{
     cursor: pointer;
     margin-bottom: 10px;
-    clear: both;
 }
 .pdfColor{
-        color: red;
+    color: red;
     font-size: 24px;
 }
 /*Contact Info*/
