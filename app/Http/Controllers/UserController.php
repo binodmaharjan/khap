@@ -24,7 +24,8 @@ class UserController extends Controller
         $news=Article::where('category_id','1')
            ->get();
 
-        return view('user.main',['slider'=>$slider,'member'=>$member,
+        return view('user.main',['slider'=>$slider,
+            'member'=>$member,
             'annual_report'=>$annual_report,
             'publications'=>$publications,
             'notice'=>$notice,

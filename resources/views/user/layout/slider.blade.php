@@ -21,80 +21,30 @@
                             <!-- Wrapper For Slides -->
                             <div id="bootstrap-touch-slider" role="listbox">
 
-                                    <div class="item active" >
+                                <?php $count =0;?>
+
+                                @foreach($slider as $slider)
+                                    {{++$count}}
+
+                                    <div class="item {{$count==1?'active':''}}" >
 
                                         <!-- Slide Background -->
-                                        <img src="{{url('src/kids.jpg')}}" alt="Bootstrap Touch Slider" class="slide-image">
+                                        <img src="{{url('uploads/'.$slider->path)}}" alt="Bootstrap Touch Slider" class="slide-image">
                                         <div class="bs-slider-overlay"></div>
 
                                         <div class="container">
                                             <div class="row">
                                                 <!-- Slide Text Layer -->
                                                 <div class="slide-text slide_style_left">
-                                                    <h1 data-animation="animated zoomInRight" class="">title 1</h1>
-                                                   <p data-animation="animated fadeInLeft" class=""> The deer herds in Shuklaphanta National Park, Kanchapur. Photo by Sher Badhur Singh  </p>
-                                                    <a href="#" target="_blank" class="btn btn-default" data-animation="animated bounceInUp">select one</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                        <div class="item" >
-
-                                        <!-- Slide Background -->
-                                        <img src="{{url('src/kids.jpg')}}" alt="Bootstrap Touch Slider" class="slide-image">
-                                        <div class="bs-slider-overlay"></div>
-
-                                        <div class="container">
-                                            <div class="row">
-                                                <!-- Slide Text Layer -->
-                                                <div class="slide-text slide_style_left">
-                                                    <h1 data-animation="animated zoomInRight" class="">title 2</h1>
-                                                   <p data-animation="animated fadeInLeft" class=""> The deer herds in Shuklaphanta National Park, Kanchapur. Photo by Sher Badhur Singh  </p>
-                                                    <a href="#" target="_blank" class="btn btn-default" data-animation="animated bounceInUp">select one</a>
+                                                    <h1 data-animation="animated zoomInRight" class="">Pulchowk Stupa</h1>
+                                                   {{--<p data-animation="animated fadeInLeft" class=""> The deer herds in Shuklaphanta National Park, Kanchapur. Photo by Sher Badhur Singh  </p>--}}
+                                                    {{--<a href="#" target="_blank" class="btn btn-default" data-animation="animated bounceInUp">select one</a>--}}
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                             <div class="item" >
-
-                                        <!-- Slide Background -->
-                                        <img src="{{url('src/kids.jpg')}}" alt="Bootstrap Touch Slider" class="slide-image">
-                                        <div class="bs-slider-overlay"></div>
-
-                                        <div class="container">
-                                            <div class="row">
-                                                <!-- Slide Text Layer -->
-                                                <div class="slide-text slide_style_left">
-                                                    <h1 data-animation="animated zoomInRight" class="">title 3</h1>
-                                                   <p data-animation="animated fadeInLeft" class=""> The deer herds in Shuklaphanta National Park, Kanchapur. Photo by Sher Badhur Singh  </p>
-                                                    <a href="#" target="_blank" class="btn btn-default" data-animation="animated bounceInUp">select one</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                        <div class="item" >
-
-                                        <!-- Slide Background -->
-                                        <img src="{{url('src/kids.jpg')}}" alt="Bootstrap Touch Slider" class="slide-image">
-                                        <div class="bs-slider-overlay"></div>
-
-                                        <div class="container">
-                                            <div class="row">
-                                                <!-- Slide Text Layer -->
-                                                <div class="slide-text slide_style_left">
-                                                    <h1 data-animation="animated zoomInRight" class="">title 4</h1>
-                                                   <p data-animation="animated fadeInLeft" class=""> The deer herds in Shuklaphanta National Park, Kanchapur. Photo by Sher Badhur Singh  </p>
-                                                    <a href="#" target="_blank" class="btn btn-default" data-animation="animated bounceInUp">select one</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
+                                    @endforeach
                             </div><!-- End of Wrapper For Slides -->
 
                             <!-- Left Control -->
