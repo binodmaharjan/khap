@@ -6,7 +6,9 @@
                     <img src="{{url('src/logo.png')}}" class="img-responsive image-one floatLeft">
 
                     <h3 class="title-aside-logo">
-                        ललितपुर वडा कार्यालय
+                        ललितपुर वडा कार्यालय<br> 
+                        ३ वडा कार्यालय <br> 
+                        पुल्चोक ल.पु.
                     </h3>
                 </div>
                 <div class="col-md-4">

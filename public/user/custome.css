@@ -30,9 +30,9 @@
 
 .team .img-circle img {
     display: inline-block;
-    width: 150px;
-    height: 150px;
-    border-radius: 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
 }
 
 .team ul li .img-circle:hover {
@@ -98,12 +98,6 @@
 
 .staffSlider {
     max-height: 310px;
-    overflow: scroll;
-}
-
-.gallaryOverflow {
-    max-height: 700px;
-    overflow: scroll;
 }
 
 .gallaryOverflow ul li:hover {
@@ -157,7 +151,8 @@
 }
 
 .footer ul {
-    margin: 20px;
+    margin: 10px;
+    font-size: 12px;
 }
 
 
@@ -234,6 +229,10 @@ section#contact .form-group {
 section#contact .form-group input,
 section#contact .form-group textarea {
     padding: 10px;
+}
+
+section#contact .form-group select {
+    height: 40px;
 }
 
 section#contact .form-group input.form-control {
@@ -388,8 +387,9 @@ ul.tabs li:first-child {
     ul.tabs li .button {
         width: 100%;
     }
+}
     /*top page*/
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         .title-aside-logo {
             font-size: 20px;
         }
@@ -403,7 +403,7 @@ ul.tabs li:first-child {
         .header-calendar {
             position: absolute;
             right: 0px;
-            top: -10px;
+            top: 0px;
             font-size: 12px;
         }
         .nav.navbar-nav.nav-hover a {
@@ -417,10 +417,11 @@ ul.tabs li:first-child {
         }
     }
     @media (max-width: 415px) {
-        .header-calendar {
-            top: -50px;
-            margin-top: 0px;
+
+.title-aside-logo {
+            padding: 0px 10px 10px 10px;
         }
+       
     }
     @media (max-width: 321px) {
         .title-aside-logo {
@@ -432,7 +433,7 @@ ul.tabs li:first-child {
         }
         .header-calendar {
             font-size: 9px;
-            top: -40px;
+            top: -20px;
         }
     }
     /*end style*/

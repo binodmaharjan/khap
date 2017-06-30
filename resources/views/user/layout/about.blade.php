@@ -1,7 +1,7 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 padding-top">
             <div class="col-md-8 padding-clear">
                 <div class="aboutUs">
                     <h3 class="heading-title-paragraph">हाम्रो बारेमा</h3>
