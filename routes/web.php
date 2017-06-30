@@ -46,6 +46,15 @@ Route::prefix('admin')->group(function () {
     Route::get('/slider/{id}/edit','SliderController@edit')->name('admin_slider_edit');
     Route::post('slider/update','SliderController@update')->name('admin_slider_update');
 
+    // gallery
+    Route::get('/gallery','GalleryController@index')->name('admin_gallery');
+    Route::get('/gallery/add','GalleryController@create')->name('admin_gallery_add');
+    Route::post('/gallery/store','GalleryController@store')->name('admin_gallery_store');
+    Route::get('/gallery/{id}/delete','GalleryController@delete')->name('admin_gallery_delete');
+    Route::get('/gallery/{id}/edit','GalleryController@edit')->name('admin_gallery_edit');
+    Route::post('gallery/update','GalleryController@update')->name('admin_gallery_update');
+
+
 // member
     Route::get('/member','MemberController@index')->name('admin_members');
     Route::get('/member/add','MemberController@create')->name('admin_member_add');
@@ -74,7 +83,7 @@ Route::prefix('admin')->group(function () {
 
     Route::get('/supports','SupportController@index')->name('admin_supports');
     Route::get('/support/{id}/delete','SupportController@delete')->name('admin_support_delete');
-    Route::get('/gallery','SupportController@photos')->name('admin_gallery');
+  //  Route::get('/gallery','SupportController@photos')->name('admin_gallery');
 
 });
 
