@@ -9,7 +9,7 @@
                      <h4>Staff</h4>
                     <p><strong>cbmaharjan@yahoo.com</strong><p>
                      <p><strong>9851022723</strong><p>
-                    <a id="moreStaffs" class="size-mantain"><i>अन्य​ कर्मचारीहरु</i></a>
+                    <a  href="{{route('staffs')}}" id="moreStaffs" class="size-mantain"><i>अन्य​ कर्मचारीहरु</i></a>
                 </div>
                 </div>
                    </div>
