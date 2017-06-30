@@ -184,18 +184,7 @@
                                   <li>
                                     <a href="#">link 1</a>
                                 </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
+                
                                 
 
                             @if(count($news))

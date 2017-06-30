@@ -73,6 +73,9 @@
 .margin-clear{
     margin: 0px;
 }
+.clear{
+    clear:both;
+}
 
 .header-calendar {
     text-align: center;

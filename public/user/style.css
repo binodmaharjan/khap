@@ -1350,12 +1350,10 @@ a {
 .slide-text {
     left: 0;
     margin: auto;
-    padding: 10px 85px;
     position: absolute;
     right: 0;
     top:35%;
     text-align: left;;
-    background: rgba(0,0,0,0.4);
     bottom: 0;
     float: left;
 }
@@ -1537,7 +1535,9 @@ a {
     letter-spacing: 1px;
     line-height: 30px;
     margin-bottom: 10px;
-    padding: 0;
+    padding: 2px 55px;
+    background: rgba(204,102,0,0.4);
+    border-radius: 5px;
 }
 
 .slide-text > p {
@@ -1548,8 +1548,15 @@ a {
     letter-spacing: 1px;
     line-height: 1.2;
     margin-bottom: 27px;
-    padding: 0;
+    padding: 10px 65px;
+    background: rgba(0,0,0,0.4);
+    width: 90%;
+    border-radius: 5px;
 }
+
+.slide-text > a.btn-default{
+    margin: 2px 65px;
+    }
 
 .carosel-slider-top {
     max-height: 350px;
