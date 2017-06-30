@@ -85,6 +85,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/gallery','UserController@photos')->name('gallery');
     Route::get('/post','UserController@articles')->name('post');
     Route::get('/staffs','UserController@staffDetails')->name('staffs');
+    Route::get('/news','UserController@category')->name('news');
     Route::get('/support','SupportController@create')->name('user_support_create');
     Route::post('/support/store','SupportController@store')->name('user_support_store');
 
