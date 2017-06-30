@@ -10,7 +10,7 @@
 <footer>
 
     <section class="background-color-footer">
-        <div class="container-fluid   width-define">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12 footer">
                     <div class="col-md-4">
