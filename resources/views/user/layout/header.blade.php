@@ -11,7 +11,7 @@
                         ललितपुर वडा कार्यालय
                     </h3>
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4">
                     <p class="pull-right header-calendar">मिती २०७०,जेष्ठ १७
                         <br>
 

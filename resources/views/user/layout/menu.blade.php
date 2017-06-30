@@ -15,8 +15,8 @@
 
                         <div class="collapse navbar-collapse" id="navbar-collapse-1">
                             <ul class="nav navbar-nav nav-hover main-menu">
-                                <li><a href="#" class="active">गृहपृष्ठ</a></li>
-                                <!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">हाम्रो बारेमा <b class="caret"></b></a>
+                                <li><a href="{{url('')}}" class="active">गृहपृष्ठ</a></li>
+                                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">हाम्रो बारेमा <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li class=""><a href="#">Nationa News</a></li>
                                         <li><a href="#">Internation News</a></li>
@@ -26,11 +26,10 @@
 
 
                                     </ul>
-                                </li> -->
-
-                                <li><a href="#">हाम्रो बारेमा </a></li>
+                                </li>
+                                <li><a href="{{route('post')}}">हाम्रो बारेमा </a></li>
                                 <li><a href="#">जनसङ्ख्या </a></li>
-                                <li><a href="#">फोटो ग्यालरी</a></li>
+                                <li><a  href="{{route('gallery')}}">फोटो ग्यालरी</a></li>
 
                                 <li><a href="{{route('user_support_create')}}">सम्पर्क</a></li>
                             </ul>
