@@ -26,7 +26,6 @@
 
  
  <div class="col-md-12 widget_comments widget-sidebar padding-clear team">
-<h3 class='text-center-one widget-title'>My Teams</h3>
                         <ul class="galleryList">
                     <li>
                     <div class="img-responsive img-circle"><img src="{{url('src/profile.jpg')}}">

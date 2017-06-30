@@ -17,8 +17,8 @@
 
 .team ul li .img-circle {
     margin: 10px 0px;
-    border: 1px solid #156d20;
-    box-shadow: 0 4px 20px 0 #000000;
+    /*border: 1px solid #156d20;
+    box-shadow: 0 4px 20px 0 #000000;*/
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -30,16 +30,16 @@
 
 .team .img-circle img {
     display: inline-block;
-    width: 150px;
-    height: 150px;
-    border-radius: 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
 }
 
-.team ul li .img-circle:hover {
+/*.team ul li .img-circle:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
+}*/
 
 .navbar-toggle {
     float: left;
@@ -70,6 +70,12 @@
 .padding-clear {
     padding: 0;
 }
+.margin-clear{
+    margin: 0px;
+}
+.clear{
+    clear:both;
+}
 
 .header-calendar {
     text-align: center;
@@ -86,7 +92,7 @@
 
 .postDate {
     margin-top: 10px;
-    color: blue;
+    color: #a0a0a0;
 }
 
 .staffDetails {}
@@ -98,12 +104,6 @@
 
 .staffSlider {
     max-height: 310px;
-    overflow: scroll;
-}
-
-.gallaryOverflow {
-    max-height: 700px;
-    overflow: scroll;
 }
 
 .gallaryOverflow ul li:hover {
@@ -157,7 +157,8 @@
 }
 
 .footer ul {
-    margin: 20px;
+    margin: 10px;
+    font-size: 12px;
 }
 
 
@@ -208,8 +209,31 @@
     max-height: 400px;
     object-fit: cover;
 }
-
-
+.newsDetails{
+    border-bottom: 1px solid #e8e8e8;
+}
+.newsDetails h3{
+    float: left;
+    margin-top: 10px;
+}
+.newsDetails p{
+    padding-top: 10px;
+    text-align: justify;
+}
+.newsDetails img{
+    width: 100%;
+    height: 100%;
+    padding: 15px 0px;
+    object-fit:cover;
+}
+.newsDetails a{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.pdfColor{
+    color: red;
+    font-size: 24px;
+}
 /*Contact Info*/
 
 section#contact {
@@ -234,6 +258,10 @@ section#contact .form-group {
 section#contact .form-group input,
 section#contact .form-group textarea {
     padding: 10px;
+}
+
+section#contact .form-group select {
+    height: 40px;
 }
 
 section#contact .form-group input.form-control {
@@ -351,6 +379,10 @@ section#contact .text-danger {
     color: #339966;
 }
 
+.loadMore{
+    float: right;
+}
+
 ul.alt {
     list-style: none;
     padding-left: 0;
@@ -388,8 +420,9 @@ ul.tabs li:first-child {
     ul.tabs li .button {
         width: 100%;
     }
+}
     /*top page*/
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         .title-aside-logo {
             font-size: 20px;
         }
@@ -403,7 +436,7 @@ ul.tabs li:first-child {
         .header-calendar {
             position: absolute;
             right: 0px;
-            top: -10px;
+            top: 0px;
             font-size: 12px;
         }
         .nav.navbar-nav.nav-hover a {
@@ -417,10 +450,11 @@ ul.tabs li:first-child {
         }
     }
     @media (max-width: 415px) {
-        .header-calendar {
-            top: -50px;
-            margin-top: 0px;
+
+.title-aside-logo {
+            padding: 0px 10px 10px 10px;
         }
+       
     }
     @media (max-width: 321px) {
         .title-aside-logo {
@@ -432,7 +466,7 @@ ul.tabs li:first-child {
         }
         .header-calendar {
             font-size: 9px;
-            top: -40px;
+            top: -20px;
         }
     }
     /*end style*/

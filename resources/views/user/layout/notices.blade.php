@@ -1,7 +1,7 @@
 <section>
     <div class="container">
         <div class="row">
-             <div class="col-md-12">
+             <div class="col-md-12 padding-top">
             <div class="col-md-8 padding-clear">
                 
                                         <ul class="nav-tabs noShadow otherTitles reports">
@@ -184,18 +184,7 @@
                                   <li>
                                     <a href="#">link 1</a>
                                 </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
+                
                                 
 
                             @if(count($news))
