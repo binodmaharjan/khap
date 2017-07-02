@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use App\Category;
+use App\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use File;
@@ -13,7 +14,8 @@ class ArticleController extends Controller
     //
     public function __construct()
     {
-        $this->middleware('auth');
+//        $this->middleware('auth');
+          $this->middleware('auth', ['except' => ['post']]);
     }
 
     public function index()
@@ -101,6 +103,18 @@ class ArticleController extends Controller
         //  route('admin_member_edit',array($member->id))}}
 
         return redirect()->route('admin_articles')->with('status', 'Your file is deleted.');
+    }
+
+    public function post($id){
+
+        $article= Article::find($id);
+
+
+        $menu = Menu::all();
+
+        return view('user.post',['menu'=>$menu]);
+
+
     }
 
     private function deleteFile($path){

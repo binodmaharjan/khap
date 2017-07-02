@@ -8,6 +8,10 @@
             <li>
                 <a href="{{route('admin_category')}}"><i class="fa fa-bars"></i> Categories</a>
             </li>
+
+            <li>
+                <a href="{{route('admin_menu')}}"><i class="fa fa-bars"></i> Nav Menu</a>
+            </li>
             <li>
                 <a href="{{route('admin_articles')}}"><i class="fa fa-bar-chart-o"></i>Articles</a>
             </li>
@@ -30,6 +34,11 @@
 
             <li>
                 <a href="{{route('admin_supports')}}"><i class="fa fa-edit"></i> फारम </a>
+            </li>
+
+
+            <li>
+                <a href="{{route('admin_gunaso')}}"><i class="fa fa-edit"></i> गुनासो  </a>
             </li>
 
             <li>

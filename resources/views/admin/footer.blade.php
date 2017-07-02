@@ -37,6 +37,24 @@
 </script>
 {{--<script src="{{ asset('js/app.js') }}"></script>--}}
 
+{{--clipboard js--}}
+<!-- clipboard Js -->
 
+
+<!-- 2. Include library -->
+<script src="{{asset('clipboard/dist/clipboard.min.js')}}"></script>
+
+<!-- 3. Instantiate clipboard by passing a string selector -->
+<script>
+    var clipboard = new Clipboard('.clipboard');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>
 
 <i title="Raphaël Colour Picker" style="display: none; color: gray;"></i></body></html>

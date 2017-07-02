@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Menu;
 use App\Notifications\SupportNotify;
 use App\Support;
 use App\User;
@@ -29,7 +30,9 @@ class SupportController extends Controller
     }
 
     public function create(){
-        return view('user.support');
+
+        $menu = Menu::all();
+        return view('user.support',['menu'=>$menu]);
     }
 
     public function store(Request $request){

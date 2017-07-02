@@ -5,8 +5,9 @@
                     <div class="col-md-8 padding-clear">
 
                         <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line carosel-slider-top" data-ride="carousel" data-pause="hover" data-interval="5000">
-                            <!-- Indicators 
+                            {{--<!-- Indicators --}}
                             <ol class="carousel-indicators">
+
 
                                @if(count($slider))
                                 @for( $key=0;$key<count($slider);$key++)
@@ -16,7 +17,7 @@
                                    @endif
 
 
-                            </ol>-->
+                            </ol>
 
                             <!-- Wrapper For Slides -->
                             <div id="bootstrap-touch-slider" role="listbox">
@@ -36,7 +37,7 @@
                                             <div class="row">
                                                 <!-- Slide Text Layer -->
                                                 <div class="slide-text slide_style_left">
-                                                    <h1 data-animation="animated zoomInRight" class="">Pulchowk Stupa</h1>
+                                                    <h1 data-animation="animated zoomInRight" class="">{{$slider->title}}</h1>
                                                    {{--<p data-animation="animated fadeInLeft" class=""> The deer herds in Shuklaphanta National Park, Kanchapur. Photo by Sher Badhur Singh  </p>--}}
                                                     {{--<a href="#" target="_blank" class="btn btn-default" data-animation="animated bounceInUp">select one</a>--}}
                                                 </div>

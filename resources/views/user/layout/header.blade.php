@@ -16,7 +16,7 @@
                     </h3>
                 </div>
                 <div class="col-md-4">
-                    <p class="pull-right header-calendar">मिती २०७०,जेष्ठ १७
+                    <p class="pull-right header-calendar">मिती {!! Patro::current_miti() !!}
                         <br>
 
                         {{--<a data-toggle="modal" data-target="#loginbox">--}}

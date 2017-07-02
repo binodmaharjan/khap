@@ -14,24 +14,32 @@
                         </div>
 
                         <div class="collapse navbar-collapse" id="navbar-collapse-1">
+
+
+                           @php
+                               $activeRoute = \Illuminate\Support\Facades\Route::currentRouteName()
+                           @endphp
                             <ul class="nav navbar-nav nav-hover main-menu">
-                                <li><a href="{{url('')}}" class="active">गृहपृष्ठ</a></li>
-                                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">हाम्रो बारेमा <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li class=""><a href="{{route('news')}}">Nationa News</a></li>
-                                        <li><a href="#">Internation News</a></li>
-                                        <li><a href="#">Today's Market</a></li>
-                                        <li><a href="#">Entertainment</a></li>
-                                        <li><a href="#">Flash News </a></li>
+                                <li><a href="{{url('')}}" class="{{ ($activeRoute=='main')?'active':''}}">गृहपृष्ठ</a></li>
 
+                                @foreach($menu as $menu)
+                                    <li><a href="{{$menu->link}}" class="{{ (strcmp($menu->link,url(Request::path()))==0)?'active':''}}">{{$menu->name}}</a></li>
+                                    @endforeach
 
-                                    </ul>
-                                </li>
-                                <li><a href="{{route('post')}}">हाम्रो बारेमा </a></li>
-                                <li><a href="#">जनसङ्ख्या </a></li>
-                                <li><a  href="{{route('gallery')}}">फोटो ग्यालरी</a></li>
+                                 {{--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">हाम्रो बारेमा <b class="caret"></b></a>--}}
+                                    {{--<ul class="dropdown-menu">--}}
+                                        {{--<li class=""><a href="{{route('news')}}">Nationa News</a></li>--}}
+                                        {{--<li><a href="#">Internation News</a></li>--}}
+                                        {{--<li><a href="#">Today's Market</a></li>--}}
+                                        {{--<li><a href="#">Entertainment</a></li>--}}
+                                        {{--<li><a href="#">Flash News </a></li>--}}
+                                    {{--</ul>--}}
+                                {{--</li>--}}
+                                {{--<li><a href="#">हाम्रो बारेमा </a></li>--}}
+                                {{--<li><a href="#">जनसङ्ख्या </a></li>--}}
+                                {{--<li><a  href="{{route('gallery')}}"></a></li>--}}
 
-                                <li><a href="{{route('user_support_create')}}">सम्पर्क</a></li>
+                                {{--<li><a href="{{route('user_support_create')}}">सम्पर्क</a></li>--}}
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </nav>

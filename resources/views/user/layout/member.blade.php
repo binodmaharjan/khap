@@ -5,10 +5,10 @@
         <div class="col-sm-12">
                 <div class="img-responsive img-circle"><img src="{{url('src/profile.jpg')}}">
           <div class="text-center-one staffDetails">
-                    <h3>BIkram</h3>
-                     <h4>Staff</h4>
-                    <p><strong>cbmaharjan@yahoo.com</strong><p>
-                     <p><strong>9851022723</strong><p>
+                    <h3>{{$member->name}}</h3>
+                     <h4>{{$member->position}}</h4>
+                    <p><strong>{{$member->email}}</strong><p>
+                     <p><strong>{{$member->phone}}</strong><p>
                     <a  href="{{route('staffs')}}" id="moreStaffs" class="size-mantain"><i>अन्य​ कर्मचारीहरु</i></a>
                 </div>
                 </div>

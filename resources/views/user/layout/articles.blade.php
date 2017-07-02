@@ -7,14 +7,10 @@
 
                  <div class="col-md-9 widget-sidebar">
                      <div class="aboutUs postDetails">
-                    <h3 class="heading-title-paragraph">Post बारेमा</h3>
-                    <div class="paragraph-link floatRight postDate">२०७०,जेष्ठ १७</div>
-                    <img alt="Title goes here"  src=" {{url('src/kids.jpg')}}">
-                    <p>काठमाडौं नेपालको केन्द्रीय राजधानी शहर तथा मुलुककै पहिलो महानगर पनि हो । यस महानगरको उपनगरको रुपमा रहेका दुई ठूला शहरहरु मध्ये दक्षिणतर्फ ललितपुर र पूर्वतर्फ भक्तपुर रहेका छन्
-                        शिवपुरी, फुल्चोकी, नागार्जुङ र चन्द्रागिरी नामका चार ठूला पहाडहरुको बीचमा रहेको यो महानगर अनुपम भौगोलिक अवस्था, रहस्यपूर्ण जैविक विविधता सहित कचौरा आकारमा समुन्द्री सतहबाट लगभग १४०० मि
-                        टर (४६०० फिट) को उचाइमा ५०.६७ वर्ग किलो मिटरमा फैलिएर २७'२२" उत्तरी अक्षांश र ८५'२०" पूर्वी देशान्तरमा अवस्थित रहेको छ । ।काठमाडौं नेपालको केन्द्रीय राजधानी शहर तथा मुलुककै पहिलो महानगर पनि हो । यस महानगरको उपनगरको रुपमा रहेका दुई ठूला शहरहरु मध्ये दक्षिणतर्फ ललितपुर र पूर्वतर्फ भक्तपुर रहेका छन्
-                        शिवपुरी, फुल्चोकी, नागार्जुङ र चन्द्रागिरी नामका चार ठूला पहाडहरुको बीचमा रह 
-                    </p>
+                    <h3 class="heading-title-paragraph">{{$article->title}}</h3>
+                    <div class="paragraph-link floatRight postDate">{!! Patro::miti($article->created_at) !!}</div>
+                    <img alt="Title goes here"  src=" {{url('uploads/'.$article->feature_image)}}">
+                   {!! $article->description !!}
 
                 </div>
                  </div>
