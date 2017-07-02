@@ -15,9 +15,6 @@
                 <a href="{{route('admin_sliders')}}"><i class="fa fa-qrcode"></i> Slider</a>
             </li>
 
-            <li>
-                <a href="{{route('admin_sliders')}}"><i class="fa fa-qrcode"></i> Slider</a>
-            </li>
 
             <li>
                 <a href="{{route('admin_gallery')}}"><i class="fa fa-qrcode"></i> Gallery</a>
