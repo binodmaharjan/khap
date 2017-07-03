@@ -485,11 +485,20 @@ private $nepali_number = array('०','१','२','३','४','५','६','७','
         }
     }
 
-    public function nc_date_in_YY_dd_mm($yy, $mm, $dd){
+    public function nc_date_in_nepali($yy, $mm, $dd){
         $nc=$this->eng_to_nep($yy, $mm, $dd);
         //str_replace($western_arabic, $eastern_arabic, $str);
         return  str_replace($this->western_number, $this->nepali_number, $nc['year']).', '.$this->_get_nepali_month($nc['month']). ' '.str_replace($this->western_number, $this->nepali_number, $nc['date']);
     }
+
+    public function nc_date_in_YY_mm_dd($yy, $mm, $dd){
+        $nc=$this->eng_to_nep($yy, $mm, $dd);
+        //str_replace($western_arabic, $eastern_arabic, $str);
+        $d=$nc['year'].'|'.$nc['month'].'|'.$nc['date'];
+        return  str_replace($this->western_number, $this->nepali_number, $d);
+    }
+
+
 
 
 

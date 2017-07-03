@@ -15,43 +15,7 @@
                 </div>
                  </div>
 
-            <div class="col-md-3 widget-sidebar">
-                 <div class="widget widget_comments noShadow">
-                    <h3 class="widget-title">Main Links</h3>
-                    <div class="widget-inner staffSlider">
-                        <ul class="comment mainlinks">
-                             <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-                                  <li>
-                                    <a href="#">link 1</a>
-                                </li>
-
-                        </ul>
-                    </div>
-                </div>
-                </div>
+                 @include('user.layout.mainlink')
                   
              </div>
             </div> 

@@ -66,6 +66,14 @@
         </div>
 
         <div class="form-group">
+            <label for="name" class="col-md-4 control-label col-left"></label>
+            <div class="col-md-5">
+                <input type="hidden" name="home_page" value="0">
+                <input type="checkbox" name="home_page" value="1" {{$article->home_page ==1?'checked':''}}> Home page Article<br>
+            </div>
+        </div>
+
+        <div class="form-group">
             <label for="name" class="col-md-4 control-label col-left"> Image</label>
 
             <div class="col-md-6">

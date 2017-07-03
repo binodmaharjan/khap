@@ -3,7 +3,7 @@
         <h3 class="widget-title">पदाधिकारी</h3>
         <div class="staffSlider">
         <div class="col-sm-12">
-                <div class="img-responsive img-circle"><img src="{{url('src/profile.jpg')}}">
+                <div class="img-responsive img-circle"><img src="{{url('uploads/'.$member->path)}}">
           <div class="text-center-one staffDetails">
                     <h3>{{$member->name}}</h3>
                      <h4>{{$member->position}}</h4>

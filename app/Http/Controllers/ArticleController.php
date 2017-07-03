@@ -33,7 +33,7 @@ class ArticleController extends Controller
     public function store(Request $request){
 
 
-        $input = Input::only('title','description','category_id','publish','feature_image');
+        $input = Input::only('title','description','category_id','publish','feature_image', 'home_page');
 
     //    dd($input);
         $this->validate($request, [
@@ -41,7 +41,8 @@ class ArticleController extends Controller
             'description' => 'required',
             'category_id' => 'required',
             'publish' => 'required',
-            'feature_image'=>'required|image'
+            'feature_image'=>'required|image',
+            'home_page'=>'required',
         ]);
 
         $filename = $input['feature_image']->store('features');
@@ -51,6 +52,7 @@ class ArticleController extends Controller
         $article->category_id = $input['category_id'];
         $article->publish = $input['publish'];
         $article->feature_image=$filename;
+        $article->home_page=$input['home_page'];
         $article->save();
 
         return redirect()->route('admin_articles')->with('status', 'New article successfully added.');
@@ -67,7 +69,7 @@ class ArticleController extends Controller
 
 
 
-        $input = Input::only('id','title','description','category_id','publish','feature_image');
+        $input = Input::only('id','title','description','category_id','publish','feature_image','home_page');
 
 
         $this->validate($request, [
@@ -75,7 +77,8 @@ class ArticleController extends Controller
             'description' => 'required',
             'category_id' => 'required',
             'publish' => 'required',
-            'feature_image'=>'required|image'
+            'feature_image'=>'required|image',
+            'home_page'=>'required'
         ]);
 
         $article = Article::find($input['id']);
@@ -86,6 +89,7 @@ class ArticleController extends Controller
         $article->description = $input['description'];
         $article->category_id = $input['category_id'];
         $article->publish = $input['publish'];
+        $article->home_page=$input['home_page'];
         $article->feature_image=$filename;
         $article->save();
 

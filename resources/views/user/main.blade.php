@@ -4,6 +4,6 @@
 
     @include('user.layout.slider')
     @include('user.layout.about')
-    @include('user.layout.notices')
+    {{--@include('user.layout.notices')--}}
 
     @endsection

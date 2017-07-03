@@ -16,17 +16,25 @@ class Helpers
 {
 
 
+
+
     public static function miti($date){
         $cal = new Nepali_Calendar();
         $createdAt = Carbon::parse($date);
-        return $cal->nc_date_in_YY_dd_mm($createdAt->year,$createdAt->month,$createdAt->day);
+        return $cal->nc_date_in_nepali($createdAt->year,$createdAt->month,$createdAt->day);
     }
 
     public static function current_miti(){
         $cal = new Nepali_Calendar();
         $createdAt = Carbon::now();
-        return $cal->nc_date_in_YY_dd_mm($createdAt->year,$createdAt->month,$createdAt->day);
+        return $cal->nc_date_in_nepali($createdAt->year,$createdAt->month,$createdAt->day);
 
+    }
+
+    public static function miti_YY_mm_dd($date){
+        $cal = new Nepali_Calendar();
+        $createdAt = Carbon::parse($date);
+        return $cal->nc_date_in_YY_mm_dd($createdAt->year,$createdAt->month,$createdAt->day);
     }
 
     /*

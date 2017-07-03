@@ -14,40 +14,40 @@
             <div class="row">
                 <div class="col-md-12 footer">
                     <div class="col-md-4">
-                        <h4>सूचनाहरु</h4>
+                        <h4></h4>
                         <ul>
-                            <li>सूचनाहरु</li>
-                            <li>सूचनाहरु</li>
-                            <li>सूचनाहरु</li>
-                            <li>सूचनाहरु</li>
+                            @foreach($menu as $menu)
+                                <li><a href="{{$menu->link}}">{!! $menu->name !!}</a> </li>
+                                @endforeach
+
 
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <h4>प्रतिवेदन</h4>
-                        <ul>
-                            <li>प्रतिवेदन 1</li>
-                            <li>प्रतिवेदन</li>
-                            <li>प्रतिवेदन</li>
-                            <li>प्रतिवेदन</li>
-                            
-                        </ul>
+                        {{--<h4>प्रतिवेदन</h4>--}}
+                        {{--<ul>--}}
+                            {{--<li>प्रतिवेदन 1</li>--}}
+                            {{--<li>प्रतिवेदन</li>--}}
+                            {{--<li>प्रतिवेदन</li>--}}
+                            {{--<li>प्रतिवेदन</li>--}}
+                            {{----}}
+                        {{--</ul>--}}
                     </div>
                      <div class="col-md-4">
                         <h4>संपर्क</h4>
                         <ul>
-                            <li>ललितपुर वडा कार्यालय</li>
-                            <li>ललितपुर वडा कार्यालय</li>
-                            <li>ललितपुर वडा कार्यालय</li>
-                            <li>location</li>
-                            <li>ललितपुर वडा कार्यालय@gmail.com</li>
+                            <li>ललितपुर महानगरपालिका </li>
+                            <li>३ नं. वडा कार्यालय </li>
+                            <li>पुल्चोक, ललितपुर </li>
+                            <li> गुगल नक्सामा स्थान</li>
+                            <li>इमेल:lmcity.ward3@gmail.com</li>
                             
                         </ul>
                     </div>              
                     <div class="col-md-12">
                         <p class="footer-last-text">
-                        सर्वाधिकार©२०१७ । काठमाण्डौ वडा कार्यालय, संघिय मामिला तथा स्थानिय विकास मन्त्रालय
-                        <span class="pull-right footer-develop-text">डेवेलोभ : <a href="#"> बेटा इन्फर्मेसन टेक्नोलोजी
+                        सर्वाधिकार ©२०१७
+                        {{--<span class="pull-right footer-develop-text">डेवेलोभ : <a href="#"> बेटा इन्फर्मेसन टेक्नोलोजी--}}
                         </a></span>
                     </div>
 

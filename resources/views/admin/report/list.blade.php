@@ -10,6 +10,9 @@
 
     <div class="panel-heading">
         <a href="{{route('admin_report_add')}}" > <button ><i class="fa fa-plus" aria-hidden="true"> </i> Add new</button></a>
+
+        <button class="clipboard" data-clipboard-text="{{route('downloads')}}"><i
+                    class="fa fa-clipboard" aria-hidden="true">Copy link for menu</i></button>
     </div>
 
 
