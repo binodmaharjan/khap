@@ -32,7 +32,7 @@ class UserController extends Controller
 
         $homeArticle=Article::where('home_page','1')->first();
 
-        $menu = Menu::all();
+        $menu = Menu::orderBy('order', 'ASC')->get();
 
         return view('user.main', ['slider' => $slider,
             'member' => $member,

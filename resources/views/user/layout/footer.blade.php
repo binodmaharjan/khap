@@ -17,7 +17,7 @@
                         <h4></h4>
                         <ul>
                             @foreach($menu as $menu)
-                                <li><a href="{{$menu->link}}">{!! $menu->name !!}</a> </li>
+                                <li><a href="{{$menu->link}}" class="footer-link">{!! $menu->name !!}</a> </li>
                                 @endforeach
 
 
