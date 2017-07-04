@@ -930,7 +930,7 @@ a {
 }
 
 .navbar-header {
-    background: #156d20 none repeat scroll 0 0;
+    /*background: #156d20 none repeat scroll 0 0;*/
 }
 
 .nav.navbar-nav.nav-height a {
@@ -2033,3 +2033,18 @@ ul.first {
     float: left;
     width: 25%;
 }
+
+
+.navbar-default {
+     background-color: #323232;
+    border-color: #e7e7e7;
+}
+
+.top-navbar .navbar-brand:hover {
+    color: #FFFFFF;
+    background-color: #FFB53E;
+}
+
+/*.navbar-header a:hover {*/
+    /*background-color: #FFB53E;*/
+/*}*/

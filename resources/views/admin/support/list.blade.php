@@ -1,7 +1,7 @@
 @extends('admin.layout')
-@section('page_title','All articles')
-@section('header-title','Articles')
-@section('header-subtitle','All articles')
+@section('page_title','All support')
+@section('header-title','Supports')
+@section('header-subtitle','All supports')
 
 @section('content')
 

@@ -19,6 +19,7 @@ class GunasoController extends Controller
     }
 
     public function gunaso(){
+
         $menu = Menu::orderBy('order', 'ASC')->get();
         return view('user.gunaso',['menu'=>$menu]);
     }

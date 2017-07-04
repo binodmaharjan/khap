@@ -3,7 +3,7 @@
        <div class="container">
     <!--<div class="breadcrumb"><a href="{{url('')}}">Home</a> » Contact</div>-->
       <div class="col-sm-12 widget_comments padding-clear padding-top">
-               <div class="breadcrumb"><a href="{{url('')}}">Home</a> » Contact</div>
+               <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » गुनासो</div>
         </div>
 </div>
     <section id="contact" class='padding-top'>

@@ -1,4 +1,7 @@
 @extends('admin.layout')
+@section('page_title','Edit menu')
+@section('header-title','Menus')
+@section('header-subtitle','Edit category')
 
 @section('content')
 
@@ -70,6 +73,3 @@
     </form>
 
 @endsection
-@section('page_title','Add new category')
-@section('header-title','Categories')
-@section('header-subtitle','Add new category')
