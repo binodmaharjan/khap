@@ -4,7 +4,7 @@
             <div class="col-sm-12 logo-main">
 
                 <div class="col-md-6 col-sm-12">
-                <a href="{{route('main')}}" >    <img src="{{url('src/logo.png')}}" class="img-responsive image-one">
+                <a href="{{route('main')}}" >    <img src="{{url('src/logo.png')}}" class="floatLeft image-one">
                     </a>
                     <h3 class="title-aside-logo">
                         ललितपुर वडा कार्यालय<br> 

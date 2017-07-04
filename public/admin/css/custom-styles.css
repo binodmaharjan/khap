@@ -83,7 +83,7 @@ position: fixed;
 }
 .navbar-side {
   z-index: 1;
-  position: fixed;
+  position: absolute;
   width: 260px;
   top: 80px;
 }
@@ -482,6 +482,7 @@ padding-top: 4px;
 }
 .sidebar-collapse .nav {
 	padding:0;
+  overflow-y: scroll;
 }
 .sidebar-collapse .nav > li > a {
 	color: #FFFFFF;

@@ -1062,6 +1062,7 @@ a {
     color: white;
     font-size: 14px;
     line-height: 35px;
+    text-align: center;
 }
 
 
@@ -1588,7 +1589,9 @@ a {
 }
 
 .img-responsive {
-     float:left;
+    display: block;
+    max-width: 100%;
+
 }
 
 .widget-sidebar .widget-title {
