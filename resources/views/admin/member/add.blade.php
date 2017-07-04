@@ -1,4 +1,7 @@
 @extends('admin.layout')
+@section('page_title','Add new member')
+@section('header-title','Members')
+@section('header-subtitle','Add new member')
 
 @section('content')
 
@@ -94,6 +97,3 @@
     </form>
 
 @endsection
-@section('page_title','Add new member')
-@section('header-title','Members')
-@section('header-subtitle','Add new member')

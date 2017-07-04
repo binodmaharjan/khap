@@ -1,5 +1,9 @@
 @include('user.layout.head')
 <body>
+
+@if(Auth::check())
+@include('admin.top')
+@endif
 <header>
     <div class="modal fade bs-example-modal-sm" id="loginbox" tabindex="-1" role="dialog" aria-labelledby="loginboxModalLabel">
         <div class="modal-dialog modal-sm">

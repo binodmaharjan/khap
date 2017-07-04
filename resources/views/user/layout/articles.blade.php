@@ -3,7 +3,7 @@
         <div class="row">
              <div class="col-md-12">
                 
-                 <div class="breadcrumb"><a href="{{url('')}}">Home</a> » Post Name</div>
+                 <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » {{$article->title}}</div>
 
                  <div class="col-md-9 widget-sidebar">
                      <div class="aboutUs postDetails">

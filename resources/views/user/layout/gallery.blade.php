@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-12">
 
-                <div class="breadcrumb"><a href="{{url('')}}">Home</a> » Gallery</div>
+                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » फोटो ग्यालरी</div>
 
                 <div class="col-md-9">
                     <!-- Gallery -->

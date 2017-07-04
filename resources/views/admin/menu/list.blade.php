@@ -1,8 +1,8 @@
 @extends('admin.layout')
 
-@section('page_title','All categories')
-@section('header-title','Categories')
-@section('header-subtitle','All Categories')
+@section('page_title','All menus')
+@section('header-title','Menus')
+@section('header-subtitle','All Menus')
 
 @section('content')
 

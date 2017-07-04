@@ -1,4 +1,7 @@
 @extends('admin.layout')
+@section('page_title','Add new category')
+@section('header-title','Categories')
+@section('header-subtitle','Add new category')
 
 @section('content')
 
@@ -44,6 +47,3 @@
     </form>
 
 @endsection
-@section('page_title','Add new category')
-@section('header-title','Categories')
-@section('header-subtitle','Add new category')

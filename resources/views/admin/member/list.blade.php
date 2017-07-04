@@ -1,4 +1,7 @@
 @extends('admin.layout')
+@section('page_title','All members')
+@section('header-title','Members')
+@section('header-subtitle','All Members')
 
 @section('content')
 
@@ -61,6 +64,3 @@
 
 
 @endsection
-@section('page_title','All members')
-@section('header-title','Members')
-@section('header-subtitle','All Members')
