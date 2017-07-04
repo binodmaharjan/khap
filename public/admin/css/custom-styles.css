@@ -485,7 +485,7 @@ padding-top: 4px;
 }
 .sidebar-collapse .nav {
 	padding:0;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
 }
 .sidebar-collapse .nav > li > a {
 	color: #FFFFFF;
