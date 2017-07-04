@@ -5,7 +5,7 @@
 <html>
 <head>
     <style>
-        * {
+         {
             padding: 0;
             margin: 0;
         }
@@ -40,6 +40,27 @@
 //            function() { $(this).animate({width: "50px"}, 500); }
 //        );
 //    });
+
+//    $(document).ready(function(){
+//        $("img").click(function(){
+//            $("img").animate({height: "4000px"});
+//        });
+//    });
+
+    $('img').load(function() {
+        $(this).data('height', this.height);
+        $(this).data('width', this.height);
+    }).bind("click", function(e) {
+
+//        alert( "The mouse cursor is at (" +
+//            event.pageX + ", " + event.pageY +
+//            ")" );
+        $(this).animate({
+            height: $(this).data('height') * 2,
+            width: $(this).data('width') * 2,
+
+        });
+    });
 </script>
 
 </body>

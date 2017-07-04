@@ -11,9 +11,9 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('user.first');
-//});
+Route::get('/', function () {
+    return view('user.first');
+});
 
 Route::get('/second', function () {
     return view('user.second');
@@ -111,8 +111,8 @@ Route::prefix('admin')->group(function () {
 
 //user
 
-//   Route::get('/main','UserController@index')->name('main');
-Route::get('/', 'UserController@index')->name('main');
+   Route::get('/main','UserController@index')->name('main');
+//Route::get('/', 'UserController@index')->name('main');
 Route::get('/gallery', 'UserController@photos')->name('gallery');
 Route::get('/staffs', 'UserController@staffDetails')->name('staffs');
 Route::get('/news', 'UserController@category')->name('news');
