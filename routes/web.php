@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('user.first');
-});
+//Route::get('/', function () {
+//    return view('user.first');
+//});
 
 Route::get('/second', function () {
     return view('user.second');
@@ -96,6 +96,7 @@ Route::prefix('admin')->group(function () {
 
     Route::get('/supports', 'SupportController@index')->name('admin_supports');
     Route::get('/support/{id}/delete', 'SupportController@delete')->name('admin_support_delete');
+    Route::get('/support/notification', 'SupportController@notificationClicked')->name('admin_notification_clicked');
     //  Route::get('/gallery','SupportController@photos')->name('admin_gallery');
 
 
@@ -111,8 +112,8 @@ Route::prefix('admin')->group(function () {
 
 //user
 
-   Route::get('/main','UserController@index')->name('main');
-//Route::get('/', 'UserController@index')->name('main');
+  // Route::get('/main','UserController@index')->name('main');
+Route::get('/', 'UserController@index')->name('main');
 Route::get('/gallery', 'UserController@photos')->name('gallery');
 Route::get('/staffs', 'UserController@staffDetails')->name('staffs');
 Route::get('/news', 'UserController@category')->name('news');

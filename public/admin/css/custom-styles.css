@@ -393,14 +393,17 @@ max-width:170px;
 margin:0px;
 }
 .top-navbar .navbar-brand {
-color: #fff;
+
+    color: #FFFFFF;background-color: #FFB53E;
+
 width: 260px;
 text-align: left;
 height: 60px;
 font-size: 24px;
 font-weight: 700;
 /* text-transform: uppercase; */
-line-height: 30px;background: #F09B22;}
+line-height: 30px;}
+
 .navbar-brand b{
 color: #4BD28C;
 }

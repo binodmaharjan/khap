@@ -16,6 +16,8 @@
                 <div class="col-md-6">
                     <p class="pull-right header-calendar">मिती {!! Patro::current_miti() !!}
                         <br>
+                        <br>
+
 
                         {{--<a data-toggle="modal" data-target="#loginbox">--}}
                             {{--फारम भर्नको लागी--}}

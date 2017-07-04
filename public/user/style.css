@@ -2053,3 +2053,18 @@ ul.first {
 /*.navbar-header a:hover {*/
     /*background-color: #FFB53E;*/
 /*}*/
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color:  #FFB53E;;
+    border-radius: 10px;
+    color: white;
+}

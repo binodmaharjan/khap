@@ -7,6 +7,7 @@ use App\Notifications\SupportNotify;
 use App\Support;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use File;
 use Illuminate\Support\Facades\Notification;
@@ -20,6 +21,25 @@ class SupportController extends Controller
         $this->middleware('auth', ['only' => ['index', 'delete']]);
         // Alternativly
       //  $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
+
+    public function notificationClicked()
+    {
+
+        if (Auth::check())
+        {
+            $user = User::find(Auth::user()->id);
+
+//            dd($user);
+
+            foreach ($user->unreadNotifications as $notification) {
+                $notification->markAsRead();
+            }
+        }
+
+
+        return redirect()->route('admin_supports') ;
+
     }
 
     public function index(){
@@ -55,7 +75,7 @@ class SupportController extends Controller
 
         $filename = $input['file']->store('supports');
 
-        dd($filename);
+//        dd($filename);
 
         $support =new Support();
         $support->name = $input['name'];

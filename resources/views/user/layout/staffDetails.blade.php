@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
 
-                <div class="breadcrumb"><a href="{{url('')}}">Home</a> » Staff Details</div>
+                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » पदाधिकारी</div>
 
                 <div class="col-md-9 widget-sidebar padding-clear">
                     <div class="widget widget_comments widget_latest_post noShadow">

@@ -1,9 +1,10 @@
-    .image-one {
+.image-one {
     width: 120px;
     height: auto;
 }
 
 .img-circle {
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -81,7 +82,7 @@
 
 .header-calendar {
     text-align: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .floatLeft {
@@ -170,9 +171,9 @@
     opacity: .7;
     cursor: pointer;
 }
- .footer ul li a img{
-     margin-left: -24px;
-    }  
+.footer ul li a img{
+    margin-left: -24px;
+}
 .downloads li a{
     font-size: 18px;
 }
@@ -248,12 +249,13 @@
 .pdfColor{
     color: red;
     font-size: 24px;
+    margin-right: 10px;
 }
 a span{
-    color: #337ab7 !important;
+    /*color: #337ab7 !important;*/
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 a span:hover{
     opacity: .7;
@@ -476,54 +478,65 @@ ul.tabs li:first-child {
         width: 100%;
     }
 }
-    /*top page*/
-    @media (max-width: 769px) {
-        .title-aside-logo {
-            font-size: 16px;
-        }
-        .widget-sidebar {
-            margin-top: 20px;
-        }
-        .image-one {
-            width: 85px;
-            height: auto;
-        }
-        .header-calendar {
-            position: absolute;
-            right: 0px;
-            top: 0px;
-            font-size: 12px;
-            text-align: center;
-            margin-top: 15px;
-            line-height: 15px;
-        }
-        .nav.navbar-nav.nav-hover a {
-            border-right: transparent;
-        }
-        .newTag {
-            right: 0px;
-        }
-        .padding-clear {
-            padding: auto;
-        }
+/*top page*/
+@media (max-width: 769px) {
+    .title-aside-logo {
+        font-size: 16px;
     }
-    @media (max-width: 415px) {
+    .widget-sidebar {
+        margin-top: 20px;
+    }
+    .image-one {
+        width: 85px;
+        height: auto;
+    }
+    .header-calendar {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 15px;
+        line-height: 15px;
+    }
+    .nav.navbar-nav.nav-hover a {
+        border-right: transparent;
+    }
+    .newTag {
+        right: 0px;
+    }
+    .padding-clear {
+        padding: auto;
+    }
+}
+@media (max-width: 415px) {
 
-.title-aside-logo {
-            padding: 0px 10px 10px 10px;
-        }
-       
+    .title-aside-logo {
+        padding: 0px 10px 10px 10px;
     }
-    @media (max-width: 321px) {
-        .title-aside-logo {
-            font-size: 16px;
-        }
-        .image-one {
-            width: 65px;
-            height: auto;
-        }
-        .header-calendar {
-            font-size: 9px;
-        }
+
+}
+@media (max-width: 321px) {
+    .title-aside-logo {
+        font-size: 16px;
     }
-    /*end style*/
+    .image-one {
+        width: 65px;
+        height: auto;
+    }
+    .header-calendar {
+        font-size: 9px;
+    }
+}
+/*end style*/
+
+
+.top-navbar .navbar-brand:hover {
+    color: #FFFFFF;
+    background-color: #FFB53E;
+}
+
+.top-navbar   .navbar-brand {
+    color: #FFFFFF;
+    background-color: #FFB53E;
+}

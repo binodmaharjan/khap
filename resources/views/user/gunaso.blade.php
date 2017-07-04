@@ -10,9 +10,9 @@
         <div class="container">
             <div class="row">
                 <div class="about_our_company" style="margin-bottom: 20px;">
-                    <h1 style="color:#fff;">Contact Us</h1>
+                    <h1 style="color:#fff;"> गुनासो</h1>
                     <div class="titleline-icon"></div>
-                    <p style="color:#fff;">Please provide your suggestion</p>
+                    <p style="color:#fff;">गुनासो बुझाउनुस्| </p>
                 </div>
             </div>
             <div class="row">
@@ -22,17 +22,17 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input name="full_name" type="text" class="form-control" placeholder="Your full Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+                                    <input name="full_name" type="text" class="form-control" placeholder="पुरा नाम *" id="name" required="" data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="input-group form-group">
                                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                                 </span>
-                                    <input name= "email" type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                    <input name= "email" type="email" class="form-control" placeholder="ईमेल  *" id="email" required="" data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" name="phone" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" name="phone" class="form-control" placeholder="फोन *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
@@ -46,7 +46,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="sub" name="subject" class="form-control" placeholder="Subject" id="subject" required="" data-validation-required-message="Please enter subject.">
+                                    <input type="sub" name="subject" class="form-control" placeholder="बिषय *" id="subject" required="" data-validation-required-message="Please enter subject.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
@@ -75,10 +75,10 @@
                 <p>Lalitpur</p>
                 <br />
                 <h3><i class="fa fa-envelope fa-1x"></i> E-Mail Address:</h3>
-                <p>lalitpur@gmail.com</p>
+                <p>lmcity.ward3.gmail.com</p>
                 <br />
                 <h3><i class="fa fa-user fa-1x" ></i> CEO:</h3>
-                <p>Name of perosn</p>
+                <p>Name of person</p>
                 <br />
                 <h3><i class="fa fa-yelp fa-1x"></i> Other Details:</h3>
                 <ul>
