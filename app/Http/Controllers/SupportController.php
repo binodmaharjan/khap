@@ -36,19 +36,27 @@ class SupportController extends Controller
     }
 
     public function store(Request $request){
+
+       // dd('Heler');
         $input = Input::only('name','email','phone','file','subject');
+
+       //  dd($input);
 
 
         //    dd($input);
-        $this->validate($request, [
-            'name' => 'required|max:255|',
-            'email' => 'required',
-            'phone' => 'required',
-            'subject' => 'required',
-            'file'=>'required|image'
-        ]);
+//       $this->validate($request, [
+//            'name' => 'required|max:255|',
+//            'email' => 'required',
+//            'phone' => 'required',
+//            'subject' => 'required',
+//            'file'=>'required|image'
+//        ]);
+
 
         $filename = $input['file']->store('supports');
+
+        dd($filename);
+
         $support =new Support();
         $support->name = $input['name'];
         $support->email = $input['email'];
