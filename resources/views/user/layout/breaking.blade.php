@@ -1,5 +1,7 @@
 <section>
-    <div class="container">
+    <div class="container" style="
+    margin-top: 18px;
+">
         <div class="row">
             <div class="latest-update col-md-2 no-padding">
                 <h3>सुचनाहरु   <img src="{{url('src/new.png')}}" class="img-responsive image-one floatLeft newTag">

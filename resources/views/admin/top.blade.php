@@ -202,7 +202,7 @@
                     {{--<li class="divider"></li>--}}
                     {{--<li>--}}
                     <li>
-                        <a class="text-center" href="#">
+                        <a class="text-center" href="{{route('admin_notification_clicked')}}">
                             <strong>See All Alerts</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>

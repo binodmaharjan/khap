@@ -26,7 +26,11 @@
 
     <script src="{{asset('editor/tinymce/js/tinymce/tinymce.min.js')}}"></script>
     <script>tinymce.init({ selector:'textarea',
-            plugins: "link",
+            plugins: "link textcolor ",
+            toolbar: [
+                'undo redo | styleselect | bold italic |  alignleft aligncenter alignright',
+                'forecolor link '
+            ]
 
             });</script>
 
