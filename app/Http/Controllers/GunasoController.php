@@ -13,20 +13,13 @@ class GunasoController extends Controller
     //
 
     public function index(){
-
-
         $gunaso = Gunaso::all();
-
         return view('admin.gunaso.list',['gunaso'=>$gunaso]);
 
     }
 
     public function gunaso(){
-
-
-
-
-        $menu = Menu::all();
+        $menu = Menu::orderBy('order', 'ASC')->get();
         return view('user.gunaso',['menu'=>$menu]);
     }
 

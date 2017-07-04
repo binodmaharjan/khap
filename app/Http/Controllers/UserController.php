@@ -46,14 +46,14 @@ class UserController extends Controller
 
     public function photos()
     {
-        $menu = Menu::all();
+        $menu = Menu::orderBy('order', 'ASC')->get();
         return view('user.gallery', ['menu' => $menu]);
     }
 
     public function post($id)
     {
         $article = Article::find($id);
-        $menu = Menu::all();
+        $menu = Menu::orderBy('order', 'ASC')->get();
         return view('user.post', ['menu' => $menu, 'article' => $article]);
     }
 
@@ -61,7 +61,7 @@ class UserController extends Controller
     public function staffDetails()
     {
 
-        $menu = Menu::all();
+        $menu = Menu::orderBy('order', 'ASC')->get();
         $main_member = Member::where('head', '1')->first();
         $member = Member::where('head', '0')->get();
         return view('user.staffs', ['main_member' => $main_member,
@@ -76,7 +76,7 @@ class UserController extends Controller
 
     public function download()
     {
-        $menu = Menu::all();
+        $menu = Menu::orderBy('order', 'ASC')->get();
 
         $report = Report::all();
         return view('user.download', ['menu' => $menu, 'report' => $report]);
