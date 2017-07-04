@@ -102,8 +102,8 @@ Route::prefix('admin')->group(function () {
     //gunaso
 
     Route::get('/gunaso', 'GunasoController@index')->name('admin_gunaso');
-    Route::get('/gunaso/add', 'GunasoController@create')->name('admin_gunaso_add');
-    Route::post('/gunaso/store', 'GunasoController@store')->name('admin_gunaso_store');
+//    Route::get('/gunaso/add', 'GunasoController@create')->name('admin_gunaso_add');
+   // Route::post('/gunaso/store', 'GunasoController@store')->name('admin_gunaso_store');
     Route::get('/gunaso/{id}/delete', 'GunasoController@delete')->name('admin_gunaso_delete');
 
 
