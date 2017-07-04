@@ -16,12 +16,12 @@
                            <div class="widget widget_comments noShadow">
                                <h3 class="widget-title">डाउनलोड्स </h3>
                                <div class="widget-inner staffSlider">
-                                   <ul class="comment mainlinks">
+                                   <ul class="comment mainlinks downloads">
 
                                        @foreach($report as $report)
                                            <li>
 
-                                               <a href="{{url('downloads/'.$report->path)}}"> {!! $report->title !!}</a>
+                                               <a href="{{url('downloads/'.$report->path)}}"> <i class="fa fa-file-pdf-o pdfColor" aria-hidden="true"></i> {!! $report->title !!}</a>
                                                <br>
                                                {!! Patro::miti_YY_mm_dd($report->created_at) !!}
                                            </li>

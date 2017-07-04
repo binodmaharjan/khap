@@ -39,6 +39,7 @@
                             <li>ललितपुर महानगरपालिका </li>
                             <li>३ नं. वडा कार्यालय </li>
                             <li>पुल्चोक, ललितपुर </li>
+                            <li><a href="https://goo.gl/maps/OZrzG" target="_blank"><img alt="" src="src/location.png" style="height:24px; width:24px">गुगल नक्सामा स्थान</a></li>
                             <li> गुगल नक्सामा स्थान</li>
                             <li>इमेल:lmcity.ward3@gmail.com</li>
                             
@@ -69,6 +70,7 @@
     // Curently there are no option available.
 
     $('#bootstrap-touch-slider').bsTouchSlider();
+    
     $(document).ready(function(){
         $('ul.galleryList').bsPhotoGallery({
             //"classes" : "col-lg-2 col-md-4 col-sm-3 col-xs-4 col-xxs-12",
