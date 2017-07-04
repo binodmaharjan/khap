@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
+use App\Category;
+use App\Gallery;
+use App\Slider;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,6 +29,11 @@ class HomeController extends Controller
     {
         // view('home');
 
-        return view('admin.dashboard');
+        $category = Category::all();
+        $articles = Article::all();
+        $slider = Slider::all();
+        $gallery = Gallery::all();
+
+        return view('admin.dashboard',['category'=>$category,'articles'=>$articles,'slider'=>$slider,'gallery'=>$gallery]);
     }
 }

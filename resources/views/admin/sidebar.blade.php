@@ -6,22 +6,22 @@
                 <a  href="/home"><i class="fa fa-dashboard"></i> Dashboard</a>
             </li>
             <li>
-                <a href="{{route('admin_category')}}"><i class="fa fa-bars"></i> Categories</a>
+                <a href="{{route('admin_category')}}"><i class="fa fa-th-list"></i> Categories</a>
             </li>
 
             <li>
                 <a href="{{route('admin_menu')}}"><i class="fa fa-bars"></i> Nav Menu</a>
             </li>
             <li>
-                <a href="{{route('admin_articles')}}"><i class="fa fa-bar-chart-o"></i>Articles</a>
+                <a href="{{route('admin_articles')}}"><i class="fa fa-newspaper-o"></i>Articles</a>
             </li>
             <li>
-                <a href="{{route('admin_sliders')}}"><i class="fa fa-qrcode"></i> Slider</a>
+                <a href="{{route('admin_sliders')}}"><i class="fa fa-sliders"></i> Slider</a>
             </li>
 
 
             <li>
-                <a href="{{route('admin_gallery')}}"><i class="fa fa-qrcode"></i> Gallery</a>
+                <a href="{{route('admin_gallery')}}"><i class="fa fa-picture-o"></i> Gallery</a>
             </li>
 
             <li>
@@ -29,7 +29,7 @@
             </li>
 
             <li>
-                <a href="{{route('admin_members')}}"><i class="fa fa-table"></i> Members</a>
+                <a href="{{route('admin_members')}}"><i class="fa fa-user "></i> Members</a>
             </li>
 
             <li>
@@ -38,7 +38,7 @@
 
 
             <li>
-                <a href="{{route('admin_gunaso')}}"><i class="fa fa-edit"></i> गुनासो  </a>
+                <a href="{{route('admin_gunaso')}}"><i class="fa fa-comment"></i> गुनासो  </a>
             </li>
 
             <li>
