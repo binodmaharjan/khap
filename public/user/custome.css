@@ -234,6 +234,16 @@
     color: red;
     font-size: 24px;
 }
+a span{
+    color: #337ab7 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-decoration: underline;
+}
+a span:hover{
+    opacity: .7;
+    cursor: pointer;
+}
 /*Contact Info*/
 
 section#contact {
@@ -424,7 +434,7 @@ ul.tabs li:first-child {
     /*top page*/
     @media (max-width: 769px) {
         .title-aside-logo {
-            font-size: 20px;
+            font-size: 16px;
         }
         .widget-sidebar {
             margin-top: 20px;
@@ -438,6 +448,9 @@ ul.tabs li:first-child {
             right: 0px;
             top: 0px;
             font-size: 12px;
+            text-align: center;
+            margin-top: 15px;
+            line-height: 15px;
         }
         .nav.navbar-nav.nav-hover a {
             border-right: transparent;
@@ -466,7 +479,6 @@ ul.tabs li:first-child {
         }
         .header-calendar {
             font-size: 9px;
-            top: -20px;
         }
     }
     /*end style*/

@@ -5,8 +5,8 @@
                     <div class="col-md-8 padding-clear">
 
                         <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line carosel-slider-top" data-ride="carousel" data-pause="hover" data-interval="5000">
-                            {{--<!-- Indicators --}}
-                            <ol class="carousel-indicators">
+
+                           <!-- <ol class="carousel-indicators">
 
 
                                @if(count($slider))
@@ -17,7 +17,7 @@
                                    @endif
 
 
-                            </ol>
+                            </ol> -->
 
                             <!-- Wrapper For Slides -->
                             <div id="bootstrap-touch-slider" role="listbox">
@@ -25,9 +25,9 @@
                                 <?php $count =0;?>
 
                                 @foreach($slider as $slider)
-                                    {{++$count}}
+                                    
 
-                                    <div class="item {{$count==1?'active':''}}" >
+                                    <div class="item {{++$count}} {{$count==1?'active':''}}" >
 
                                         <!-- Slide Background -->
                                         <img src="{{url('uploads/'.$slider->path)}}" alt="Bootstrap Touch Slider" class="slide-image">
