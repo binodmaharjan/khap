@@ -43,7 +43,7 @@ class SupportController extends Controller
     }
 
     public function index(){
-        $support = Support::all();
+        $support = Support::orderBy('created_at','DESC')->get();
 
         return view('admin.support.list',['support'=>$support]);
 

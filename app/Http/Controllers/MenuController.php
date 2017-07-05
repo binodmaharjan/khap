@@ -17,7 +17,7 @@ class MenuController extends Controller
 
     public function index()
     {
-        $menu=Menu::all()->sortByDesc("id");
+        $menu=Menu::orderBy('order','ASC')->get();
 
 
         return view('admin.menu.list',['menu'=>$menu]);

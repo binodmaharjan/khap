@@ -144,6 +144,12 @@
                 {{--<!-- /.dropdown-tasks -->--}}
             {{--</li>--}}
             <!-- /.dropdown -->
+
+
+                    <a  href="{{route('main')}}" target="_blank">
+                        <span class="badge">Visit site</span>   </i>
+                    </a>
+
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                     <span class="badge">{{count(auth()->user()->unreadNotifications)}}</span>    <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
