@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-12 logo-main">
 
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6">
                 <a href="{{route('main')}}" >    <img src="{{url('src/logo.png')}}" class="floatLeft image-one">
                     </a>
                     <h3 class="title-aside-logo">
@@ -13,20 +13,19 @@
                         <div class="title-small"> ३ नं. प्रदेश, नेपाल</div>
                     </h3>
                 </div>
-                <div class="col-md-6">
-                    <p class="pull-right header-calendar">मिती {!! Patro::current_miti() !!}
-                        <br>
-                        <br>
+                <div class="col-md-6 right">
 
-
-                        {{--<a data-toggle="modal" data-target="#loginbox">--}}
+                    <div class="text-right" >
+                   मिती {!! Patro::current_miti() !!}
+                    {{--<a data-toggle="modal" data-target="#loginbox">--}}
                             {{--फारम भर्नको लागी--}}
                         {{--</a>--}}
-
+                    </div>
+                    <div class="text-right">
                         <a href="{{route('user_support_create')}}" >
                             फारम भर्नको लागी
                         </a>
-                    </p>
+                    </div>
 
 
                 </div>

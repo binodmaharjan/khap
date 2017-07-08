@@ -74,6 +74,14 @@
         </div>
 
         <div class="form-group">
+            <label for="name" class="col-md-4 control-label col-left"></label>
+            <div class="col-md-5">
+                <input type="hidden" name="main_link" value="0">
+                <input type="checkbox" name="main_link" value="1" > Is Main Link<br>
+            </div>
+        </div>
+
+        <div class="form-group">
             <label for="name" class="col-md-4 control-label col-left"> Image</label>
 
             <div class="col-md-6">

@@ -17,4 +17,6 @@
      <link href="{{asset('user/custome.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('user/animation.min.css')}}" rel="stylesheet" type="text/css"  rel="stylesheet" media="all">
 
+    <link rel="shortcut icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
 </head>

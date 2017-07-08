@@ -39,11 +39,16 @@ class MemberController extends Controller
             'position' => 'required|max:255|',
             'position' => 'required|max:10|',
             'email' => 'required',
-            'file'=>'required|image',
+            'file'=>'image',
 
         ]);
 
-        $filename = $input['file']->store('member');
+        $filename='';
+
+        if(!empty($input['file'])) {
+
+            $filename = $input['file']->store('member');
+        }
         $member =new Member();
         $member->name = $input['name'];
         $member->position = $input['position'];

@@ -33,7 +33,13 @@ class ArticleController extends Controller
     public function store(Request $request){
 
 
-        $input = Input::only('title','description','category_id','publish','feature_image', 'home_page');
+        $input = Input::only('title',
+            'description',
+            'category_id',
+            'publish',
+            'feature_image',
+            'home_page',
+            'main_link');
 
     //    dd($input);
         $this->validate($request, [
@@ -43,6 +49,7 @@ class ArticleController extends Controller
             'publish' => 'required',
             'feature_image'=>'required|image',
             'home_page'=>'required',
+            'main_link'=>'required',
         ]);
 
         $filename = $input['feature_image']->store('features');
@@ -53,6 +60,7 @@ class ArticleController extends Controller
         $article->publish = $input['publish'];
         $article->feature_image=$filename;
         $article->home_page=$input['home_page'];
+        $article->main_link=$input['main_link'];
         $article->save();
 
         return redirect()->route('admin_articles')->with('status', 'New article successfully added.');
@@ -68,9 +76,14 @@ class ArticleController extends Controller
     public  function update(Request $request){
 
 
-
-        $input = Input::only('id','title','description','category_id','publish','feature_image','home_page');
-
+        $input = Input::only('id',
+            'title',
+            'description',
+            'category_id',
+            'publish',
+            'feature_image',
+            'home_page',
+            'main_link');
 
         $this->validate($request, [
             'title' => 'required|max:255|',
@@ -78,7 +91,8 @@ class ArticleController extends Controller
             'category_id' => 'required',
             'publish' => 'required',
             'feature_image'=>'required|image',
-            'home_page'=>'required'
+            'home_page'=>'required',
+            'main_link'=>'required',
         ]);
 
         $article = Article::find($input['id']);
@@ -91,6 +105,7 @@ class ArticleController extends Controller
         $article->publish = $input['publish'];
         $article->home_page=$input['home_page'];
         $article->feature_image=$filename;
+        $article->main_link=$input['main_link'];
         $article->save();
 
         return redirect()->route('admin_articles')->with('status', 'article is updated.');

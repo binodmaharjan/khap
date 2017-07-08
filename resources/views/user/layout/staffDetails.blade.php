@@ -14,8 +14,8 @@
                             @if(count($main_member))
                                 <div class="col-sm-12">
 
-                                    <div class="img-responsive img-circle"><img
-                                                src="{{url('uploads/'.$main_member->path)}}">
+                                    <div class="img-responsive img-circle"> <img src="{{ !empty($main_member->path)?url('uploads/'.$main_member->path):url('src/profile.jpg')}}">
+
                                         <div class="text-center-one staffDetails">
                                             <h3>{{$main_member->name}}</h3>
                                             <h4>{{$main_member->position}}</h4>
@@ -40,8 +40,9 @@
 
                                 @foreach($member as $member)
                                     <li>
-                                        <div class="img-responsive img-circle"><img
-                                                    src="{{url('uploads/'.$member->path)}}">
+                                        <div class="img-responsive img-circle">
+                                            <img src="{{ !empty($member->path)?url('uploads/'.$member->path):url('src/profile.jpg')}}">
+
                                             <div class="text-center-one staffDetails">
                                                 <h3>{{$member->name}}</h3>
                                                 <h4>{{$member->position}}</h4>
