@@ -2068,3 +2068,16 @@ ul.first {
     border-radius: 10px;
     color: white;
 }
+
+.error{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.title-small{
+    font-size: 1em;
+}
+
+.title-big{
+    font-size:1.5em;
+}

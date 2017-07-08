@@ -1,4 +1,17 @@
+@extends('user.layout.app')
+@section('content')
 
-404 error
+    <div class="container">
+        <div class="row">
+            <div class="error">
+                <h1>
+                    Whoops, The content you are looking is not found.
+                </h1>
+            </div>
 
-<a href="{{route('home')}}"> click</a>
+        </div>
+    </div>
+
+@endsection
+
+

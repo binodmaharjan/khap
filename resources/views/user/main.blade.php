@@ -1,4 +1,5 @@
 @extends('user.layout.app')
+@section('page-title','३ नं. वडा कार्यालय | गृहपृष्ठ')
 @section('content')
 
 

@@ -19,12 +19,17 @@
                            @php
                                $activeRoute = \Illuminate\Support\Facades\Route::currentRouteName()
                            @endphp
+
+
                             <ul class="nav navbar-nav nav-hover main-menu">
                                 <li><a href="{{url('')}}" class="{{ ($activeRoute=='main')?'active':''}}">गृहपृष्ठ</a></li>
 
+                                @if(!empty($menu))
                                 @foreach($menu as $menu)
                                     <li><a href="{{$menu->link}}" class="{{ (strcmp($menu->link,url(Request::path()))==0)?'active':''}}">{{$menu->name}}</a></li>
                                     @endforeach
+
+                                @endif
 
                                  {{--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">हाम्रो बारेमा <b class="caret"></b></a>--}}
                                     {{--<ul class="dropdown-menu">--}}

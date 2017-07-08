@@ -2,7 +2,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>ललितपुर वडा कार्यालय</title>
+    <title>@yield('page-title')</title>
     <!-- Comon JS File -->
 {{--<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>--}}
 <!--animation linke-->

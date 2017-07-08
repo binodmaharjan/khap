@@ -52,7 +52,7 @@ class UserController extends Controller
 
     public function post($id)
     {
-        $article = Article::find($id);
+        $article = Article::findOrfail($id);
         $menu = Menu::orderBy('order', 'ASC')->get();
         return view('user.post', ['menu' => $menu, 'article' => $article]);
     }

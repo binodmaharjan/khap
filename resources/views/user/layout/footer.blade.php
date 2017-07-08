@@ -15,6 +15,8 @@
                 <div class="col-md-12 footer">
                     <div class="col-md-4">
                         <h4></h4>
+
+                        @if(!empty($menu))
                         <ul>
                             @foreach($menu as $menu)
                                 <li><a href="{{$menu->link}}" class="footer-link">{!! $menu->name !!}</a> </li>
@@ -22,6 +24,7 @@
 
 
                         </ul>
+                            @endif
                     </div>
                     <div class="col-md-4">
                         {{--<h4>प्रतिवेदन</h4>--}}

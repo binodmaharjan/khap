@@ -1,3 +1,5 @@
+@section('page-title','३ नं. वडा कार्यालय | '.$article->title)
+
 <section>
     <div class="container">
         <div class="row">

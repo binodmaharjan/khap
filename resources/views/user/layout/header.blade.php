@@ -7,10 +7,10 @@
                 <a href="{{route('main')}}" >    <img src="{{url('src/logo.png')}}" class="floatLeft image-one">
                     </a>
                     <h3 class="title-aside-logo">
-                        ललितपुर वडा कार्यालय<br> 
-                        ३ नं. वडा कार्यालय <br>
-                        पुल्चोक, ललितपुर <br>
-                        ३ नं. प्रदेश, नेपाल
+                        <div class="title-small">ललितपुर महानगरपालिका </div>
+                        <div class="title-big">  ३ नं. वडा कार्यालय </div>
+                        <div class="title-small"> पुल्चोक, ललितपुर </div>
+                        <div class="title-small"> ३ नं. प्रदेश, नेपाल</div>
                     </h3>
                 </div>
                 <div class="col-md-6">

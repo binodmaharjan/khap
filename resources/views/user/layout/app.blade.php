@@ -14,24 +14,15 @@
         </div>
     </div>
     </div>
-
     @include('user.layout.header')
-
     @include('user.layout.menu')
-
 </header>
 @include('user.layout.breaking')
-
-
 @include('user.message')
-
-
 <!--slider start from here-->
 <div class="margin"></div>
 <!-- don't use this html this only for margin top remove this -->
 @yield('content')
-
-
 @include('user.layout.footer')
 
 
