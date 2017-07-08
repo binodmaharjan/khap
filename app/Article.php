@@ -10,7 +10,7 @@ class Article extends Model
     protected $table = 'articles';
 
     protected $fillable = [
-        'title', 'description', 'publish','category_id','feature_image','home_page','main_link'
+        'title', 'description', 'publish','category_id','feature_image','home_page','main_link','breaking_news'
     ];
 
     public function category()

@@ -34,6 +34,12 @@ class UserController extends Controller
 
         $menu = Menu::orderBy('order', 'ASC')->get();
 
+        $breaking_news = Article::where('breaking_news', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
+
+
+
         return view('user.main', ['slider' => $slider,
             'member' => $member,
             'annual_report' => $annual_report,
@@ -41,6 +47,7 @@ class UserController extends Controller
             'notice' => $notice,
             'news' => $news,
             'menu' => $menu,
+            'breaking_news'=>$breaking_news,
             'homeArticle'=>$homeArticle]);
     }
 

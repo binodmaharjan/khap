@@ -39,7 +39,8 @@ class ArticleController extends Controller
             'publish',
             'feature_image',
             'home_page',
-            'main_link');
+            'main_link',
+            'breaking_news');
 
     //    dd($input);
         $this->validate($request, [
@@ -50,6 +51,7 @@ class ArticleController extends Controller
             'feature_image'=>'required|image',
             'home_page'=>'required',
             'main_link'=>'required',
+            'breaking_news'=>'required'
         ]);
 
         $filename = $input['feature_image']->store('features');
@@ -61,6 +63,7 @@ class ArticleController extends Controller
         $article->feature_image=$filename;
         $article->home_page=$input['home_page'];
         $article->main_link=$input['main_link'];
+        $article->breaking_news=$input['breaking_news'];
         $article->save();
 
         return redirect()->route('admin_articles')->with('status', 'New article successfully added.');
@@ -83,7 +86,8 @@ class ArticleController extends Controller
             'publish',
             'feature_image',
             'home_page',
-            'main_link');
+            'main_link',
+            'breaking_news');
 
         $this->validate($request, [
             'title' => 'required|max:255|',
@@ -93,6 +97,7 @@ class ArticleController extends Controller
             'feature_image'=>'required|image',
             'home_page'=>'required',
             'main_link'=>'required',
+            'breaking_news'=>'required'
         ]);
 
         $article = Article::find($input['id']);
@@ -106,6 +111,7 @@ class ArticleController extends Controller
         $article->home_page=$input['home_page'];
         $article->feature_image=$filename;
         $article->main_link=$input['main_link'];
+        $article->breaking_news=$input['breaking_news'];
         $article->save();
 
         return redirect()->route('admin_articles')->with('status', 'article is updated.');

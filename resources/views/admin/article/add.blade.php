@@ -82,6 +82,14 @@
         </div>
 
         <div class="form-group">
+            <label for="name" class="col-md-4 control-label col-left"></label>
+            <div class="col-md-5">
+                <input type="hidden" name="breaking_news" value="0">
+                <input type="checkbox" name="breaking_news" value="1" > Breaking news<br>
+            </div>
+        </div>
+
+        <div class="form-group">
             <label for="name" class="col-md-4 control-label col-left"> Image</label>
 
             <div class="col-md-6">

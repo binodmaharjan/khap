@@ -1,3 +1,6 @@
+
+@if(!empty($breaking_news))
+
 <section>
     <div class="container" style="
     margin-top: 18px;
@@ -11,11 +14,11 @@
                 <div class="marquee-top" role="alert">
                     <marquee>
                         <div class="breaking-news">
-                            <a href="#">
 
-                                काठमाडौं नेपालको केन्द्रीय राजधानी शहर तथा मुलुककै पहिलो महानगर पनि हो ।</a>
-                            <a href="#">
-                                यस महानगरको उपनगरको रुपमा रहेका दुई ठूला शहरहरु मध्ये</a>
+                            @foreach($breaking_news as $news)
+                                <a href="{{route('article_post',array('id'=>$news->id))}}">{!! $news->title !!}</a>
+                                @endforeach
+
 
                         </div></marquee>
                 </div>
@@ -23,3 +26,5 @@
         </div>
     </div>
 </section>
+
+    @endif
