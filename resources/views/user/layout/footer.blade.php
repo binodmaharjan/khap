@@ -37,13 +37,16 @@
                         {{--</ul>--}}
                     </div>
                      <div class="col-md-4">
-                        <h4>संपर्क</h4>
+                        {{--<h4>संपर्क</h4>--}}
                         <ul>
                             <li>ललितपुर महानगरपालिका </li>
                             <li>३ नं. वडा कार्यालय </li>
                             <li>पुल्चोक, ललितपुर </li>
-                            <li><a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d914.4773039619241!2d85.3149311!3d27.6777106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19cb158b4451%3A0xd25227bf6a248c11!2sAksheshwor+Mahavihar%2C+Patan+44600!5e1!3m2!1sen!2snp!4v1499495543029" target="_blank"><img alt="" src="{{asset('src/location.png')}}" style="height:24px; width:24px">गुगल नक्सामा स्थान</a></li>
-
+                            <li>०१-५५२८१८८  </li>
+                            <li>
+                              {{--<img src="{{asset('src/location.png')}}" width="16px"/>--}}
+                                <a href="https://www.google.com/maps/place/lmcity+ward+3/@27.6776364,85.3127984,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb19cb0d14573d:0xe04f345f83867b6e!8m2!3d27.6776364!4d85.3149871?hl=en-US" target="_blank">गुगल नक्सामा स्थान</a></li>
+                                {{--<a href="https://www.google.com/maps/place/lmcity+ward+3/@27.6775695,85.3134636,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb19cb0d14573d:0xe04f345f83867b6e!8m2!3d27.6775695!4d85.3156523?hl=en-AU">गुगल नक्सामा स्थान</a></li>--}}
                             <li>इमेल: lmcity.ward3@gmail.com</li>
                             
                         </ul>
@@ -52,7 +55,7 @@
                         <p class="footer-last-text">
                         सर्वाधिकार ©२०१७
                         {{--<span class="pull-right footer-develop-text">डेवेलोभ : <a href="#"> बेटा इन्फर्मेसन टेक्नोलोजी--}}
-                        </a></span>
+                        </p></span>
                     </div>
 
                 </div>

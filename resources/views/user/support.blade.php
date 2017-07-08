@@ -23,9 +23,9 @@
                                     {{ csrf_field() }}
 
                                     <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                                        <label for="name" class="col-md-4 control-label col-left">Full Name</label>
+                                        <label for="name" class="col-md-4 control-label col-left">पुरा नाम *</label>
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-8">
                                             <input id="name" type="text" class="form-control" name="name"
                                                    value="{{ old('name') }}" required autofocus>
 
@@ -37,9 +37,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                        <label for="name" class="col-md-4 control-label col-left">Email</label>
+                                        <label for="name" class="col-md-4 control-label col-left">ईमेल *</label>
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-8">
                                             <input id="name" type="email" class="form-control" name="email"
                                                    value="{{ old('email') }}" required autofocus>
 
@@ -51,9 +51,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
-                                        <label for="name" class="col-md-4 control-label col-left">Phone</label>
+                                        <label for="name" class="col-md-4 control-label col-left">फोन *</label>
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-8">
                                             <input id="name" type="text" class="form-control" name="phone"
                                                    value="{{ old('phone') }}" required autofocus>
 
@@ -65,9 +65,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group{{ $errors->has('subject') ? ' has-error' : '' }}">
-                                        <label for="name" class="col-md-4 control-label col-left">Subject</label>
+                                        <label for="name" class="col-md-4 control-label col-left">बिषय *</label>
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-8">
                                             <input id="name" type="text" class="form-control" name="subject"
                                                    value="{{ old('subject') }}" required autofocus>
 
@@ -81,9 +81,9 @@
 
 
                                     <div class="form-group">
-                                        <label for="name" class="col-md-4 control-label col-left"> File</label>
+                                        <label for="name" class="col-md-4 control-label col-left"> फाइल *</label>
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-8">
                                             <input type="file" name="file" id="file-1"
                                                    data-multiple-caption="{count} files selected" multiple="multiple">
 
