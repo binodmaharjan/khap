@@ -13,7 +13,7 @@
                      <h4>{{$member->position}}</h4>
                     <p><strong>{{$member->email}}</strong><p>
                      <p><strong>{{$member->phone}}</strong><p>
-                    <a  href="{{route('staffs')}}" class="size-mantain"><i>अन्य​ कर्मचारीहरु</i></a>
+                    <a  href="{{route('staffs')}}" class="size-mantain"><i>अन्य कर्मचारीहरु </i></a>
                 </div>
                 </div>
                    </div>

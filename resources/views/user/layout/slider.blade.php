@@ -6,7 +6,7 @@
 
                         <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line carosel-slider-top" data-ride="carousel" data-pause="hover" data-interval="5000">
 
-                           <!-- <ol class="carousel-indicators">
+                            <ol class="carousel-indicators">
 
 
                                @if(count($slider))
@@ -17,7 +17,7 @@
                                    @endif
 
 
-                            </ol> -->
+                            </ol>
 
                             <!-- Wrapper For Slides -->
                             <div id="bootstrap-touch-slider" role="listbox">
