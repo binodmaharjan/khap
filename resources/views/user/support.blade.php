@@ -15,7 +15,7 @@
                     <div class="col-md-9 widget-sidebar">
                         <div class="widget widget_comments noShadow">
                             <h3 class="widget-title">फारम भरेर बुझाउनुहोस  </h3>
-                            <div class="widget-inner staffSlider">
+                            <div class="widget-inner">
 
                                 <form class="form-horizontal" role="form" method="POST"
                                       action="{{ route('user_support_store') }}" enctype="multipart/form-data"
@@ -23,7 +23,7 @@
                                     {{ csrf_field() }}
 
                                     <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                                        <label for="name" class="col-md-4 control-label col-left">पुरा नाम *</label>
+                                        <label for="name" class="col-md-4 control-label">पुरा नाम *</label>
 
                                         <div class="col-md-8">
                                             <input id="name" type="text" class="form-control" name="name"
@@ -37,7 +37,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                        <label for="name" class="col-md-4 control-label col-left">ईमेल *</label>
+                                        <label for="name" class="col-md-4 control-label">ईमेल *</label>
 
                                         <div class="col-md-8">
                                             <input id="name" type="email" class="form-control" name="email"
@@ -51,7 +51,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
-                                        <label for="name" class="col-md-4 control-label col-left">फोन *</label>
+                                        <label for="name" class="col-md-4 control-label">फोन *</label>
 
                                         <div class="col-md-8">
                                             <input id="name" type="text" class="form-control" name="phone"
@@ -65,7 +65,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group{{ $errors->has('subject') ? ' has-error' : '' }}">
-                                        <label for="name" class="col-md-4 control-label col-left">बिषय *</label>
+                                        <label for="name" class="col-md-4 control-label">बिषय *</label>
 
                                         <div class="col-md-8">
                                             <input id="name" type="text" class="form-control" name="subject"
@@ -81,7 +81,7 @@
 
 
                                     <div class="form-group">
-                                        <label for="name" class="col-md-4 control-label col-left"> फाइल *</label>
+                                        <label for="name" class="col-md-4 control-label"> फाइल *</label>
 
                                         <div class="col-md-8">
                                             <input type="file" name="file" id="file-1"
@@ -96,7 +96,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="name" class="col-md-4 control-label col-left"></label>
+                                        <label for="name" class="col-md-4 control-label"></label>
                                         <div class="col-md-5">
                                             <button type="submit" class="btn btn-primary" style=" margin-bottom: 60px;">
                                                 Submit
@@ -123,11 +123,10 @@
                             </div>
                         </div>
                     </div>
-
-                    @include('user.layout.mainlink')
-
+                @include('user.layout.mainlink')
                 </div>
             </div>
+             
         </div>
 
     </section>
