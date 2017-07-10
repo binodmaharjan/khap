@@ -31,7 +31,7 @@
 
                 <tr>
                     <td> {{ ++$counts }}</td>
-                    <td><img src="{{storage_path('uploads/'.$slider->path)}}" height="50px"></td>
+                    <td><img src="{{asset('uploads/'.$slider->path)}}" height="50px"></td>
                     <td><a href="{{route('admin_slider_edit',array($slider->id))}}"> {{$slider->title}}</a></td>
                     <td>
                         <a href="{{asset('downloads/'.$slider->path)}}"> <button ><i class="fa fa-download" aria-hidden="true"> </i> Download</button></a>
