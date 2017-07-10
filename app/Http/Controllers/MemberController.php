@@ -110,7 +110,7 @@ class MemberController extends Controller
     }
 
     private function deleteFile($path){
-        $file_path= public_path($path);
+        $file_path= storage_path($path);
         if (file_exists($file_path)) {
             File::delete($file_path);
         }

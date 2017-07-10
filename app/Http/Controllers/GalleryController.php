@@ -33,6 +33,7 @@ class GalleryController extends Controller
 
 
 
+
         $input = Input::only('title','file','desc');
 
         $this->validate($request, [
@@ -42,6 +43,7 @@ class GalleryController extends Controller
         ]);
 
         $filename = $input['file']->store('gallery');
+
         $photo =new Gallery();
         $photo->title = $input['title'];
         $photo->desc=$input['desc'];
@@ -88,7 +90,7 @@ class GalleryController extends Controller
     }
 
     private function deleteFile($path){
-        $file_path= public_path($path);
+        $file_path= storage_path($path);
         if (file_exists($file_path)) {
             File::delete($file_path);
         }
