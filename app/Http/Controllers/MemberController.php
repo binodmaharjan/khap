@@ -76,7 +76,7 @@ class MemberController extends Controller
         $this->validate($request, [
             'name' => 'required|max:255|',
             'position' => 'required|max:255|',
-            'position' => 'required|max:10|',
+            'position' => 'required|max:255|',
             'email' => 'required',
             'file'=>'required|image'
         ]);
