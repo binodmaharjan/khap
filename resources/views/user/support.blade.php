@@ -123,10 +123,10 @@
                             </div>
                         </div>
                     </div>
-
+                @include('user.layout.mainlink')
                 </div>
             </div>
-              @include('user.layout.mainlink')
+             
         </div>
 
     </section>
