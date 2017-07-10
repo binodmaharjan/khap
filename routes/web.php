@@ -125,6 +125,26 @@ Route::post('/gunaso/store', 'GunasoController@store')->name('gunaso_store');
 Route::get('/downloads','UserController@download')->name('downloads');
 
 
+Route::get('storage/{cat}/{filename}', function ($cat,$filename)
+{
+    $path = storage_path('uploads/' . $cat . '/' . $filename);
+
+   // dd($path);
+
+    if (!File::exists($path)) {
+        abort(404);
+    }
+
+    $file = File::get($path);
+    $type = File::mimeType($path);
+
+    $response = Response::make($file, 200);
+    $response->header("Content-Type", $type);
+
+    return $response;
+});
+
+
 Route::get('downloads/{cat}/{file_name}', function ($cat = null, $file_name = null) {
     $path = public_path('uploads/' . $cat . '/' . $file_name);
     //  dd($path);
