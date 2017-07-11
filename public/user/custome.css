@@ -469,7 +469,9 @@ ul.tabs li {
 ul.tabs li:first-child {
     padding: 0;
 }
-
+  .logo-main .right {
+    padding: 20px 10px;
+}
 @media screen and (max-width: 736px) {
     ul.tabs li {
         display: block;
@@ -512,22 +514,30 @@ ul.tabs li:first-child {
     }
 }
 @media (max-width: 415px) {
-
+    .image-one {
+        margin-bottom:5px;
+}
+    .title-aside-logo {
+        font-size: 11px;
+    }
     .title-aside-logo {
         padding: 0px 10px 10px 10px;
     }
+    .logo-main .right {
+    padding: 0px 10px 0px 0px;
+    font-size: 9px;
+    margin-top: 10px;
+}
 
 }
 @media (max-width: 321px) {
-    .title-aside-logo {
-        font-size: 16px;
-    }
+
     .image-one {
         width: 65px;
         height: auto;
     }
     .header-calendar {
-        font-size: 9px;
+        font-size: 7px;
     }
 }
 /*end style*/
