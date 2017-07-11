@@ -37,18 +37,14 @@ class MemberController extends Controller
         $this->validate($request, [
             'name' => 'required|max:255|',
             'position' => 'required|max:255|',
-            'position' => 'required|max:10|',
+            'position' => 'required|max:255|',
             'email' => 'required',
-            'file'=>'image',
+            'file'=>'required|image',
 
         ]);
 
-        $filename='';
+        $filename = $input['file']->store('member');
 
-        if(!empty($input['file'])) {
-
-            $filename = $input['file']->store('member');
-        }
         $member =new Member();
         $member->name = $input['name'];
         $member->position = $input['position'];
@@ -103,8 +99,6 @@ class MemberController extends Controller
         $this->deleteFile('uploads/'.$report->path);
 
         $report->delete();
-
-      //  route('admin_member_edit',array($member->id))}}
 
         return redirect()->route('admin_members')->with('status', 'Your file is deleted.');
     }

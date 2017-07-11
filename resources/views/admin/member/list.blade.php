@@ -38,7 +38,7 @@
                     <td> {{ ++$counts }}</td>
                     <td> <input type="checkbox" {{$member->head ==1?'checked':''}} disabled >
                     </td>
-                    <td><img src="{{!empty($member->path)?URL::to('storage/'.$member->path):asset('src/profile.jpg')}}" height="50px"></td>
+                    <td><img src="{{!empty($member->path)?url('storage/'.$member->path):asset('src/profile.jpg')}}" height="50px"></td>
 
                     <td><a href="{{route('admin_member_edit',array($member->id))}}"> {{$member->name}}</a></td>
                     <td><a href="{{route('admin_member_edit',array($member->id))}}"> {{$member->position}}</a></td>
