@@ -34,7 +34,7 @@
 
                 <tr>
                     <td> {{ ++$counts }}</td>
-                    <td><img src="{{asset('uploads/'.$article->feature_image)}}" height="50px"></td>
+                    <td><img src="{{url('storage/'.$article->feature_image)}}" height="50px"></td>
 
                     <td><a href="{{route('admin_article_edit',array($article->id))}}"> {{$article->title}}</a></td>
                     <td>
