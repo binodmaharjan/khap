@@ -30,7 +30,7 @@
                                     <div class="item {{++$count}} {{$count==1?'active':''}}" >
 
                                         <!-- Slide Background -->
-                                        <img src="{{url('uploads/'.$slider->path)}}" alt="Bootstrap Touch Slider" class="slide-image">
+                                        <img src="{{url('storage/'.$slider->path)}}" alt="Bootstrap Touch Slider" class="slide-image">
                                         <div class="bs-slider-overlay"></div>
 
                                         <div class="container">

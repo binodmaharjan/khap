@@ -6,7 +6,7 @@
                 <div class="img-responsive img-circle">
 
 
-                    <img src="{{ !empty($member->path)?url('uploads/'.$member->path):url('src/profile.jpg')}}">
+                    <img src="{{ !empty($member->path)?url('storage/'.$member->path):url('src/profile.jpg')}}">
 
           <div class="text-center-one staffDetails">
                     <h3>{{$member->name}}</h3>

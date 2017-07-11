@@ -38,7 +38,9 @@ class UserController extends Controller
             ->orderBy('created_at','DESC')
             ->get();
 
-
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
 
         return view('user.main', ['slider' => $slider,
             'member' => $member,
@@ -47,6 +49,7 @@ class UserController extends Controller
             'notice' => $notice,
             'news' => $news,
             'menu' => $menu,
+            'main_link'=>$main_link,
             'breaking_news'=>$breaking_news,
             'homeArticle'=>$homeArticle]);
     }
