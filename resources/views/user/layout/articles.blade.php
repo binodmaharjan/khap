@@ -11,7 +11,7 @@
                      <div class="aboutUs postDetails">
                     <h3 class="heading-title-paragraph">{{$article->title}}</h3>
                     <div class="paragraph-link floatRight postDate">{!! Patro::miti($article->created_at) !!}</div>
-                    <img alt="Title goes here"  src=" {{url('uploads/'.$article->feature_image)}}">
+                    <img alt="Title goes here"  src=" {{url('storage/'.$article->feature_image)}}">
                    {!! $article->description !!}
 
                 </div>
