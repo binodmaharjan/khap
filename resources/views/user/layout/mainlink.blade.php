@@ -19,7 +19,7 @@
 
                     @foreach($main_link as $main_link)
                         <li>
-                            <a href="{{route('article_post',array('id'=>$main_link->id))}}">{!! $main_link->title !!}</a>
+                            <a href="{{route('article_slug',array('slug'=>$main_link->slug))}}">{!! $main_link->title !!}</a>
                         </li>
                     @endforeach
                     @endforelse
