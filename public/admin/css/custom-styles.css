@@ -8,8 +8,18 @@ http://creativecommons.org/licenses/by/3.0/
 /*----------------------------------------------
     COMMON  STYLES    
 ------------------------------------------------*/
+@font-face {
+    font-family: 'Mercantile';
+    src: url('MercantileNormal.eot');
+    src: url('MercantileNormal.eot?#iefix') format('embedded-opentype'),
+    url('MercantileNormal.woff') format('woff'),
+    url('MercantileNormal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Mercantile ' ;
     background: #323232;
 }
 
