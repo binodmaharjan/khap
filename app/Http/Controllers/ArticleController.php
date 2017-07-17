@@ -48,19 +48,24 @@ class ArticleController extends Controller
             'description' => 'required',
             'category_id' => 'required',
             'publish' => 'required',
-            'feature_image'=>'required|image',
+            'feature_image'=>'image',
             'home_page'=>'required',
             'main_link'=>'required',
             'breaking_news'=>'required'
         ]);
 
-        $filename = $input['feature_image']->store('features');
+
         $article =new Article();
         $article->title = $input['title'];
         $article->description = $input['description'];
         $article->category_id = $input['category_id'];
         $article->publish = $input['publish'];
-        $article->feature_image=$filename;
+
+        if(!empty($input['feature_image'])) {
+            $filename = $input['feature_image']->store('features');
+            $article->feature_image=$filename;
+        }
+
         $article->home_page=$input['home_page'];
         $article->main_link=$input['main_link'];
         $article->breaking_news=$input['breaking_news'];
@@ -94,7 +99,7 @@ class ArticleController extends Controller
             'description' => 'required',
             'category_id' => 'required',
             'publish' => 'required',
-            'feature_image'=>'required|image',
+            'feature_image'=>'image',
             'home_page'=>'required',
             'main_link'=>'required',
             'breaking_news'=>'required'
@@ -102,14 +107,21 @@ class ArticleController extends Controller
 
         $article = Article::find($input['id']);
 
-        $this->deleteFile('uploads/'.$article->feature_image);
-        $filename = $input['feature_image']->store('features');
+
+
         $article->title = $input['title'];
         $article->description = $input['description'];
         $article->category_id = $input['category_id'];
         $article->publish = $input['publish'];
         $article->home_page=$input['home_page'];
-        $article->feature_image=$filename;
+
+        if(!empty($input['feature_image']))     {
+            $this->deleteFile('uploads/'.$article->feature_image);
+            $filename = $input['feature_image']->store('features');
+            $article->feature_image=$filename;
+        }
+
+
         $article->main_link=$input['main_link'];
         $article->breaking_news=$input['breaking_news'];
         $article->save();
