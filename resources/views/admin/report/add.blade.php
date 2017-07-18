@@ -5,7 +5,12 @@
 
 @section('content')
 
-    <form class="form-horizontal" role="form" method="POST" action="{{ route('admin_report_store') }}" enctype="multipart/form-data">
+    <form class="form-horizontal"
+          role="form" method="POST"
+          action="{{ route('admin_report_store') }}"
+
+          id="my-awesome-dropzone"
+          enctype="multipart/form-data">
         {{ csrf_field() }}
 
         <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
@@ -36,11 +41,22 @@
             </div>
         </div>
 
+
         <div class="form-group">
             <label for="name" class="col-md-4 control-label col-left"></label>
 
             <div class="col-md-6">
-                <input type="file" name="file" id="file-1" data-multiple-caption="{count} files selected"  multiple="multiple">
+
+                {{--<div class="dropzone dz-clickable">--}}
+
+
+
+                    {{--<input type="file" name = 'file' multiple="multiple" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;">--}}
+                    <input type="file" name="file[]" id="file-1" data-multiple-caption="{count} files selected"  multiple="multiple">
+
+
+
+                {{--</div>--}}
 
                 @if ($errors->has('file'))
                     <span class="help-block">
@@ -49,6 +65,8 @@
                 @endif
             </div>
         </div>
+
+
 
 
 

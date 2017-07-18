@@ -39,7 +39,14 @@ class ReportController extends Controller
             'file' => 'required',
         ]);
 
-        $filename = $input['file']->store('reports');
+//        dd($input['file']);
+
+        if(count($input['file'])){
+            foreach($input['file'] as $file){
+                $filename = $file->store('reports');
+            }
+        }
+
         $report =new Report();
         $report->title = $input['title'];
         $report->path=$filename;

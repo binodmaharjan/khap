@@ -8,6 +8,7 @@ use App\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use File;
+use Illuminate\Support\Str;
 
 class ArticleController extends Controller
 {
@@ -34,6 +35,7 @@ class ArticleController extends Controller
 
 
         $input = Input::only('title',
+            'slug',
             'description',
             'category_id',
             'publish',
@@ -45,6 +47,7 @@ class ArticleController extends Controller
     //    dd($input);
         $this->validate($request, [
             'title' => 'required|max:255|',
+            'slug' => 'required|max:255|',
             'description' => 'required',
             'category_id' => 'required',
             'publish' => 'required',
@@ -60,6 +63,7 @@ class ArticleController extends Controller
         $article->description = $input['description'];
         $article->category_id = $input['category_id'];
         $article->publish = $input['publish'];
+        $article->slug=Str::slug($input['slug']);
 
         if(!empty($input['feature_image'])) {
             $filename = $input['feature_image']->store('features');
@@ -85,6 +89,7 @@ class ArticleController extends Controller
 
 
         $input = Input::only('id',
+            'slug',
             'title',
             'description',
             'category_id',
@@ -96,6 +101,7 @@ class ArticleController extends Controller
 
         $this->validate($request, [
             'title' => 'required|max:255|',
+            'slug' => 'required|max:255|',
             'description' => 'required',
             'category_id' => 'required',
             'publish' => 'required',
@@ -114,6 +120,7 @@ class ArticleController extends Controller
         $article->category_id = $input['category_id'];
         $article->publish = $input['publish'];
         $article->home_page=$input['home_page'];
+        $article->slug=Str::slug($input['slug']);
 
         if(!empty($input['feature_image']))     {
             $this->deleteFile('uploads/'.$article->feature_image);

@@ -64,7 +64,33 @@ class UserController extends Controller
     {
         $article = Article::findOrfail($id);
         $menu = Menu::orderBy('order', 'ASC')->get();
-        return view('user.post', ['menu' => $menu, 'article' => $article]);
+
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
+
+        return view('user.post', ['menu' => $menu,
+            'main_link'=>$main_link,
+            'article' => $article]);
+    }
+
+    public function slug($slug)
+    {
+        $article = Article::where('slug',$slug)->first();
+
+        if(empty($article)){
+            abort(404);
+        }
+
+        $menu = Menu::orderBy('order', 'ASC')->get();
+
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
+
+        return view('user.post', ['menu' => $menu,
+            'main_link'=>$main_link,
+            'article' => $article]);
     }
 
 
