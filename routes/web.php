@@ -120,10 +120,13 @@ Route::get('/news', 'UserController@category')->name('news');
 Route::get('/support', 'SupportController@create')->name('user_support_create');
 Route::post('/support/store', 'SupportController@store')->name('user_support_store');
 Route::get('/article/{id}/post', 'UserController@post')->name('article_post');
-Route::get('/{slug}', 'UserController@slug')->name('article_slug');
+
 Route::get('/gunaso', 'GunasoController@gunaso')->name('gunaso');
 Route::post('/gunaso/store', 'GunasoController@store')->name('gunaso_store');
 Route::get('/downloads','UserController@download')->name('downloads');
+Route::get('/bhatta','UserController@bhatta')->name('brida_bhatta');
+
+
 
 
 Route::get('storage/{cat}/{filename}', function ($cat,$filename)
@@ -156,4 +159,8 @@ Route::get('downloads/{cat}/{file_name}', function ($cat = null, $file_name = nu
     }
 
 });
+
+Route::get('/{slug}', 'UserController@slug')->name('article_slug');
+
+
 

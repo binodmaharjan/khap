@@ -7,11 +7,11 @@
         <div class="row">
             <div class="col-md-12">
 
-                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » brida vatta namawoli</div>
+                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » बृदा भत्ता नामावली</div>
 
                 <div class="col-md-9 widget-sidebar">
                     <div class="aboutUs postDetails">
-                        <h3 class="heading-title-paragraph">Test</h3>
+                        <h3 class="heading-title-paragraph">बृदा भत्ता नामावली</h3>
                         <br>
 
 

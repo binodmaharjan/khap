@@ -63,27 +63,5 @@ class BhattaController extends Controller
 
 
 
-
-
-
-//        $article =new Bhatta();
-//        $article->title = $input['title'];
-//        $article->description = $input['description'];
-//        $article->category_id = $input['category_id'];
-//        $article->publish = $input['publish'];
-//        $article->slug=Str::slug($input['slug']);
-//
-//        if(!empty($input['feature_image'])) {
-//            $filename = $input['feature_image']->store('features');
-//            $article->feature_image=$filename;
-//        }
-//
-//        $article->home_page=$input['home_page'];
-//        $article->main_link=$input['main_link'];
-//        $article->breaking_news=$input['breaking_news'];
-//        $article->save();
-
-      //  return redirect()->route('admin_articles')->with('status', 'New article successfully added.');
-
     }
 }
