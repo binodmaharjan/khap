@@ -29,10 +29,21 @@
             plugins: "link textcolor table ",
             toolbar: [
                 'undo redo | styleselect | bold italic |  alignleft aligncenter alignright',
-                'forecolor link table'
-            ]
+                'forecolor link table | sizeselect  |   fontsizeselect | fontselect'
+            ],
+            fontsize_formats: "8pt 10pt 11pt 12pt 14pt 18pt 24pt 36pt",
+            style_formats: [
+                { title: 'Inline Right', inline: 'span', styles: { float: 'right' } },
+                { title: 'Inline Left',inline: 'span', styles: { float: 'left' } }
+                ]
+
 
             });</script>
+
+    <script src="{{asset('dropzone/dropzone.js')}}"></script>
+    <link href="{{ asset('dropzone/basic.css') }}" rel="stylesheet">
+
+
 
 
 </head>

@@ -5,7 +5,7 @@
             <div class="col-md-8 padding-clear">
                 <div class="aboutUs">
                     <h3 class="heading-title-paragraph">{!! $homeArticle->title !!}</h3>
-                    {!! str_limit($homeArticle->description, 4*400) !!} <span class="paragraph-link"><a href="{{route('article_post',array('id'=>$homeArticle->id))}}">पुरा पढ्नुहोस</a></span>
+                    {!! str_limit($homeArticle->description, 4*400) !!} <span class="paragraph-link"><a href="{{route('article_slug',array('slug'=>$homeArticle->slug))}}">पुरा पढ्नुहोस</a></span>
                     </p>
 
                 </div>

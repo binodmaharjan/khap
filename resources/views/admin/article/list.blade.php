@@ -34,7 +34,13 @@
 
                 <tr>
                     <td> {{ ++$counts }}</td>
-                    <td><img src="{{url('storage/'.$article->feature_image)}}" height="50px"></td>
+                    <td>
+                        @if(!empty($article->feature_image))
+                        <img src="{{url('storage/'.$article->feature_image)}}" height="50px">
+                    @else
+                            <i class="fa fa-picture-o fa-5x" aria-hidden="true"></i>
+                        @endif
+                    </td>
 
                     <td><a href="{{route('admin_article_edit',array($article->id))}}"> {{$article->title}}</a></td>
                     <td>
@@ -51,7 +57,7 @@
                         </a>
                         {{--<a href="{{route('admin_article_delete',array($article->id))}}" onclick="return confirm('Are you sure you want to delete this item?');">  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></a>--}}
                         <a>
-                            <button class="clipboard" data-clipboard-text="{{route('article_post',array('id'=>$article->id))}}"><i
+                            <button class="clipboard" data-clipboard-text="{{route('article_slug',array('id'=>$article->slug))}}"><i
                                         class="fa fa-clipboard" aria-hidden="true">Copy link</i></button>
                         </a>
                     </td>

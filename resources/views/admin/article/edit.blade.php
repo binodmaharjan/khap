@@ -25,6 +25,20 @@
             </div>
         </div>
 
+        <div class="form-group{{ $errors->has('slug') ? ' has-error' : '' }}">
+            <label for="name" class="col-md-4 control-label col-left">Slug</label>
+
+            <div class="col-md-6">
+                <input id="name" type="text" class="form-control" name="slug" value="{{ $article->slug }}" required autofocus>
+
+                @if ($errors->has('slug'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('slug') }}</strong>
+                    </span>
+                @endif
+            </div>
+        </div>
+
         <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
             <label for="name" class="col-md-4 control-label col-left">Description</label>
 
