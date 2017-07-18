@@ -26,7 +26,7 @@
 
     <script src="{{asset('editor/tinymce/js/tinymce/tinymce.min.js')}}"></script>
     <script>tinymce.init({ selector:'textarea',
-            plugins: "link textcolor table",
+            plugins: "link textcolor table ",
             toolbar: [
                 'undo redo | styleselect | bold italic |  alignleft aligncenter alignright',
                 'forecolor link table | sizeselect  |   fontsizeselect | fontselect'
@@ -50,4 +50,4 @@
 
 <body>
 
-@include('admin.top')
+{{--@include('admin.top')--}}

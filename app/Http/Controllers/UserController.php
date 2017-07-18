@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Bhatta;
 use App\Member;
 use App\Menu;
 use App\MyLibs\Helpers;
@@ -102,6 +103,19 @@ class UserController extends Controller
         $member = Member::where('head', '0')->get();
         return view('user.staffs', ['main_member' => $main_member,
             'member' => $member,
+            'menu' => $menu]);
+    }
+
+    public function bhatta()
+    {
+
+        $menu = Menu::orderBy('order', 'ASC')->get();
+        $main_member = Member::where('head', '1')->first();
+        $member = Member::where('head', '0')->get();
+        $bhatta = Bhatta::orderBy('memberName','ASC')->paginate(20);
+        return view('user.bhatta', ['main_member' => $main_member,
+            'member' => $member,
+            'bhatta' => $bhatta,
             'menu' => $menu]);
     }
 
