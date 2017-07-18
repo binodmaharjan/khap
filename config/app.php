@@ -176,6 +176,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
       //  Barryvdh\Debugbar\ServiceProvider::class,
 
 
@@ -230,6 +231,7 @@ return [
     //    'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
         'Patro' => App\MyLibs\Helpers::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
     ],
 
