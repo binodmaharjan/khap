@@ -20,16 +20,23 @@
                         <table id="customers">
                             <tbody><tr>
                                 <th>Name</th>
-                                <th>Citizenship</th>
+                                <th>Age</th>
                                 <th>Gender</th>
+                                <th>Citizenship</th>
+                                <th>Member id</th>
+                                <th>Type</th>
+
                             </tr>
 
                             @foreach($bhatta as $data)
 
                             <tr>
                                 <td>{{$data->memberName}}</td>
+                                <td>{{$data->age}}</td>
+                                <td>{{$data->gender}}</td>
                                 <td>{{$data->citizenship}}</td>
                                 <td>{{$data->gender}}</td>
+                                <td>{{$data->type}}</td>
                             </tr>
 
                             @endforeach
