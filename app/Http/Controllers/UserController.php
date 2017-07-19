@@ -127,6 +127,9 @@ class UserController extends Controller
 
     public function download()
     {
+
+
+
         $menu = Menu::orderBy('order', 'ASC')->get();
 
         $report = Report::all();

@@ -42,11 +42,14 @@
         <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
             <label for="name" class="col-md-4 control-label col-left">Description</label>
 
+
             <div class="col-md-10">
-                <textarea name="description" cols="50" rows="10" class="form-control" value="{{ old('description') }}" >
+
+                <textarea name="description" cols="50" rows="20" class="form-control" value="{{ old('description') }}" >
                     @php echo htmlentities($article->description) @endphp
                     {{--{!! $article->description !!}--}}
                 </textarea>
+
                 {{--<input id="name" type="text" class="form-control" name="position" value="{{ old('position') }}" required autofocus>--}}
 
                 @if ($errors->has('description'))
