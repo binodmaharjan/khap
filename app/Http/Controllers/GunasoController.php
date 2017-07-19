@@ -24,6 +24,11 @@ class GunasoController extends Controller
         return view('user.gunaso',['menu'=>$menu]);
     }
 
+    public function view($id){
+        $gunaso = Gunaso::findorFail($id);
+        return view('admin.gunaso.single',['gunaso'=>$gunaso]);
+    }
+
     public function store(Request $request){
         $input = Input::only('full_name','email','phone','type','subject','message');
         $this->validate($request, [

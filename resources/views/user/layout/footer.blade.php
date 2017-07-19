@@ -98,8 +98,8 @@ $("#otherStaffs").hide( "slow");
 
         $("#method-option").change(function() {
             console.log('selected')
-            $('#help-text').text($('option:selected').attr('data-content'));
-            $('#example-text').text($('option:selected').attr('data-example'));
+            $('#help-text').html($('option:selected').attr('data-content'));
+
         }).change();
 
 </script>

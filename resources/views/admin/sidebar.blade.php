@@ -29,15 +29,20 @@
                 </li>
 
                 <li class="{{strcmp($activeRoute,'admin_reports')==0?'active-menu':''}}">
-                    <a href="{{route('admin_reports')}}"><i class="fa fa-edit"></i> Report </a>
+                    <a href="{{route('admin_reports')}}"><i class="fa fa-edit"></i> डाउनलोदड्स  </a>
                 </li>
 
                 <li class="{{strcmp($activeRoute,'admin_members')==0?'active-menu':''}}">
-                    <a href="{{route('admin_members')}}"><i class="fa fa-user "></i> Members</a>
+                    <a href="{{route('admin_members')}}"><i class="fa fa-user "></i> वडा सदस्य​</a>
                 </li>
 
+
+                <li class="{{strcmp($activeRoute,'admin_kagajats')==0?'active-menu':''}}">
+                    <a href="{{route('admin_kagajats')}}"><i class="fa fa-edit"></i> निवेदनको लागी कागजात </a>
+
+                </li>
                 <li class="{{strcmp($activeRoute,'admin_supports')==0?'active-menu':''}}">
-                    <a href="{{route('admin_supports')}}"><i class="fa fa-edit"></i> फारम </a>
+                    <a href="{{route('admin_supports')}}"><i class="fa fa-edit"></i> निवेदनहरू </a>
                 </li>
 
 

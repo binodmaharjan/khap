@@ -50,7 +50,6 @@
                     {{--{!! $article->description !!}--}}
                 </textarea>
 
-                {{--<input id="name" type="text" class="form-control" name="position" value="{{ old('position') }}" required autofocus>--}}
 
                 @if ($errors->has('description'))
                     <span class="help-block">

@@ -45,8 +45,8 @@
 
 
                     <td>
-                        <a href="{{URL::to('storage/'.$support->path)}}" target="_blank"> <button ><i class="fa fa-download" aria-hidden="true"> </i> View</button></a>
-                        <a href="{{url('downloads/'.$support->path)}}"> <button ><i class="fa fa-download" aria-hidden="true"> </i> Download</button></a>
+                        {{--<a href="{{URL::to('storage/'.$support->path)}}" target="_blank"> <button ><i class="fa fa-download" aria-hidden="true"> </i> View</button></a>--}}
+                        <a href="{{route('admin_supports_download',array($support->path))}}"> <button ><i class="fa fa-download" aria-hidden="true"> </i> Download</button></a>
                          <a href="{{route('admin_support_delete',array($support->id))}}" onclick="return confirm('Are you sure you want to delete this item?');">  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></a>
                     </td>
 

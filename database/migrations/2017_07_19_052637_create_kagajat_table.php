@@ -15,6 +15,8 @@ class CreateKagajatTable extends Migration
     {
         Schema::create('kagajat', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->text('description');
             $table->timestamps();
         });
     }

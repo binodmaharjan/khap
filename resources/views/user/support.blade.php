@@ -10,8 +10,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
-
                     <div class="col-md-9 widget-sidebar">
                         <div class="widget widget_comments noShadow">
                             <h3 class="widget-title">फारम भरेर बुझाउनुहोस </h3>
@@ -31,8 +29,8 @@
 
                                             @if ($errors->has('name'))
                                                 <span class="help-block">
-                        <strong>{{ $errors->first('title') }}</strong>
-                    </span>
+                                           <strong>{{ $errors->first('title') }}</strong>
+                                              </span>
                                             @endif
                                         </div>
                                     </div>
@@ -68,19 +66,34 @@
                                         <label for="name" class="col-md-4 control-label">बिषय *</label>
 
                                         <div class="col-md-8">
-                                            <select id="method-option" name="method" required>
-                                                <option name="method" value="Choose method" data-content="The web, or email?" data-type="default" data-example="Choose your method">Choose method</option>
-                                                <option name="method" value="email" data-content="Enter your website address below" data-type="email" data-example="e.g. stuff@yourdomain.com">Email</option>
-                                                <option name="method" value="web" data-content="Enter your email below" data-type="web" data-example="e.g. www.yourdomain.com">Web</option>
+                                            <select id="method-option" class="form-control" name ='subject' >
+
+
+                                                <option name="method" value=""
+                                                        data-content="बिषय छान्नुहोस "
+                                                      >-- छान्नुहोस --
+                                                </option>
+
+                                                @if(!empty($kagajat))
+                                                    @foreach($kagajat as $data)
+
+                                                    <option name="method" value="{{$data->title }}"
+                                                            data-content="{{ $data->description }}"
+                                                           >{{$data->title }}
+                                                    </option>
+                                                    @endforeach
+
+                                                    @endif
                                             </select>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="name" class="col-md-4 control-label">चाहिने कागजातहरू</label>
-                                        <label for="name" class="col-md-6 control-label" id="help-text"></label>
+                                        <label for="name" class="col-md-4 control-label">चाहिने कागजातहरू*</label>
+                                        <div class="col-md-8">
+                                        <label for="name" class="form-control  w3-border"  id="help-text"></label>
 
-
+                                        </div>
                                     </div>
 
 
@@ -88,7 +101,7 @@
                                         <label for="name" class="col-md-4 control-label"> फाइल *</label>
 
                                         <div class="col-md-8">
-                                            <input type="file" name="file" id="file-1"
+                                            <input type="file" name="file[]" id="file-1"
                                                    data-multiple-caption="{count} files selected" multiple="multiple">
 
                                             @if ($errors->has('file'))
@@ -109,19 +122,6 @@
                                     </div>
                                 </form>
 
-
-                                {{--<ul class="comment mainlinks downloads">--}}
-
-                                {{--@foreach($report as $report)--}}
-                                {{--<li>--}}
-
-                                {{--<a href="{{url('downloads/'.$report->path)}}"> <i class="fa fa-file-pdf-o pdfColor" aria-hidden="true"></i> {!! $report->title !!}</a>--}}
-                                {{--<br>--}}
-                                {{--{!! Patro::miti_YY_mm_dd($report->created_at) !!}--}}
-                                {{--</li>--}}
-                                {{--@endforeach--}}
-
-                                {{--</ul>--}}
                             </div>
                         </div>
                     </div>

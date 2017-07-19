@@ -36,7 +36,9 @@
                          {{$gunaso->subject}}</td>
                     <td>{!! $gunaso->full_name !!}</td>
                     <td>
-                         <a href="{{route('admin_gunaso_delete',array($gunaso->id))}}" onclick="return confirm('Are you sure you want to delete this item?');">  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></a>
+                        <a href="{{route('admin_gunaso_view',array($gunaso->id))}}" >  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> View</button></a>
+
+                        <a href="{{route('admin_gunaso_delete',array($gunaso->id))}}" onclick="return confirm('Are you sure you want to delete this item?');">  <button ><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button></a>
                     </td>
 
                 </tr>

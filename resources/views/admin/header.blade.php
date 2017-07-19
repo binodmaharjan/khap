@@ -26,6 +26,7 @@
 
     <script src="{{asset('editor/tinymce/js/tinymce/tinymce.min.js')}}"></script>
     <script>tinymce.init({ selector:'textarea',
+            editor_deselector : "mceNoEditor",
             plugins: "link textcolor table ",
             toolbar: [
                 'undo redo | styleselect | bold italic |  alignleft aligncenter alignright',
@@ -53,7 +54,9 @@
                 ]
 
 
-            });</script>
+            });
+        tinymce.remove('#remove');
+    </script>
 
     <script src="{{asset('dropzone/dropzone.js')}}"></script>
     <link href="{{ asset('dropzone/basic.css') }}" rel="stylesheet">

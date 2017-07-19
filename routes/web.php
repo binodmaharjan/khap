@@ -97,6 +97,8 @@ Route::prefix('admin')->group(function () {
     Route::get('/supports', 'SupportController@index')->name('admin_supports');
     Route::get('/support/{id}/delete', 'SupportController@delete')->name('admin_support_delete');
     Route::get('/support/notification', 'SupportController@notificationClicked')->name('admin_notification_clicked');
+    Route::get('/support/{folder}/downloads', 'SupportController@download')->name('admin_supports_download');
+
     //  Route::get('/gallery','SupportController@photos')->name('admin_gallery');
 
 
@@ -106,11 +108,20 @@ Route::prefix('admin')->group(function () {
 //    Route::get('/gunaso/add', 'GunasoController@create')->name('admin_gunaso_add');
    // Route::post('/gunaso/store', 'GunasoController@store')->name('admin_gunaso_store');
     Route::get('/gunaso/{id}/delete', 'GunasoController@delete')->name('admin_gunaso_delete');
+    Route::get('/gunaso/{id}/view', 'GunasoController@view')->name('admin_gunaso_view');
 
 
      Route::get('/bhatta/add', 'BhattaController@create')->name('admin_vatta_add');
     Route::post('/bhatta/store', 'BhattaController@store')->name('admin_vatta_store');
 
+    // kagajat haru
+    // article
+    Route::get('/kagajat', 'KagajatController@index')->name('admin_kagajats');
+    Route::get('/kagajat/add', 'KagajatController@create')->name('admin_kagajat_add');
+    Route::post('/kagajat/store', 'KagajatController@store')->name('admin_kagajat_store');
+    Route::get('/kagajat/{id}/delete', 'KagajatController@delete')->name('admin_kagajat_delete');;
+    Route::get('/kagajat/{id}/edit', 'KagajatController@edit')->name('admin_kagajat_edit');
+    Route::post('kagajat/update', 'KagajatController@update')->name('admin_kagajat_update');
 
 });
 
@@ -121,7 +132,7 @@ Route::get('/', 'UserController@index')->name('main');
 Route::get('/gallery', 'UserController@photos')->name('gallery');
 Route::get('/staffs', 'UserController@staffDetails')->name('staffs');
 Route::get('/news', 'UserController@category')->name('news');
-Route::get('/support', 'SupportController@create')->name('user_support_create');
+Route::get('/nibedan', 'SupportController@create')->name('user_support_create');
 Route::post('/support/store', 'SupportController@store')->name('user_support_store');
 Route::get('/article/{id}/post', 'UserController@post')->name('article_post');
 

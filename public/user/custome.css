@@ -581,3 +581,19 @@ ul.tabs li:first-child {
     background-color: #156d20;
     color: white;
 }
+
+
+
+select option{
+    font-size: 14pt;
+}
+
+
+
+.w3-border {
+    /*border: 1px solid #ccc!important;*/
+    padding: 5pt;
+    font-weight: 500;
+    display: inline-block;
+    height: inherit;
+}

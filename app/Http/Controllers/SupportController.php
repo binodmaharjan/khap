@@ -2,15 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Kagajat;
 use App\Menu;
 use App\Notifications\SupportNotify;
 use App\Support;
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use File;
 use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Str;
+use ZipArchive;
+use RecursiveIteratorIterator;
+use RecursiveDirectoryIterator;
 
 class SupportController extends Controller
 {
@@ -18,7 +25,7 @@ class SupportController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth', ['only' => ['index', 'delete']]);
+        $this->middleware('auth', ['only' => ['index', 'delete','download']]);
         // Alternativly
       //  $this->middleware('auth', ['except' => ['index', 'show']]);
     }
@@ -52,7 +59,8 @@ class SupportController extends Controller
     public function create(){
 
         $menu = Menu::all();
-        return view('user.support',['menu'=>$menu]);
+        $kagajat= Kagajat::all();
+        return view('user.support',['menu'=>$menu,'kagajat'=>$kagajat]);
     }
 
     public function store(Request $request){
@@ -60,20 +68,31 @@ class SupportController extends Controller
        // dd('Heler');
         $input = Input::only('name','email','phone','file','subject');
 
-       //  dd($input);
+
+       $this->validate($request, [
+            'name' => 'required|max:255|',
+            'email' => 'required',
+            'phone' => 'required',
+            'subject' => 'required',
+           array(
+               'file'  => 'required|max:1024'
+           )
 
 
-        //    dd($input);
-//       $this->validate($request, [
-//            'name' => 'required|max:255|',
-//            'email' => 'required',
-//            'phone' => 'required',
-//            'subject' => 'required',
-//            'file'=>'required|image'
-//        ]);
+        ]);
 
 
-        $filename = $input['file']->store('supports');
+
+       $filename = Str::random(30);
+//       dd($filename);
+
+       foreach ($input['file'] as $file){
+
+
+       //    $file->store('nibedan');
+           $file->storeAs('nibedan/'.$filename,$file->getClientOriginalName());
+        }
+
 
 //        dd($filename);
 
@@ -85,17 +104,15 @@ class SupportController extends Controller
         $support->path=$filename;
         $support->save();
         $users = User::all();
-
+//
         Notification::send($users, new SupportNotify($support));
         return redirect()->route('main')->with('status', 'Your task has been posted. We will contact you later via phone or email');
     }
 
     public function delete($id){
         $support = Support::find($id);
-        $this->deleteFile('uploads/'.$support->path);
+        $this->deleteFile('uploads/nibedan/'.$support->path);
         $support->delete();
-        //  route('admin_member_edit',array($member->id))}}
-
         return redirect()->route('admin_supports')->with('status', 'Support deleted.');
     }
 
@@ -103,7 +120,42 @@ class SupportController extends Controller
 
         $file_path= storage_path($path);
         if (file_exists($file_path)) {
-            File::delete($file_path);
+            // File::delete($file_path);
+            File::deleteDirectory($file_path, true);
+        }
+    }
+
+    public function download($folder){
+
+        $path = storage_path('uploads/nibedan/'.$folder);
+        $log_files = File::glob($path.'/*.zip');
+        if(!empty($log_files)){
+            if(file_exists($log_files[0])){
+                return Response::download($log_files[0]);
+            }
+        }
+        $zipFileName = Carbon::now().'.zip';
+        $fullpath  = $path.'/'.$zipFileName;
+       // dd($filename);
+        $zip = new \ZipArchive();
+        $zip->open($fullpath, ZipArchive::CREATE);
+        $files = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator($path),
+            RecursiveIteratorIterator::LEAVES_ONLY
+        );
+        foreach ($files as $name => $file) {
+            if (! $file->isDir()) {
+                $filePath = $file->getRealPath();
+                $relativePath = substr($filePath, strlen($path) + 1);
+                $zip->addFile($filePath, $relativePath);
+            }
+        }
+        $zip->close();
+
+        if(file_exists($fullpath)){
+            return Response::download($fullpath);
+        }else{
+            abort(404);
         }
     }
 }
