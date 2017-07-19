@@ -94,4 +94,12 @@ $("#hideStaffs").click(function(){
 $("#moreStaffs").show( "slow");
 $("#otherStaffs").hide( "slow");
 });
+
+
+        $("#method-option").change(function() {
+            console.log('selected')
+            $('#help-text').text($('option:selected').attr('data-content'));
+            $('#example-text').text($('option:selected').attr('data-example'));
+        }).change();
+
 </script>
