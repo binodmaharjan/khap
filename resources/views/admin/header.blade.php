@@ -32,9 +32,24 @@
                 'forecolor link table | sizeselect  |   fontsizeselect | fontselect'
             ],
             fontsize_formats: "8pt 10pt 11pt 12pt 14pt 18pt 24pt 36pt",
+            font_formats: 'Arial=arial,helvetica,sans-serif;Courier New=courier new,courier,monospace;Mercantile=mercantile ; Preeti=preeti',
+
             style_formats: [
+
+                {title: 'Headers', items: [
+                    {title: 'h1', block: 'h1'},
+                    {title: 'h2', block: 'h2'},
+                    {title: 'h3', block: 'h3'},
+                    {title: 'h4', block: 'h4'},
+                    {title: 'h5', block: 'h5'},
+                    {title: 'h6', block: 'h6'}
+                ]},
+
+
                 { title: 'Inline Right', inline: 'span', styles: { float: 'right' } },
                 { title: 'Inline Left',inline: 'span', styles: { float: 'left' } }
+
+
                 ]
 
 
@@ -50,4 +65,4 @@
 
 <body>
 
-{{--@include('admin.top')--}}
+@include('admin.top')

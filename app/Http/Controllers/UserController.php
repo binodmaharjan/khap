@@ -110,11 +110,12 @@ class UserController extends Controller
     {
 
         $menu = Menu::orderBy('order', 'ASC')->get();
-        $main_member = Member::where('head', '1')->first();
-        $member = Member::where('head', '0')->get();
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
         $bhatta = Bhatta::orderBy('memberName','ASC')->paginate(20);
-        return view('user.bhatta', ['main_member' => $main_member,
-            'member' => $member,
+        return view('user.bhatta', [
+            'main_link'=>$main_link,
             'bhatta' => $bhatta,
             'menu' => $menu]);
     }

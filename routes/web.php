@@ -108,6 +108,10 @@ Route::prefix('admin')->group(function () {
     Route::get('/gunaso/{id}/delete', 'GunasoController@delete')->name('admin_gunaso_delete');
 
 
+     Route::get('/bhatta/add', 'BhattaController@create')->name('admin_vatta_add');
+    Route::post('/bhatta/store', 'BhattaController@store')->name('admin_vatta_store');
+
+
 });
 
 //user

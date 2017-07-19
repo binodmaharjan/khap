@@ -18,8 +18,19 @@ http://creativecommons.org/licenses/by/3.0/
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Preeti';
+    src: url('Preeti.eot');
+    src: url('Preeti.eot?#iefix') format('embedded-opentype'),
+    url('Preeti.woff') format('woff'),
+    url('Preeti.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
-    font-family: 'Mercantile ' ;
+    font-family: 'Mercantile Preeti' ;
     background: #323232;
 }
 

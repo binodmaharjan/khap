@@ -19,12 +19,12 @@
 
                         <table id="customers">
                             <tbody><tr>
-                                <th>Name</th>
-                                <th>Age</th>
-                                <th>Gender</th>
-                                <th>Citizenship</th>
-                                <th>Member id</th>
-                                <th>Type</th>
+                                <th>नाम </th>
+                                <th>उमेर </th>
+                                <th>लिङ्ग​</th>
+                                <th>नागरिकता नं </th>
+                                <th>सदस्य नं </th>
+                                <th>प्रकार </th>
 
                             </tr>
 
@@ -35,7 +35,7 @@
                                 <td>{{$data->age}}</td>
                                 <td>{{$data->gender}}</td>
                                 <td>{{$data->citizenship}}</td>
-                                <td>{{$data->gender}}</td>
+                                <td>{{$data->memberId}}</td>
                                 <td>{{$data->type}}</td>
                             </tr>
 
