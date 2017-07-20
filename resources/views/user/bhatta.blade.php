@@ -7,18 +7,18 @@
         <div class="row">
             <div class="col-md-12">
 
-                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » बृदा भत्ता नामावली</div>
+                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » समाजिक सुरक्षा भत्ता</div>
 
                 <div class="col-md-9 widget-sidebar">
                     <div class="aboutUs postDetails">
-                        <h3 class="heading-title-paragraph">बृदा भत्ता नामावली</h3>
+                        <h3 class="heading-title-paragraph">समाजिक सुरक्षा भत्ता</h3>
                         <br>
                         <form action="{{route('bhatta_search')}}" method="GET">
                             {!! csrf_field() !!}
                         <div id="custom-search-input">
                             <div class="input-group col-md-12">
 
-                                <input type="text" class="form-control input-lg" placeholder="नाम, नागरिकता नं र​ सदस्य नं बाट खोज्नुहोस " name="keyword">
+                                <input type="text" class="form-control input-lg" placeholder="नाम, नागरिकता नं अथवा सदस्य नं बाट खोज्नुहोस " name="keyword">
                                 <span class="input-group-btn">
                         <button class="btn btn-info btn-lg" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
