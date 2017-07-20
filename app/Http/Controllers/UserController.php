@@ -12,6 +12,7 @@ use App\Slider;
 use Illuminate\Http\Request;
 use App\MyLibs\Nepali_Calendar;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Route;
 
 class UserController extends Controller
@@ -114,6 +115,37 @@ class UserController extends Controller
             ->orderBy('created_at','DESC')
             ->get();
         $bhatta = Bhatta::orderBy('memberName','ASC')->paginate(20);
+        return view('user.bhatta', [
+            'main_link'=>$main_link,
+            'bhatta' => $bhatta,
+            'menu' => $menu]);
+    }
+    public function bhattaSearch(Request $request)
+    {
+
+
+
+        $input = Input::only('keyword');
+
+
+        $this->validate($request, [
+            'keyword' => 'required',
+        ]);
+
+
+        $menu = Menu::orderBy('order', 'ASC')->get();
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
+//        $q->where('name', 'LIKE', "%$queryString%");
+        $bhatta = Bhatta::where('memberName','LIKE','%' .$input['keyword'].'%' )
+            ->orWhere('citizenship','LIKE',$input['keyword'])
+            ->orWhere('memberId','LIKE',$input['keyword'])
+            ->orderBy('memberName','ASC')->paginate(20);
+        $bhatta->appends(['keyword' => $input['keyword']]);
+
+       // dd($bhatta);
+
         return view('user.bhatta', [
             'main_link'=>$main_link,
             'bhatta' => $bhatta,
