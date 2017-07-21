@@ -39,7 +39,7 @@
                             <tbody>
                             <tr>
                                 <th>नाम</th>
-                                <th>उमेर</th>
+
                                 <th>लिङ्ग​</th>
                                 <th>नागरिकता नं</th>
                                 <th>सदस्य नं</th>
@@ -51,7 +51,7 @@
 
                                 <tr>
                                     <td>{{$data->memberName}}</td>
-                                    <td>{{$data->age}}</td>
+
                                     <td>{{$data->gender}}</td>
                                     <td>{{$data->citizenship}}</td>
                                     <td>{{$data->memberId}}</td>
