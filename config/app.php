@@ -233,6 +233,7 @@ return [
         'Patro' => App\MyLibs\Helpers::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
+
     ],
 
 ];
