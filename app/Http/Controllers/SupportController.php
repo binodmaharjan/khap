@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Kagajat;
 use App\Menu;
+
+use App\MyLibs\zipfile;
 use App\Notifications\SupportNotify;
 use App\Support;
 use App\User;
@@ -15,9 +17,8 @@ use File;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Str;
-use ZipArchive;
-use RecursiveIteratorIterator;
-use RecursiveDirectoryIterator;
+
+
 
 class SupportController extends Controller
 {
@@ -136,26 +137,45 @@ class SupportController extends Controller
         }
         $zipFileName = Carbon::now().'.zip';
         $fullpath  = $path.'/'.$zipFileName;
-       // dd($filename);
-        $zip = new \ZipArchive();
-        $zip->open($fullpath, ZipArchive::CREATE);
-        $files = new RecursiveIteratorIterator(
-            new RecursiveDirectoryIterator($path),
-            RecursiveIteratorIterator::LEAVES_ONLY
-        );
-        foreach ($files as $name => $file) {
-            if (! $file->isDir()) {
-                $filePath = $file->getRealPath();
-                $relativePath = substr($filePath, strlen($path) + 1);
-                $zip->addFile($filePath, $relativePath);
-            }
+
+        $zipfile = new zipfile();
+//        $fileonserver = storage_path('uploads');
+//        $filename = "face2.jpg";
+//        $zipfile -> addFile(file_get_contents($fileonserver), $filename);
+//        $contents = $zipfile -> file();
+//        file_put_contents("test.zip", $contents);
+
+
+        $files = File::allFiles(storage_path('uploads/nibedan/'.$folder));
+//        dd($files);
+        foreach ($files as $file)
+        {
+            $fileonserver = storage_path('uploads/nibedan/'.$folder.'/'.$file->getFileName());
+            $filename = $file->getFileName();
+            $zipfile -> addFile(file_get_contents($fileonserver), $filename);
         }
-        $zip->close();
+        $contents = $zipfile -> file();
+        file_put_contents($fullpath, $contents);
 
         if(file_exists($fullpath)){
             return Response::download($fullpath);
-        }else{
-            abort(404);
         }
+
+
+        // dd($filename);
+//        $zip = new \ZipArchive();
+//        $zip->open($fullpath, ZipArchive::CREATE);
+//        $files = new RecursiveIteratorIterator(
+//            new RecursiveDirectoryIterator($path),
+//            RecursiveIteratorIterator::LEAVES_ONLY
+//        );
+//        foreach ($files as $name => $file) {
+//            if (! $file->isDir()) {
+//                $filePath = $file->getRealPath();
+//                $relativePath = substr($filePath, strlen($path) + 1);
+//                $zip->addFile($filePath, $relativePath);
+//            }
+//        }
+//        $zip->close();
     }
 }
