@@ -9,6 +9,7 @@ use App\MyLibs\zipfile;
 use App\Notifications\SupportNotify;
 use App\Support;
 use App\User;
+use App\Article;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
