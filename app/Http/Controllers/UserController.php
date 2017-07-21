@@ -164,8 +164,14 @@ class UserController extends Controller
 
         $menu = Menu::orderBy('order', 'ASC')->get();
 
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
+
         $report = Report::all();
-        return view('user.download', ['menu' => $menu, 'report' => $report]);
+        return view('user.download', ['menu' => $menu,
+            'main_link'=>$main_link,
+            'report' => $report]);
     }
 
 }
