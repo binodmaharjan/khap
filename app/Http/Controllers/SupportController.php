@@ -139,15 +139,7 @@ class SupportController extends Controller
         $fullpath  = $path.'/'.$zipFileName;
 
         $zipfile = new zipfile();
-//        $fileonserver = storage_path('uploads');
-//        $filename = "face2.jpg";
-//        $zipfile -> addFile(file_get_contents($fileonserver), $filename);
-//        $contents = $zipfile -> file();
-//        file_put_contents("test.zip", $contents);
-
-
         $files = File::allFiles(storage_path('uploads/nibedan/'.$folder));
-//        dd($files);
         foreach ($files as $file)
         {
             $fileonserver = storage_path('uploads/nibedan/'.$folder.'/'.$file->getFileName());
@@ -161,21 +153,5 @@ class SupportController extends Controller
             return Response::download($fullpath);
         }
 
-
-        // dd($filename);
-//        $zip = new \ZipArchive();
-//        $zip->open($fullpath, ZipArchive::CREATE);
-//        $files = new RecursiveIteratorIterator(
-//            new RecursiveDirectoryIterator($path),
-//            RecursiveIteratorIterator::LEAVES_ONLY
-//        );
-//        foreach ($files as $name => $file) {
-//            if (! $file->isDir()) {
-//                $filePath = $file->getRealPath();
-//                $relativePath = substr($filePath, strlen($path) + 1);
-//                $zip->addFile($filePath, $relativePath);
-//            }
-//        }
-//        $zip->close();
     }
 }
