@@ -123,11 +123,7 @@ class UserController extends Controller
     public function bhattaSearch(Request $request)
     {
 
-
-
         $input = Input::only('keyword');
-
-
         $this->validate($request, [
             'keyword' => 'required',
         ]);
@@ -137,14 +133,13 @@ class UserController extends Controller
         $main_link = Article::where('main_link', '1')
             ->orderBy('created_at','DESC')
             ->get();
-//        $q->where('name', 'LIKE', "%$queryString%");
+
         $bhatta = Bhatta::where('memberName','LIKE','%' .$input['keyword'].'%' )
             ->orWhere('citizenship','LIKE',$input['keyword'])
             ->orWhere('memberId','LIKE',$input['keyword'])
             ->orderBy('memberName','ASC')->paginate(20);
         $bhatta->appends(['keyword' => $input['keyword']]);
 
-       // dd($bhatta);
 
         return view('user.bhatta', [
             'main_link'=>$main_link,
@@ -164,8 +159,14 @@ class UserController extends Controller
 
         $menu = Menu::orderBy('order', 'ASC')->get();
 
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
+
         $report = Report::all();
-        return view('user.download', ['menu' => $menu, 'report' => $report]);
+        return view('user.download', ['menu' => $menu,
+            'main_link'=>$main_link,
+            'report' => $report]);
     }
 
 }

@@ -9,6 +9,7 @@ use App\MyLibs\zipfile;
 use App\Notifications\SupportNotify;
 use App\Support;
 use App\User;
+use App\Article;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -59,9 +60,16 @@ class SupportController extends Controller
 
     public function create(){
 
-        $menu = Menu::all();
+        $menu = Menu::orderBy('order', 'ASC')->get();
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
+
+
         $kagajat= Kagajat::all();
-        return view('user.support',['menu'=>$menu,'kagajat'=>$kagajat]);
+        return view('user.support',['menu'=>$menu,
+            'main_link'=>$main_link,
+            'kagajat'=>$kagajat]);
     }
 
     public function store(Request $request){
