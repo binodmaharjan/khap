@@ -27,10 +27,10 @@
     <script src="{{asset('editor/tinymce/js/tinymce/tinymce.min.js')}}"></script>
     <script>tinymce.init({ selector:'textarea',
             editor_deselector : "mceNoEditor",
-            plugins: "link textcolor table ",
+            plugins: "link textcolor table image",
             toolbar: [
                 'undo redo | styleselect | bold italic |  alignleft aligncenter alignright',
-                'forecolor link table | sizeselect  |   fontsizeselect | fontselect'
+                'forecolor link table image| sizeselect  |   fontsizeselect | fontselect'
             ],
             fontsize_formats: "8pt 10pt 11pt 12pt 14pt 18pt 24pt 36pt",
             font_formats: 'Arial=arial,helvetica,sans-serif;Courier New=courier new,courier,monospace;Mercantile=mercantile ; Preeti=preeti',
