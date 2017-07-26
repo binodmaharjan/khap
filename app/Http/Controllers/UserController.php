@@ -163,7 +163,9 @@ class UserController extends Controller
             ->orderBy('created_at','DESC')
             ->get();
 
-        $report = Report::all();
+        $report = Report::where('type','0')
+            ->orderBy('created_at','DESC')
+            ->paginate(15);
         return view('user.download', ['menu' => $menu,
             'main_link'=>$main_link,
             'report' => $report]);

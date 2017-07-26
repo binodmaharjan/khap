@@ -9,3 +9,4 @@
     {{--@include('user.layout.notices')--}}
 
     @endsection
+
