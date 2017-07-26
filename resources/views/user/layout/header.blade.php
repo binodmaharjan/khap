@@ -13,7 +13,9 @@
                         <div class="title-small"> ३ नं. प्रदेश, नेपाल</div>
                     </h3>
                 </div>
-                <div class="col-md-6 right">
+
+
+                <div class="col-md-4 right">
 
                     <div class="text-right" >
                    मिती {!! Patro::current_miti() !!}

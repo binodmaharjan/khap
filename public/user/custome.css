@@ -629,3 +629,9 @@ select option{
 #custom-search-input .glyphicon-search{
     font-size: 23px;
 }
+
+ .info img{
+    display: block;
+    margin: 0 auto;
+     margin-top: 75px;
+}

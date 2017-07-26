@@ -25,6 +25,13 @@
                     @endforelse
 
             </ul>
+
+
+            <div class="info">
+                <img src="{{asset('src/jankari.jpg')}}" >
+            </div>
+
         </div>
     </div>
 </div>
+
