@@ -106,7 +106,7 @@
 }
 
 .staffSlider {
-    max-height: 310px;
+    height: auto;
 }
 
 .gallaryOverflow ul li:hover {
