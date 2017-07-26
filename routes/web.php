@@ -34,6 +34,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('admin')->group(function () {
 
+    // users
+    Route::get('/users', 'EditorController@index')->name('admin_users');
+    Route::get('/user/add', 'EditorController@create')->name('admin_user_add');
+    Route::post('/user/store', 'EditorController@store')->name('admin_user_store');
+    Route::get('/user/{id}/delete', 'EditorController@delete')->name('admin_user_delete');;
+    Route::get('/user/{id}/edit', 'EditorController@edit')->name('admin_user_edit');
+    Route::post('user/update', 'EditorController@update')->name('admin_user_update');
+
+
     // reports
     Route::get('/reports', 'ReportController@index')->name('admin_reports');
     Route::get('/reports/add', 'ReportController@create')->name('admin_report_add');

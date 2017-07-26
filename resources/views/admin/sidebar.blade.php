@@ -50,6 +50,11 @@
                     <a href="{{route('admin_gunaso')}}"><i class="fa fa-comment"></i> गुनासो  </a>
                 </li>
 
+                <li class="{{strcmp($activeRoute,'admin_users')==0?'active-menu':''}}">
+                    <a href="{{route('admin_users')}}"><i class="fa fa-comment"></i> Users  </a>
+                </li>
+
+
                 <li >
                     <a href="https://webthemez.com/demo/marvel-bootstrap-html-admin-template/empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                 </li>
