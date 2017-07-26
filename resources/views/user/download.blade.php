@@ -16,7 +16,7 @@
                        <div class="col-md-9 widget-sidebar">
                            <div class="widget widget_comments noShadow">
                                <h3 class="widget-title">डाउनलोड्स </h3>
-                               <div class="widget-inner staffSlider">
+                               <div class="widget-inner ">
                                    <ul class="comment mainlinks downloads">
 
                                        @foreach($report as $data)
