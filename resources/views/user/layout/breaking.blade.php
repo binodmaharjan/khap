@@ -16,7 +16,7 @@
                         <div class="breaking-news">
 
                             @foreach($breaking_news as $news)
-                                <a href="{{route('article_post',array('id'=>$news->id))}}">{!! $news->title !!}</a>
+                                <a href="{{route('article_slug',array('slug'=>$news->slug))}}">{!! $news->title !!}</a>
                                 @endforeach
 
 
