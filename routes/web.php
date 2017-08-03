@@ -150,6 +150,7 @@ Route::post('/gunaso/store', 'GunasoController@store')->name('gunaso_store');
 Route::get('/downloads','UserController@download')->name('downloads');
 Route::get('/bhatta','UserController@bhatta')->name('brida_bhatta');
 Route::get('/bhatta/search','UserController@bhattaSearch')->name('bhatta_search');
+Route::get('/downloads/search','UserController@downloadSearch')->name('downloads_search');
 
 
 
