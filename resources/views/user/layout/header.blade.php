@@ -14,8 +14,15 @@
                     </h3>
                 </div>
 
+                <div class="col-md-4">
+                    <a href ="http://lmcityward3.com/hardik-anurodh" ><img src="{{asset('src/hardik.gif')}}" style="
+    width: 150px;
+    margin-top: 22px;
+"/>
+                    </a>
+                </div>
 
-                <div class="col-md-4 right">
+                <div class="col-md-2 right">
 
                     <div class="text-right" >
                    मिती {!! Patro::current_miti() !!}
@@ -23,11 +30,7 @@
                             {{--फारम भर्नको लागी--}}
                         {{--</a>--}}
                     </div>
-                    <div class="text-right">
-                        <a href="{{route('user_support_create')}}" >
-                            फारम भर्नको लागी
-                        </a>
-                    </div>
+
 
 
                 </div>

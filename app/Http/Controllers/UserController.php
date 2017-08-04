@@ -32,7 +32,9 @@ class UserController extends Controller
         $news = Article::where('category_id', '1')
             ->get();
 
-        $homeArticle=Article::where('home_page','1')->first();
+        $homeArticle=Article::where('home_page','1')
+                    ->orderBy('created_at', 'DESC')
+                    ->get();
 
         $menu = Menu::orderBy('order', 'ASC')->get();
 
