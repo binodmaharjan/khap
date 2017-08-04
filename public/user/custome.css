@@ -224,7 +224,7 @@
 .postDetails img {
     padding: 10px 0px;
     width: 100%;
-    max-height: 400px;
+
     object-fit: cover;
 }
 .newsDetails{

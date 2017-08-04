@@ -32,10 +32,11 @@ class ReportController extends Controller
 
     public function store(Request $request){
 
-        $input = Input::only('title','file','type');
+        $input = Input::only('title','file','type','keywords');
 
         $this->validate($request, [
             'title' => 'required|max:255|min:2',
+            'keywords'=>'required',
             'file' => 'required',
         ]);
 
@@ -51,6 +52,7 @@ class ReportController extends Controller
         $report->title = $input['title'];
         $report->path=$filename;
         $report->type = $input['type'];
+        $report->keywords = $input['keywords'];
         $report->save();
 
         return redirect()->route('admin_reports')->with('status', 'Your file is uploaded.');
@@ -64,20 +66,24 @@ class ReportController extends Controller
 
     public  function update(Request $request){
 
-        $input = Input::only('id','title','file','type');
+        $input = Input::only('id','title','file','type','keywords');
 
         $this->validate($request, [
             'title' => 'required|max:255|min:2',
-            'file' => 'required',
+            'keywords'=>'required',
+
         ]);
 
          $report = Report::find($input['id']);
-
-         $this->deleteFile('app/'.$report->path);
-        $filename = $input['file']->store('reports');
         $report->title = $input['title'];
         $report->type = $input['type'];
-        $report->path=$filename;
+        $report->keywords = $input['keywords'];
+        if(!empty($input['file'])) {
+            $this->deleteFile('uploads/'.$report->path);
+            $filename = $input['file']->store('reports');
+            $report->path=$filename;
+        }
+
         $report->save();
         return redirect()->route('admin_reports')->with('status', 'Report is updated.');
     }
@@ -86,7 +92,7 @@ class ReportController extends Controller
 
         $report = Report::find($id);
 
-        $file_path= storage_path('app/'.$report->path);
+        $file_path= storage_path('uploads/'.$report->path);
 
         if (file_exists($file_path)) {
             File::delete($file_path);

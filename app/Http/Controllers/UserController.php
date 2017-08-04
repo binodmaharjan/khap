@@ -149,6 +149,30 @@ class UserController extends Controller
             'menu' => $menu]);
     }
 
+    public function downloadSearch(Request $request)
+    {
+
+        $input = Input::only('keyword');
+        $this->validate($request, [
+            'keyword' => 'required',
+        ]);
+
+        $menu = Menu::orderBy('order', 'ASC')->get();
+
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
+
+        $report = Report::where('keywords','LIKE','%' .$input['keyword'].'%' )
+                        ->where('type','0')
+            ->orderBy('created_at','DESC')
+            ->paginate(2);
+        $report->appends(['keyword' => $input['keyword']]);
+        return view('user.download', ['menu' => $menu,
+            'main_link'=>$main_link,
+            'report' => $report]);
+    }
+
     public function category()
     {
         return view('user.news');

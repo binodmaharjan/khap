@@ -23,6 +23,22 @@
                 @endif
             </div>
         </div>
+
+        <div class="form-group{{ $errors->has('keywords') ? ' has-error' : '' }}">
+            <label for="name" class="col-md-4 control-label col-left">Keywords</label>
+
+            <div class="col-md-6">
+                <input id="name" type="text" class="form-control" name="keywords" value="{{ $report->keywords }}" placeholder="for searching by keywords" required autofocus>
+
+                @if ($errors->has('keywords'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('keywords') }}</strong>
+                    </span>
+                @endif
+            </div>
+        </div>
+
+
         <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
             <label for="name" class="col-md-4 control-label col-left">Type</label>
 
