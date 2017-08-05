@@ -14,13 +14,7 @@
                     </h3>
                 </div>
 
-                <div class="col-md-4">
-                    <a href ="http://lmcityward3.com/hardik-anurodh" ><img src="{{asset('src/hardik.gif')}}" style="
-    width: 150px;
-    margin-top: 22px;
-"/>
-                    </a>
-                </div>
+
 
                 <div class="col-md-2 right">
 
