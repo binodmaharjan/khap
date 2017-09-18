@@ -39,11 +39,14 @@ class BhattaController extends Controller
 
         })->get();
 
+     //   dd($data);
+
         foreach ($data->toArray() as $row) {
 
             if(!empty($row['personal_id'])) {
 
                 $vatta = new Bhatta();
+                $vatta->name_nepali = $row['name_nepali'];
                 $vatta->type = $row['social_assistance_type_name'];
                 $vatta->ward = $row['ward_number'];
                 $vatta->personalId = $row['personal_id'];
@@ -53,9 +56,9 @@ class BhattaController extends Controller
                 $vatta->age = $row['age'];
                 $vatta->birthDate = $row['birth_date_bs'];
                 $vatta->citizenship = $row['citizenship_number'];
-                $vatta->regularAmount = $row['regular_amount'];
-                $vatta->totalAmount = $row['total_amount'];
-                $vatta->medicalAmount = $row['medical_amount'];
+               // $vatta->regularAmount = $row['regular_amount'];
+               // $vatta->totalAmount = $row['total_amount'];
+               // $vatta->medicalAmount = $row['medical_amount'];
                 $vatta->save();
             }
 //            dd($row);
