@@ -18,7 +18,7 @@
                         <div id="custom-search-input">
                             <div class="input-group col-md-12">
 
-                                <input type="text" class="form-control input-lg" placeholder="नाम, नागरिकता नं अथवा सदस्य नं बाट खोज्नुहोस " name="keyword">
+                                <input type="text" class="form-control input-lg" placeholder="नाम बाट खोज्नुहोस " name="keyword">
                                 <span class="input-group-btn">
                         <button class="btn btn-info btn-lg" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
@@ -50,7 +50,7 @@
                             @foreach($bhatta as $data)
 
                                 <tr>
-                                    <td>{{$data->memberName}}</td>
+                                    <td>{{$data->name_nepali}}</td>
 
                                     <td>{{$data->gender}}</td>
                                     <td>{{$data->citizenship}}</td>
