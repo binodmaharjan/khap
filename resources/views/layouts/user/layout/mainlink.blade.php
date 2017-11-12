@@ -28,7 +28,7 @@
 
 
             <div class="info">
-              <a href="{{asset('src/samachar.jpeg')}}"><img src="{{asset('src/samachar.jpeg')}}" width="100%" > </a>
+                <img src="{{asset('src/jankari.jpg')}}" >
             </div>
 
         </div>

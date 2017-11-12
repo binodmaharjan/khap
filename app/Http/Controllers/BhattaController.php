@@ -25,21 +25,20 @@ class BhattaController extends Controller
 
         $input = Input::only('file');
 
-
-
-
         $filename = $input['file']->store('xls');
-
         $path =storage_path('uploads/'.$filename);
-
-
-
 
         $data = Excel::load($path, function($reader) {
 
         })->get();
 
      //   dd($data);
+
+
+            Bhatta::truncate();
+
+
+
 
         foreach ($data->toArray() as $row) {
 
