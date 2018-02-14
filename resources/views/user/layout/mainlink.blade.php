@@ -1,6 +1,4 @@
 
-
-
 <div class="col-md-3 widget-sidebar">
     <div class="widget widget_comments noShadow">
         <h3 class="widget-title">मुख्य लिन्क </h3>
@@ -28,7 +26,7 @@
 
 
             <div class="info">
-              <a href="{{asset('src/samachar.jpeg')}}"><img src="{{asset('src/samachar.jpeg')}}" width="100%" > </a>
+              <a href="{{asset('src/suchana.jpeg')}}"><img src="{{asset('src/suchana.jpeg')}}" width="100%" > </a>
             </div>
 
         </div>

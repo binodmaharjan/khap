@@ -18,25 +18,25 @@
                             <h3 class="widget-title">डाउनलोडहरू </h3>
                             <br>
 
-                            <form action="{{route('downloads_search')}}" method="GET">
-                                {!! csrf_field() !!}
-                                <div id="custom-search-input">
-                                    <div class="input-group col-md-12">
+                            {{--<form action="{{route('bhatta_search')}}" method="GET">--}}
+                                {{--{!! csrf_field() !!}--}}
+                                {{--<div id="custom-search-input">--}}
+                                    {{--<div class="input-group col-md-12">--}}
 
-                                        <input type="text" class="form-control input-lg"
-                                               placeholder="निवेदन खोज्नुहोस eg, house, resident"
-                                               name="keyword">
-                                        <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="submit">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
+                                        {{--<input type="text" class="form-control input-lg"--}}
+                                               {{--placeholder="निवेदन खोज्नुहोस eg, house, resident"--}}
+                                               {{--name="keyword">--}}
+                                        {{--<span class="input-group-btn">--}}
+                        {{--<button class="btn btn-info btn-lg" type="submit">--}}
+                            {{--<i class="glyphicon glyphicon-search"></i>--}}
+                        {{--</button>--}}
 
 
-                    </span>
+                    {{--</span>--}}
 
-                                    </div>
-                                </div>
-                            </form>
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</form>--}}
 <br>
 
                             <div class="widget-inner ">
