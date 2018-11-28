@@ -27,14 +27,20 @@
                             @endif
                     </div>
                     <div class="col-md-4">
-                        {{--<h4>प्रतिवेदन</h4>--}}
-                        {{--<ul>--}}
-                            {{--<li>प्रतिवेदन 1</li>--}}
-                            {{--<li>प्रतिवेदन</li>--}}
-                            {{--<li>प्रतिवेदन</li>--}}
-                            {{--<li>प्रतिवेदन</li>--}}
-                            {{----}}
-                        {{--</ul>--}}
+                        <h4></h4>
+                        <ul>
+                        <li style="
+                    font-size: 1.4em;">महत्वपूर्ण लिन्क </li>
+                         <li><a href="https://www.ocmcm.p3.gov.np" class="footer-link" target="_blank">मुख्यमन्त्री तथा मन्त्रिपरिषद्को कार्यालय</a></li>
+                         <li><a href="http://www.lalitpurmun.gov.np" class="footer-link" target="_blank">ललितपुर महानगरपालिका</a></li>
+                        
+                           <li><a href="http://www.mofaga.gov.np/" class="footer-link" target="_blank">सङ्घीय मामिला तथा सामान्य प्रशासन मन्त्रालय</a></li>
+                           <li><a href="http://www.psc.gov.np/" class="footer-link" target="_blank">लोक सेवा आयोग</a></li>
+                            <li><a href="http://cbs.gov.np/" class="footer-link" target="_blank">केन्द्रिय तथ्यांक विभाग</a></li>
+                            <li><a href="https://www.npc.gov.np/np/" class="footer-link" target="_blank">राष्ट्रिय योजना आयोग</a></li>
+                            <li><a href="http://www.docr.gov.np/" class="footer-link" target="_blank">केन्द्रीय पञ्जीकरण विभाग</a></li>
+                          
+                        </ul>
                     </div>
                      <div class="col-md-4">
                         {{--<h4>संपर्क</h4>--}}
