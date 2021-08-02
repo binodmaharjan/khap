@@ -56,5 +56,5 @@
         console.log(e);
     });
 </script>
-
+@yield('script')
 <i title="Raphaël Colour Picker" style="display: none; color: gray;"></i></body></html>

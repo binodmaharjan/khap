@@ -132,6 +132,18 @@ Route::prefix('admin')->group(function () {
     Route::get('/kagajat/{id}/edit', 'KagajatController@edit')->name('admin_kagajat_edit');
     Route::post('kagajat/update', 'KagajatController@update')->name('admin_kagajat_update');
 
+    // person
+    Route::get('/person', 'PersonController@index')->name('admin.persons');
+    Route::get('/person/add', 'PersonController@create')->name('admin.persons.add');
+    Route::get('/person/{id}/show', 'PersonController@show')->name('admin.persons.show');
+    Route::post('/person/store', 'PersonController@store')->name('admin.persons.store');
+    Route::get('/person/{id}/delete', 'PersonController@destroy')->name('admin.persons.delete');;
+    Route::get('/person/{id}/edit', 'PersonController@edit')->name('admin.persons.edit');
+    Route::post('person/update', 'PersonController@update')->name('admin.persons.update');
+    Route::get('/person/{id}/addFamily', 'PersonController@AddFamily')->name('admin.persons.add.family');
+    Route::post('/person/{id}/storeFamily', 'PersonController@StoreFamily')->name('admin.persons.store.family');
+
+
 });
 
 //user
@@ -151,6 +163,8 @@ Route::get('/downloads','UserController@download')->name('downloads');
 Route::get('/bhatta','UserController@bhatta')->name('brida_bhatta');
 Route::get('/bhatta/search','UserController@bhattaSearch')->name('bhatta_search');
 Route::get('/downloads/search','UserController@downloadSearch')->name('downloads_search');
+Route::get('/persons','UserController@person')->name('persons');
+Route::get('/persons/{id}/details','UserController@person_details')->name('persons.details');
 
 
 //terminal

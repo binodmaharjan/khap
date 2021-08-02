@@ -24,11 +24,6 @@
 
             </ul>
 
-
-            <div class="info">
-              <a href="{{asset('src/suchana.jpeg')}}"><img src="{{asset('src/suchana.jpeg')}}" width="100%" > </a>
-            </div>
-
         </div>
     </div>
 </div>

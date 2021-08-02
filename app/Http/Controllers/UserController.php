@@ -11,6 +11,7 @@ use App\Report;
 use App\Slider;
 use Illuminate\Http\Request;
 use App\MyLibs\Nepali_Calendar;
+use App\Person;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Route;
@@ -148,6 +149,60 @@ class UserController extends Controller
             'bhatta' => $bhatta,
             'menu' => $menu]);
     }
+
+    public function person()
+    {
+
+        $menu = Menu::orderBy('order', 'ASC')->get();
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
+        $persons = Person::orderBy('id','ASC')->paginate(20);
+        return view('user.persons', [
+            'main_link'=>$main_link,
+            'persons' => $persons,
+            'menu' => $menu]);
+    }
+
+    public function person_details($id)
+    {
+
+        $menu = Menu::orderBy('order', 'ASC')->get();
+        $main_link = Article::where('main_link', '1')
+            ->orderBy('created_at','DESC')
+            ->get();
+        $person = Person::findOrfail($id);
+        return view('user.persons_details', [
+            'main_link'=>$main_link,
+            'person' => $person,
+            'menu' => $menu]);
+    }
+    // public function bhattaSearch(Request $request)
+    // {
+
+    //     $input = Input::only('keyword');
+    //     $this->validate($request, [
+    //         'keyword' => 'required',
+    //     ]);
+
+
+    //     $menu = Menu::orderBy('order', 'ASC')->get();
+    //     $main_link = Article::where('main_link', '1')
+    //         ->orderBy('created_at','DESC')
+    //         ->get();
+
+    //     $bhatta = Bhatta::where('memberName','LIKE','%' .$input['keyword'].'%' )
+    //         ->orWhere('citizenship','LIKE',$input['keyword'])
+    //         ->orWhere('memberId','LIKE',$input['keyword'])
+    //         ->orderBy('memberName','ASC')->paginate(20);
+    //     $bhatta->appends(['keyword' => $input['keyword']]);
+
+
+    //     return view('user.bhatta', [
+    //         'main_link'=>$main_link,
+    //         'bhatta' => $bhatta,
+    //         'menu' => $menu]);
+    // }
 
     public function downloadSearch(Request $request)
     {

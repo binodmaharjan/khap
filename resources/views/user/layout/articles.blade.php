@@ -1,4 +1,4 @@
-@section('page-title','३ नं. वडा कार्यालय | '.$article->title)
+@section('page-title','खपिन्छे | '.$article->title)
 
 <section>
     <div class="container">

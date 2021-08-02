@@ -8,8 +8,8 @@
                     </a>
                     <h3 class="title-aside-logo">
                         <div class="title-small">ललितपुर महानगरपालिका </div>
-                        <div class="title-big">  ३ नं. वडा कार्यालय </div>
-                        <div class="title-small"> पुल्चोक, ललितपुर </div>
+                        <div class="title-big"> खपिन्छे त्वा </div>
+                        <div class="title-small"> खपिन्छे, ललितपुर </div>
                         <div class="title-small"> ३ नं. प्रदेश, नेपाल</div>
                     </h3>
                 </div>

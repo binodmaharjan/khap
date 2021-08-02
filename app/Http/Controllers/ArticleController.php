@@ -44,7 +44,6 @@ class ArticleController extends Controller
             'main_link',
             'breaking_news');
 
-    //    dd($input);
         $this->validate($request, [
             'title' => 'required|max:255|',
             'slug' => 'required|max:255|',
