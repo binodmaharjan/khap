@@ -498,7 +498,12 @@ private $nepali_number = array('०','१','२','३','४','५','६','७','
         return  str_replace($this->western_number, $this->nepali_number, $d);
     }
 
-
+    public function currentYear()
+    {
+        $date = date("Y");
+        return  str_replace($this->western_number, $this->nepali_number, $date);
+    }
+    
 
 
 

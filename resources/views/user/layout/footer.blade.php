@@ -59,7 +59,7 @@
                     </div>              
                     <div class="col-md-12">
                         <p class="footer-last-text">
-                        सर्वाधिकार ©२०१७
+                        सर्वाधिकार ©{{Patro::currentYear()}}
                         {{--<span class="pull-right footer-develop-text">डेवेलोभ : <a href="#"> बेटा इन्फर्मेसन टेक्नोलोजी--}}
                         </p></span>
                     </div>
