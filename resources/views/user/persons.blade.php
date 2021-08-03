@@ -7,7 +7,7 @@
         <div class="row">
             
 
-                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » टोलवासीहरु</div>
+                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » सदस्य</div>
                 <div class="col-md-12">
                     <div class="col-md-8 widget-sidebar">
                         <div class="aboutUs postDetails">
