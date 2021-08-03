@@ -35,8 +35,8 @@
                 <li class="{{strcmp($activeRoute,'admin_members')==0?'active-menu':''}}">
                     <a href="{{route('admin_members')}}"><i class="fa fa-user "></i> वडा सदस्य​</a>
                 </li>
-                <li class="{{strcmp($activeRoute,'persons')==0?'active-menu':''}}">
-                    <a href="{{route('persons')}}"><i class="fa fa-user "></i> टोल सदस्य​</a>
+                <li class="{{strcmp($activeRoute,'admin.persons')==0?'active-menu':''}}">
+                    <a href="{{route('admin.persons')}}"><i class="fa fa-user "></i> टोल सदस्य​</a>
                 </li>
 
 
