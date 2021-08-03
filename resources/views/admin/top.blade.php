@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{url('/home')}}"><strong>Pulchowk</strong></a>
+            <a class="navbar-brand" href="{{url('/home')}}"><strong>Khapinchhen</strong></a>
 
 
         </div>

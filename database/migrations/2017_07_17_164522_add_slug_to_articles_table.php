@@ -15,7 +15,7 @@ class AddSlugToArticlesTable extends Migration
     {
         Schema::table('articles', function (Blueprint $table) {
             //
-            $table->string('slug');
+            // $table->string('slug');
         });
     }
 

@@ -13,10 +13,10 @@ class AddKeywordsToReporstTable extends Migration
      */
     public function up()
     {
-        Schema::table('reports', function (Blueprint $table) {
-            //
-            $table->string('keywords');
-        });
+        // Schema::table('reports', function (Blueprint $table) {
+        //     //
+        //     $table->string('keywords');
+        // });
     }
 
     /**
@@ -26,8 +26,8 @@ class AddKeywordsToReporstTable extends Migration
      */
     public function down()
     {
-        Schema::table('reports', function (Blueprint $table) {
-            //
-        });
+        // Schema::table('reports', function (Blueprint $table) {
+        //     //
+        // });
     }
 }

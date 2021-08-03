@@ -13,12 +13,12 @@ class CreateKagajatTable extends Migration
      */
     public function up()
     {
-        Schema::create('kagajat', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title');
-            $table->text('description');
-            $table->timestamps();
-        });
+        // Schema::create('kagajat', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->string('title');
+        //     $table->text('description');
+        //     $table->timestamps();
+        // });
     }
 
     /**
@@ -28,6 +28,6 @@ class CreateKagajatTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kagajat');
+        // Schema::dropIfExists('kagajat');
     }
 }

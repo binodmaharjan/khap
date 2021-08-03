@@ -35,15 +35,18 @@
                 <li class="{{strcmp($activeRoute,'admin_members')==0?'active-menu':''}}">
                     <a href="{{route('admin_members')}}"><i class="fa fa-user "></i> वडा सदस्य​</a>
                 </li>
+                <li class="{{strcmp($activeRoute,'persons')==0?'active-menu':''}}">
+                    <a href="{{route('persons')}}"><i class="fa fa-user "></i> टोल सदस्य​</a>
+                </li>
 
 
-                <li class="{{strcmp($activeRoute,'admin_kagajats')==0?'active-menu':''}}">
+                {{-- <li class="{{strcmp($activeRoute,'admin_kagajats')==0?'active-menu':''}}">
                     <a href="{{route('admin_kagajats')}}"><i class="fa fa-edit"></i> निवेदनको लागी कागजात </a>
 
                 </li>
                 <li class="{{strcmp($activeRoute,'admin_supports')==0?'active-menu':''}}">
                     <a href="{{route('admin_supports')}}"><i class="fa fa-edit"></i> निवेदनहरू </a>
-                </li>
+                </li> --}}
 
 
                 <li class="{{strcmp($activeRoute,'admin_gunaso')==0?'active-menu':''}}">
