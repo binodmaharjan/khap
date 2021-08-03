@@ -53,7 +53,7 @@
                               {{--<img src="{{asset('src/location.png')}}" width="16px"/>--}}
                                 <a href="https://www.google.com/maps/place/Bhairab+Lachhi/@27.6735567,85.3279513,15z/data=!4m12!1m6!3m5!1s0x0:0x3a9b39939086d598!2sBhairab+Lachhi!8m2!3d27.6735567!4d85.3279513!3m4!1s0x0:0x3a9b39939086d598!8m2!3d27.6735567!4d85.3279513" target="_blank">गुगल नक्सामा स्थान</a></li>
                                 {{--<a href="https://www.google.com/maps/place/lmcity+ward+3/@27.6775695,85.3134636,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb19cb0d14573d:0xe04f345f83867b6e!8m2!3d27.6775695!4d85.3156523?hl=en-AU">गुगल नक्सामा स्थान</a></li>--}}
-                            <li>इमेल: khapinchhen@gmail.com</li>
+                            {{-- <li>इमेल: khapinchhen@gmail.com</li> --}}
                             
                         </ul>
                     </div>              
