@@ -11,7 +11,7 @@
                 <div class="col-md-12">
                     <div class="col-md-8 widget-sidebar">
                         <div class="aboutUs postDetails">
-                            <h3 class="heading-title-paragraph">समाजिक सुरक्षा भत्ता</h3>
+                            <h3 class="heading-title-paragraph">सदस्य</h3>
                             <br>
                             <form action="{{route('bhatta_search')}}" method="GET">
                                 {!! csrf_field() !!}
