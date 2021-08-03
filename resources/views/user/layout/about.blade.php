@@ -9,20 +9,16 @@
                         <?php $count++ ?>
                         <div class="aboutUs">
                             <h3 class="heading-title-paragraph">{!! $data->title !!}</h3>
-                            {!! str_limit($data->description,  ($count==1)?2*400:4*400) !!} <span class="paragraph-link"><a href="{{route('article_slug',array('slug'=>$data->slug))}}">पुरा पढ्नुहोस</a></span>
+                            <p>
+                            {!! str_limit($data->description,  ($count==1)?2*400:4*400) !!} 
                             </p>
 
                         </div>
                         <br>
                     @endforeach
                 </div>
-
-
-
-                @include('user.layout.mainlink')
-
-
             </div>
+             @include('user.layout.mainlink')
         </div>
     </div>
 </section>

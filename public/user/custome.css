@@ -47,7 +47,7 @@
 }
 
 .background-colorr {
-    background: #156d20 none repeat scroll 0 0;
+    background: #e52b1e none repeat scroll 0 0;
     -webkit-box-shadow: 0 4px 20px 0 #000000;
     box-shadow: 0 4px 20px 0 #000000;
     position: relative;
@@ -149,7 +149,7 @@
 .noShadow > li.active > a:hover,
 .noShadow > li.active > a:focus,
 .noShadow > li > a:hover {
-    background-color: #156d20 !important;
+    background-color: #e52b1e !important;
     color: white;
     text-decoration: none;
 }
@@ -185,7 +185,7 @@
 .widget_comments .widget-title,
 .otherTitles {
     background-color: transparent;
-    color: #156d20;
+    color: #e52b1e;
     margin: 0;
     padding: 12px 0px;
     font-family: roboto;
@@ -266,7 +266,7 @@ a span:hover{
 /*Contact Info*/
 
 section#contact {
-    background-color: #a7803a;
+    background-color: #b9736e;
     background-image: url('../src/worldMap.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -409,7 +409,7 @@ section#contact .text-danger {
 
 .alignRight .btn {
     color: white;
-    background-color: #156d20;
+    background-color: #e52b1e;
 }
 
 .alignRight .btn:hover {
@@ -418,7 +418,7 @@ section#contact .text-danger {
 
 .contactInfo {
     padding: 20px;
-    border: 1px solid #156d20;
+    border: 1px solid #e52b1e;
 }
 
 .contactInfo p,
@@ -435,7 +435,7 @@ section#contact .text-danger {
 }
 
 .contactInfo i {
-    color: #339966;
+    color: #e52b1e;
 }
 
 .loadMore{
@@ -578,7 +578,7 @@ ul.tabs li:first-child {
 .postDetails th {
     padding-top: 11px;
     padding-bottom: 11px;
-    background-color: #156d20;
+    background-color: #777;
     color: white;
 }
 

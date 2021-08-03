@@ -75,16 +75,16 @@
         <div class="col-sm-6 padding-top padding-clear">
             <div class="contactInfo">
                 <h3><i class="fa fa-home fa-1x"></i> ठेगाना :</h3>
-                <p>ललितपुर महानगरपालिका</p>
-                <p>३ नं. वडा कार्यालय</p>
-                 <p>पुल्चोक, ललितपुर</p>
+                <p>खपिन्छे त्वा</p>
+                <p>९ / ११  नं. वडा कार्यालय</p>
+                 <p> ललितपुर</p>
 
                 <br />
                 <h3><i class="fa fa-phone fa-1x"></i> फोन  :</h3>
-                <p>०१-५५२८१८८</p>
+                <p>०१-५५३६४७१ </p>
                 <br>
                 <h3><i class="fa fa-envelope fa-1x"></i> ईमेल :</h3>
-                <p>lmcity.ward3@gmail.com</p>
+                <p>khapinchhentole@gmail.com</p>
                 <br />
                 {{--<h3><i class="fa fa-user fa-1x" ></i> CEO:</h3>--}}
                 {{--<p>Name of person</p>--}}
@@ -97,7 +97,9 @@
             </div>
         </div>
         <div class="col-sm-6 padding-top paddingR0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.2833385821423!2d85.3127984150614!3d27.67763638280409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19cb0d14573d%3A0xe04f345f83867b6e!2slmcity+ward+3!5e0!3m2!1sen!2s!4v1499539172527" width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+            {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.2833385821423!2d85.3127984150614!3d27.67763638280409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19cb0d14573d%3A0xe04f345f83867b6e!2slmcity+ward+3!5e0!3m2!1sen!2s!4v1499539172527" width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe> --}}
+            {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220.83848592207738!2d85.32764551550896!3d27.673541670992655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f2895055fd%3A0x61ae3b8161eb2984!2sBhairav%20mandir!5e0!3m2!1sen!2snp!4v1627971740970!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" ></iframe> --}}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220.83848592207738!2d85.32764551550896!3d27.673541670992655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f2895055fd%3A0x61ae3b8161eb2984!2sBhairav%20mandir!5e0!3m2!1sen!2snp!4v1627971740970!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 

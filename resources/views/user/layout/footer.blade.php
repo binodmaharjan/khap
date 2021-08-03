@@ -45,10 +45,10 @@
                      <div class="col-md-4">
                         {{--<h4>संपर्क</h4>--}}
                         <ul>
+                            <li>खपिन्छेँ त्वा, यल: </li>
                             <li>ललितपुर महानगरपालिका </li>
-                            <li>३ नं. वडा कार्यालय </li>
-                            <li>पुल्चोक, ललितपुर </li>
-                            <li>०१-५५२८१८८  </li>
+                            <li>ललितपुर, नेपाल </li>
+                            <li>०१-५५३६४७१  </li>
                             <li>
                               {{--<img src="{{asset('src/location.png')}}" width="16px"/>--}}
                                 <a href="https://www.google.com/maps/place/lmcity+ward+3/@27.6776364,85.3127984,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb19cb0d14573d:0xe04f345f83867b6e!8m2!3d27.6776364!4d85.3149871?hl=en-US" target="_blank">गुगल नक्सामा स्थान</a></li>
