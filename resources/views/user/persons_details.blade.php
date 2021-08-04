@@ -9,7 +9,7 @@
 
                 <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » सदस्य</div>
 
-                <div class="col-md-9 widget-sidebar">
+                <div class="col-md-8 widget-sidebar">
                     <div class="aboutUs postDetails">
                         <h3 class="heading-title-paragraph">सदस्य</h3>
                         <br>
@@ -62,9 +62,7 @@
 
                    </div>
                 </div>
-
                 @include('user.layout.mainlink')
-
             </div>
         </div>
     </div>
