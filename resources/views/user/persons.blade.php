@@ -84,9 +84,8 @@
                         </div>
                     </div>
 
-                @include('user.layout.mainlink')
-
             </div>
+            @include('user.layout.mainlink')
         </div>
     </div>
 

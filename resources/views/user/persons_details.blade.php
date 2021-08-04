@@ -7,11 +7,11 @@
         <div class="row">
             <div class="col-md-12">
 
-                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » समाजिक सुरक्षा भत्ता</div>
+                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » सदस्य</div>
 
                 <div class="col-md-9 widget-sidebar">
                     <div class="aboutUs postDetails">
-                        <h3 class="heading-title-paragraph">समाजिक सुरक्षा भत्ता</h3>
+                        <h3 class="heading-title-paragraph">सदस्य</h3>
                         <br>
                         <br>
 
