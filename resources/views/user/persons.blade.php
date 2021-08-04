@@ -5,87 +5,82 @@
 <section>
     <div class="container">
         <div class="row">
-            
-
-                <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » सदस्य</div>
-                <div class="col-md-12">
-                    <div class="col-md-8 widget-sidebar">
-                        <div class="aboutUs postDetails">
-                            <h3 class="heading-title-paragraph">सदस्य</h3>
-                            <br>
-                            <form action="{{route('bhatta_search')}}" method="GET">
-                                {!! csrf_field() !!}
+            <div class="breadcrumb"><a href="{{url('')}}">गृहपृष्ठ</a> » सदस्य</div>
+            <div class="col-md-12">
+                <div class="col-md-8 widget-sidebar">
+                    <div class="aboutUs postDetails">
+                        <h3 class="heading-title-paragraph">सदस्य</h3>
+                        <br>
+                        <form action="#" method="GET">
+                            {!! csrf_field() !!}
                             <div id="custom-search-input">
                                 <div class="input-group col-md-12">
-
                                     <input type="text" class="form-control input-lg" placeholder="नाम बाट खोज्नुहोस " name="keyword">
                                     <span class="input-group-btn">
-                            <button class="btn btn-info btn-lg" type="submit">
-                                <i class="glyphicon glyphicon-search"></i>
-                            </button>
-
-
-                        </span>
-
+                                        <button class="btn btn-info btn-lg" type="submit">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
-                            </form>
-                            <br>
-                            <br>
+                        </form>
+                        <br>
+                        <br>
 
-                            @if(count($persons))
+                        @if(count($persons))
 
-                            <table id="customers">
-                                <tbody>
+                        <table id="customers">
+                            <tbody>
+                            <tr>
+                                <th>नाम</th>
+
+                                <th>लिङ्ग​</th>
+                                <th>Age</th>
+                                <th>education</th>
+                                <th>occupation</th>
+
+                            </tr>
+
+                            @foreach($persons as $data)
+
                                 <tr>
-                                    <th>नाम</th>
+                                    <td><a href="{{route('persons.details', $data->id)}}">{{$data->name}}</a></td>
 
-                                    <th>लिङ्ग​</th>
-                                    <th>Age</th>
-                                    <th>education</th>
-                                    <th>occupation</th>
-
+                                    <td>{{$data->gender}}</td>
+                                    <td>{{$data->Age()}}</td>
+                                    <td>{{$data->education}}</td>
+                                    <td>{{$data->occupation}}</td>
                                 </tr>
 
-                                @foreach($persons as $data)
+                            @endforeach
+                            {{--<tr class="alt">--}}
+                            {{--<td>Berglunds snabbköp</td>--}}
+                            {{--<td>Christina Berglund</td>--}}
+                            {{--<td>Sweden</td>--}}
+                            {{--</tr>--}}
 
-                                    <tr>
-                                        <td><a href="{{route('persons.details', $data->id)}}">{{$data->name}}</a></td>
+                            </tbody>
+                        </table>
 
-                                        <td>{{$data->gender}}</td>
-                                        <td>{{$data->Age()}}</td>
-                                        <td>{{$data->education}}</td>
-                                        <td>{{$data->occupation}}</td>
-                                    </tr>
+                        @else
 
-                                @endforeach
-                                {{--<tr class="alt">--}}
-                                {{--<td>Berglunds snabbköp</td>--}}
-                                {{--<td>Christina Berglund</td>--}}
-                                {{--<td>Sweden</td>--}}
-                                {{--</tr>--}}
+                        {{"No search results"}}
 
-                                </tbody>
-                            </table>
-
-                            @else
-
-                            {{"No search results"}}
-
-                                @endforelse
+                            @endforelse
 
 
-                            {!! $persons->render() !!}
+                        {!! $persons->render() !!}
 
 
-                            <br>
+                        <br>
 
 
-                        </div>
                     </div>
+                </div>
+
+                @include('user.layout.mainlink')
 
             </div>
-            @include('user.layout.mainlink')
         </div>
     </div>
 
