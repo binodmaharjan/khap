@@ -76,6 +76,7 @@
 
 
                     </div>
+                </div>
 
                 @include('user.layout.mainlink')
 
