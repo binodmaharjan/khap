@@ -130,7 +130,7 @@
             <label for="education" class="col-md-4 control-label col-left">Education</label>
 
             <div class="col-md-6">
-                <input id="education" type="email" class="form-control" name="education" value="{{ old('email') }}" required autofocus>
+                <input id="education" type="text" class="form-control" name="education" value="{{ old('education') }}" required autofocus>
 
                 @if ($errors->has('education'))
                     <span class="help-block">
