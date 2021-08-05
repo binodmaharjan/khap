@@ -1,6 +1,6 @@
 @extends('user.layout.app')
 @section('content')
-@section('page-title','३ नं. वडा कार्यालय | ')
+@section('page-title','खपिन्छे | सदस्य ')
 
 <section>
     <div class="container">
