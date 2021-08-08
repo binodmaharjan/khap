@@ -35,7 +35,6 @@ class GunasoController extends Controller
             'full_name' => 'required|max:255|',
             'email' => 'required',
             'phone' => 'required',
-            'type' => 'required',
             'subject' => 'required',
             'message' => 'required',
         ]);
@@ -44,7 +43,7 @@ class GunasoController extends Controller
         $gunaso->full_name=$input['full_name'];
         $gunaso->email=$input['email'];
         $gunaso->phone=$input['phone'];
-        $gunaso->type=$input['type'];
+        $gunaso->type="";
         $gunaso->subject=$input['subject'];
         $gunaso->message=$input['message'];
         $gunaso->save();

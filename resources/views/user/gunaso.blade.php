@@ -38,14 +38,7 @@
                                     <input type="tel" name="phone" class="form-control" placeholder="फोन *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="form-group">
-                                    <select id="subject" name="type" class="form-control" required="required" placeholder="Subject *" data-validation-required-message="choose subject">
-                                        <option value="na" selected="">Choose One</option>
-                                        <option value="service">General Customer Service</option>
-                                        <option value="suggestions">Suggestions</option>
-                                        <option value="product">Product Support</option>
-                                    </select>
-                                </div>
+                               
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
