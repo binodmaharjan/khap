@@ -17,7 +17,7 @@
 
                         <h4>Name: {{$person->name}}</h4>
                         <h4>Age: {{$person->Age()}}</h4>
-                        <h4>Gender: {{$person->gender}}</h4>
+                        <h4>Gender: {{$person->Gender()}}</h4>
                         <h4>Phone: {{$person->phone}}</h4>
                         <h4>Email: {{$person->email}}</h4>
                         <h4>Occupation: {{$person->occupation}}</h4>
@@ -42,9 +42,9 @@
 
                             @if(isset($data->Relative->name))
                                 <tr>
-                                    <td>{{$data->Relative->name ?? '' }}</td>
+                                    <td>{{$data->Relative->name_np ?? '' }}</td>
 
-                                    <td>{{$data->Relative->gender ?? ''}}</td>
+                                    <td>{{$data->Relative->Gender() ?? ''}}</td>
                                     <td>{{$data->Relative->Age() ?? ''}}</td>
                                     <td>{{$data->Relative->education ?? ''}}</td>
                                     <td>{{$data->Relative->occupation ??''}}</td>
