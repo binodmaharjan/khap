@@ -40,15 +40,16 @@
 
                             @foreach($person->family as $data)
 
+                            @if(isset($data->Relative->name))
                                 <tr>
-                                    <td>{{$data->Relative->name}}</td>
+                                    <td>{{$data->Relative->name ?? '' }}</td>
 
-                                    <td>{{$data->Relative->gender}}</td>
-                                    <td>{{$data->Relative->Age()}}</td>
-                                    <td>{{$data->Relative->education}}</td>
-                                    <td>{{$data->Relative->occupation}}</td>
+                                    <td>{{$data->Relative->gender ?? ''}}</td>
+                                    <td>{{$data->Relative->Age() ?? ''}}</td>
+                                    <td>{{$data->Relative->education ?? ''}}</td>
+                                    <td>{{$data->Relative->occupation ??''}}</td>
                                 </tr>
-
+                            @endif
                             @endforeach
                             {{--<tr class="alt">--}}
                             {{--<td>Berglunds snabbköp</td>--}}

@@ -42,12 +42,18 @@
                             <i class="fa fa-picture-o fa-5x" aria-hidden="true"></i>
                         @endif
                     </td> --}}
+                    @if($data)
 
                     <td><a href="{{route('admin.persons.edit',array($data->id))}}"> {{$data->name}}</a></td>
                     <td><a href="{{route('admin.persons.edit',array($data->id))}}"> {{$data->Age()}}</a></td>
                     <td><a href="{{route('admin.persons.edit',array($data->id))}}"> {{$data->phone}}</a></td>
                     <td><a href="{{route('admin.persons.edit',array($data->id))}}"> {{$data->email}}</a></td>
-                    <td><a href="{{route('admin.persons.edit',array($data->id))}}"> {{$data->RelativeNames()}}</a></td>
+                    <td>
+                        @if($data->RelativeNames())
+                        <a href="{{route('admin.persons.edit',array($data->id))}}"> {{$data->RelativeNames()}}
+                        </a>
+                        @endif
+                    </td>
 
                     <td>
                         <a href="{{route('admin.persons.show', $data->id)}}">
@@ -67,6 +73,7 @@
                                         class="fa fa-clipboard" aria-hidden="true">Copy link</i></button>
                         </a> --}}
                     </td>
+                    @endif
 
                 </tr>
 

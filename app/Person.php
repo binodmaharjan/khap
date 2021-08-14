@@ -32,7 +32,12 @@ class Person extends Model
         $family = $this->family;
         foreach($family as $row)
         {
+            
             $rel = Person::find($row->relative_id);
+            if(!$rel)
+            {
+                continue;
+            }
             $name .=  $rel->name . ', ';
         }
 
