@@ -635,3 +635,7 @@ select option{
     margin: 0 auto;
      margin-top: 75px;
 }
+
+.staff-title{
+    border-bottom: 3px solid #e52b1e;
+}
