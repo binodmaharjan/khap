@@ -52,7 +52,7 @@
                 </div>
                 {{-- commitee --}}
                 <div class="col-sm-12 ">
-                    <div class="text-center-one staff-title">
+                    <div class="text-center-one staffTitle">
                         <h3>समन्वय तथा निर्देशन कमिटी </h3>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
 
 
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staff-title">
+                    <div class="text-center-one staffTitle">
                         <h3>न्याय तथा मेलमिलाप उपसमिति </h3>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
 
                 {{-- tt --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staff-title">
+                    <div class="text-center-one staffTitle">
                         <h3>आर्थिक उपसमिति</h3>
                     </div>
                 </div>
@@ -240,7 +240,7 @@
 
                 {{-- 2 --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staff-title">
+                    <div class="text-center-one staffTitle">
                         <h3>भौतिक विकास निर्माण उपसमिति</h3>
                     </div>
                 </div>
@@ -314,7 +314,7 @@
 
                 {{-- 3 --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staff-title">
+                    <div class="text-center-one staffTitle">
                         <h3>साँस्कृतिक उपसमिति</h3>
                     </div>
                 </div>
@@ -388,7 +388,7 @@
 
                 {{-- 4 --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staff-title">
+                    <div class="text-center-one staffTitle">
                         <h3>सुवाः ब्यवस्थापन उपसमिति </h3>
                     </div>
                 </div>
@@ -450,7 +450,391 @@
                         </li>
                     </ul>
                 </div>
-                            
+                {{-- 6 --}}
+
+                <div class="col-sm-12 widget_comments">
+                    <div class="text-center-one staffTitle">
+                        <h3>विद्युत ब्यवस्थापन उपसमिति </h3>
+                    </div>
+                </div>
+                <div class="col-md-12 widget_comments widget-sidebar padding-clear team">
+                    <ul class="galleryList">
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>भुवन महर्जन</h3>
+                                    <h4>संयोजक </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>हेराकाजी महर्जन</h3>
+                                    <h4>सह संयोजक  </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>आशाकाजी महर्जन</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>मनोज कुमार ब्यञ्जनकार</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>ज्ञानेश्वर महर्जन</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>प्रेमकृष्ण अवाले</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>बेखामान महर्जन</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                {{-- 7 --}}
+                <div class="col-sm-12 widget_comments">
+                    <div class="text-center-one staffTitle">
+                        <h3>स्वास्थ्य तथा वातावरण उपसमिति </h3>
+                    </div>
+                </div>
+                <div class="col-md-12 widget_comments widget-sidebar padding-clear team">
+                    <ul class="galleryList">
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>सुरज ब्यञ्जनकार</h3>
+                                    <h4>संयोजक </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>गोपाल महर्जन</h3>
+                                    <h4>सह संयोजक  </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>कर्मलाल अवाले</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>गोविन्द महर्जन</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>सानुछोरी महर्जन अवाले</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                {{-- 10 --}}
+                <div class="col-sm-12 widget_comments">
+                    <div class="text-center-one staffTitle">
+                        <h3>युवा खेलकुद तथा शिक्षा उपसमिति</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 widget_comments widget-sidebar padding-clear team">
+                    <ul class="galleryList">
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>ज्ञानेन्द्र महर्जन</h3>
+                                    <h4>संयोजक </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>रोकेश अवाले</h3>
+                                    <h4>दुजः  </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>कर्मलाल अवाले</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>रविन्सन महर्जन</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>रुजन महर्जन </h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>निश्चल अवाले</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                {{-- 11 --}}
+
+                <div class="col-sm-12 widget_comments">
+                    <div class="text-center-one staffTitle">
+                        <h3>विधान संशोधन उपसमिति</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 widget_comments widget-sidebar padding-clear team">
+                    <ul class="galleryList">
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>सुरज ब्यञ्जनकार</h3>
+                                    <h4>संयोजक </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>तुुल्सी महर्जन</h3>
+                                    <h4>दुजः  </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>कृष्णमान ब्यञ्जनकार</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>रविन्सन महर्जन</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>रत्न अवाले  </h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                {{-- 12 --}}
+                <div class="col-sm-12 widget_comments">
+                    <div class="text-center-one staffTitle">
+                        <h3>खपिन्छेँ वेभ साइट सञ्चालन उपसमिति </h3>
+                    </div>
+                </div>
+                <div class="col-md-12 widget_comments widget-sidebar padding-clear team">
+                    <ul class="galleryList">
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>सुरज ब्यञ्जनकार</h3>
+                                    <h4>संयोजक </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>हरि महर्जन</h3>
+                                    <h4>सह संयोजक </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>राजकुुमार महर्जन</h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>विनोद महर्जन </h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>ररविन्सन महर्जन </h3>
+                                    <h4>दुजः</h4>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                {{-- 15 --}}
+
+                <div class="col-sm-12 widget_comments">
+                    <div class="text-center-one staffTitle">
+                        <h3>ज्यापु समाज यल त्वाः प्रतिनीधि</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 widget_comments widget-sidebar padding-clear team">
+                    <ul class="galleryList">
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>सबिना महर्जन</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>हरि महर्जन</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>सुनील महर्जन (शुक्रराज)</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>आपुलाल अवाले </h3>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                {{-- 133 --}}
+                <div class="col-sm-12 widget_comments">
+                    <div class="text-center-one staffTitle">
+                        <h3>मंका सामान ब्यवस्थापन </h3>
+                    </div>
+                </div>
+                <div class="col-md-12 widget_comments widget-sidebar padding-clear team">
+                    <ul class="galleryList">
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>बेखामान महर्जन</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-responsive img-circle">
+                                <img src="{{ url('src/profile.jpg')}}">
+                                <div class="text-center-one staffDetails">
+                                    <h3>कृष्ण महर्जन</h3>
+                                </div>
+                            </div>
+                        </li>
+                                                
+                    </ul>
+                </div>
                 {{-- end of comitte --}}
             </div>
             @include('user.layout.mainlink')
