@@ -52,7 +52,7 @@
                 </div>
                 {{-- commitee --}}
                 <div class="col-sm-12 ">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>समन्वय तथा निर्देशन कमिटी </h3>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
 
 
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>न्याय तथा मेलमिलाप उपसमिति </h3>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
 
                 {{-- tt --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>आर्थिक उपसमिति</h3>
                     </div>
                 </div>
@@ -240,7 +240,7 @@
 
                 {{-- 2 --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>भौतिक विकास निर्माण उपसमिति</h3>
                     </div>
                 </div>
@@ -277,7 +277,7 @@
                             <div class="img-responsive img-circle">
                                 <img src="{{ url('src/profile.jpg')}}">
                                 <div class="text-center-one staffDetails">
-                                    <h3>हेराकाजी महर्जन/h3>
+                                    <h3>हेराकाजी महर्जन</h3>
                                     <h4>दुजः</h4>
                                 </div>
                             </div>
@@ -314,7 +314,7 @@
 
                 {{-- 3 --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>साँस्कृतिक उपसमिति</h3>
                     </div>
                 </div>
@@ -388,7 +388,7 @@
 
                 {{-- 4 --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>सुवाः ब्यवस्थापन उपसमिति </h3>
                     </div>
                 </div>
@@ -453,7 +453,7 @@
                 {{-- 6 --}}
 
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>विद्युत ब्यवस्थापन उपसमिति </h3>
                     </div>
                 </div>
@@ -527,7 +527,7 @@
                 
                 {{-- 7 --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>स्वास्थ्य तथा वातावरण उपसमिति </h3>
                     </div>
                 </div>
@@ -584,7 +584,7 @@
 
                 {{-- 10 --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>युवा खेलकुद तथा शिक्षा उपसमिति</h3>
                     </div>
                 </div>
@@ -651,7 +651,7 @@
                 {{-- 11 --}}
 
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>विधान संशोधन उपसमिति</h3>
                     </div>
                 </div>
@@ -708,7 +708,7 @@
 
                 {{-- 12 --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>खपिन्छेँ वेभ साइट सञ्चालन उपसमिति </h3>
                     </div>
                 </div>
@@ -754,7 +754,7 @@
                             <div class="img-responsive img-circle">
                                 <img src="{{ url('src/profile.jpg')}}">
                                 <div class="text-center-one staffDetails">
-                                    <h3>ररविन्सन महर्जन </h3>
+                                    <h3>रविन्सन महर्जन </h3>
                                     <h4>दुजः</h4>
                                 </div>
                             </div>
@@ -766,7 +766,7 @@
                 {{-- 15 --}}
 
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one " style="border-bottom: 3px solid #e52b1e;">
                         <h3>ज्यापु समाज यल त्वाः प्रतिनीधि</h3>
                     </div>
                 </div>
@@ -810,7 +810,7 @@
 
                 {{-- 133 --}}
                 <div class="col-sm-12 widget_comments">
-                    <div class="text-center-one staffTitle">
+                    <div class="text-center-one" style="border-bottom: 3px solid #e52b1e;">
                         <h3>मंका सामान ब्यवस्थापन </h3>
                     </div>
                 </div>
