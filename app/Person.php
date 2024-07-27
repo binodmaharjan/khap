@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Person extends Model
 {
+    private $western_number = array('0','1','2','3','4','5','6','7','8','9');
+    private $nepali_number = array('०','१','२','३','४','५','६','७','८','९');
+
     protected $table = "person_details";
 
     protected $fillable =['name','name_np', 'birth_date','phone', 'email', 'gender','health','occupation','address','education' ];
@@ -18,7 +21,17 @@ class Person extends Model
 
     public function Age()
     {
-        return Carbon::now()->format('Y') - $this->birth_date;
+        $age =  Carbon::now()->format('Y') - $this->birth_date;
+        return  str_replace($this->western_number, $this->nepali_number, $age);
+    }
+
+    public function Gender()
+    {
+        if($this->gender=='MALE')
+        {
+            return 'पुरुष';
+        }
+        return "महिला";
     }
 
     public function family()

@@ -44,9 +44,9 @@
                             @foreach($persons as $data)
 
                                 <tr>
-                                    <td><a href="{{route('persons.details', $data->id)}}">{{$data->name}}</a></td>
+                                    <td><a href="{{route('persons.details', $data->id)}}">{{$data->name_np}}</a></td>
 
-                                    <td>{{$data->gender}}</td>
+                                    <td>{{$data->Gender()}}</td>
                                     <td>{{$data->Age()}}</td>
                                     <td>{{$data->education}}</td>
                                     <td>{{$data->occupation}}</td>

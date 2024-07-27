@@ -45,6 +45,7 @@
                 
                             @foreach($person->family as $key => $data)
                 
+                            @if(isset($data->Relative))
                                 <tr>
                                     <td> {{ ++$counts }}</td>
                                     {{-- <td>
@@ -77,7 +78,7 @@
                                     </td>
                 
                                 </tr>
-                
+                @endif
                             @endforeach
                 
                             </tbody>

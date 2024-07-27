@@ -20,7 +20,7 @@ class PersonController extends Controller
      */
     public function index()
     {
-        $persons=Person::paginate(20);
+        $persons=Person::OrderBy('updated_at','DESC')->paginate(20);
         return view('admin.person.list',['persons'=>$persons]);
     }
 
