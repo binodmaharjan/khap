@@ -1,5 +1,5 @@
 @extends('user.layout.app')
-@section('page-title','३ नं. वडा कार्यालय | पदाधिकारी')
+@section('page-title','खपिन्छें टोल | खपिन्छें टोल सुधार कमिटी')
 @section('content')
 
     @include('user.layout.staffDetails')
